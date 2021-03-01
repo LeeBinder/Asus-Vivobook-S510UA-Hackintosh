@@ -6,7 +6,7 @@
 
 # Details
 
-    Version:    	11.0 RC (Release Candidate) 4
+    Version:    	11.0
     Date:       	Feb. 28, 2021
     Status: 	Stable
     Support:    	All BIOS (verified 301-310)

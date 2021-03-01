@@ -1,5 +1,5 @@
 File system:
-	added OC Resources folder; reduced it; added font framd by blackOSX for better readability
+	added reduced OC Resources folder; added font framd by blackOSX for better readability
 
 config.plist:
 
