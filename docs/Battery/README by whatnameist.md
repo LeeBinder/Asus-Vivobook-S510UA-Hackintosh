@@ -1,5 +1,5 @@
 # Battery: Modified RECB and WECB methods
-by whatnameis | [link to original README.md](https://github.com/whatnameisit/Asus-Vivobook-X510UA-BQ490-Hackintosh/blob/master/Docs/README.md)
+by whatnameis | [link to original README.md](https://github.com/whatnameisit/Asus-Vivobook-X510UA-BQ490-Hackintosh/blob/master/Docs/Battery/README.md)
 ## Problem
 I was studying the [_new_ battery patch guide](https://xstar-dev.github.io/hackintosh_advanced/Guide_For_Battery_Hotpatch.html) and was wondering if there was a simpler way of reading and writing `FieldUnitObjs` with size above 32 bits.\
 There are many databases which contain battery patches for various laptops, but they are not very consistent when breaking up `FieldUnitObjs` size above 32 bits. If the `OperationRegion` starts at `Zero`, then they use `RE1B` and `RECB` (or `WE1B` and `WECB`. I should inclusively call them `xE1B` and `xECB`.) methods. If it starts at something other than `Zero`, then they break up `256` bits into a set of 32 `FieldUnitObjs` and write every single one of them into `xRBA` methods. A lack of a unified guide, and also tiring to rewrite all the broken down `FieldUnitObjs`...\
