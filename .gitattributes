@@ -1,5 +1,2 @@
-src export-ignore
-/ export-ignore
-\ export-ignore
-Asus-Vivobook-S510UA-Hackintosh-11.0.1 export-ignore
-*.* export-ignore
+# don't include any file & folder in release's source code
+* export-ignore

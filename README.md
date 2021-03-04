@@ -6,8 +6,8 @@
 
 # Details
 
-    Version:    	11.0
-    Date:       	Feb. 28, 2021
+    Version:    	11.0.1
+    Date:       	Mar. 04, 2021
     Status: 	Stable
     Support:    	All BIOS (verified 301-310)
     Technology:	OpenCore and Clover with ACPI hotpatch by RehabMan  
@@ -54,10 +54,10 @@ The support for DRM contents is limited due to incompatible firmware. Please see
 - NVRAM > 7C436110-AB2A-4BBB-A880-FE41995C9F82 > boot-args: add `-wegnoegpu`
 - save & reboot
 
-**Clover:**
+**Clover:** via Clover Configurator,
 
-- In the file system, navigate to `EFI/CLOVER/ACPI/patched/disbale dGPU (NVIDIA etc.)` and move `SSDT-RP01_PEGP.aml` one level higher into `patched`
-- via Clover Configurator: Boot > Arguments: add `-wegnoegpu`
+- Acpi > DisabledAML: remove `SSDT-RP01_PEGP.aml`
+- Boot > Arguments: add `-wegnoegpu`
 - save & reboot
 
 If there is more than one boot-arg, make sure you separate them from each other with a space!

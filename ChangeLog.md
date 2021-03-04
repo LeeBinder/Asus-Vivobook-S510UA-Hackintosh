@@ -1,11 +1,19 @@
-## Release v.11.0, Feb. 28 2021
+## [Release v.11.0.1, Mar. 04 2021](https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh/releases/tag/11.0.1)
+
+Minor non-functional fine-tuning suggested by whatnameisit/ Syncing with [his VivoBook repo](https://github.com/whatnameisit/Asus-Vivobook-X510UA-BQ490-Hackintosh):
+
+- **OC & Clover**: `AppleCpuPmCfgLock` considered unnecessary thus toggled to `false`
+- **Clover**: hardware specific dGPU ACPI table `SSDT-RP01_PEGP.aml` is now blocked more OC-like using DisabledAML in config.plist (instead moving a file in the file system); reflection of that change in ReadMe.md
+- **General structure**: relocation of ACPI Battery folder into the more appropriate 'Docs' folder
+
+## [Release v.11.0, Feb. 28 2021](https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh/releases/tag/11.0)
 
 - added Big Sur compatible OpenCore EFI (credits to whatnameisit)
 - added Big Sur compatible Clover EFI based on whatnameisit's OC EFI
 - updated all kexts and drivers
 - overall overhaul, improvements and refinements to the entire repo
 - added cool cosmic theme for OC and Clover boot GUI
-- moved repo over from tctien342 (saintno) to my GitHub corner
+- moved repo over from [tctien342 (saintno)/Asus-Vivobook-S510UA-Hackintosh](https://github.com/tctien342/Asus-Vivobook-S510UA-Hackintosh) (now [archived](https://github.com/tctien342/Asus-Vivobook-S510UA-Hackintosh/releases)) to my GitHub corner
 
 ____________________
 
@@ -13,7 +21,7 @@ ____________________
 - assigned real country code (US) across all config plist files to Boot/Arguments/brcmfx-country so Wi-Fi networks get detected even w/o any edit (user is still encouraged to set desired country code)
 
 
-## Release v.10.0, Feb. 24 2020
+## [Release v.10.0, Feb. 24 2020](https://github.com/tctien342/Asus-Vivobook-S510UA-Hackintosh/releases/tag/v10.0) <font style="font-size:14px; font-weight:normal">(archived)</font>
 
 It contains (among others) the following changes:
 
