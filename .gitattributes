@@ -5,8 +5,8 @@
 #Asus-Vivobook-S510UA-Hackintosh-11.0.1 export-ignore
 #*.* export-ignore
 * export-ignore
-Rakefile export-ignore
+#Rakefile export-ignore
 #Directories export-ignore
 #Clover export-ignore
 #Rakedirectories export-ignore
-Rakedirectory export-ignore
+#Rakedirectory export-ignore
