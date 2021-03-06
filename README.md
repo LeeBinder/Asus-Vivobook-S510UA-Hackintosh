@@ -165,6 +165,11 @@ Alternatively you can use a [Dell DW1560](https://www.google.com/search?btnG=Sea
 
 If your issue is not listed or persists, either post to the [VivoBook S15 X510UAR thread @tonymacx86](https://www.tonymacx86.com/threads/245445/), or open an [issue here](../../issues).
 
+# Knowledge Base
+
+* **Quirks:** Accdg. to [Clover Documentation](https://drovosek01.github.io/CloverHackyColor-WebVersion/) at the time of this writing (r5129), Clover does not interpret the following Quirks taken from the VivoBook OC config.plist: `SetApfsTrimTimeout`, `TscSyncTimeout`, `RequestBootVarRouting`. They might or might not be functional at some point and can be considered placeholders or reminders until they are either relevant or removed.<br>
+OC's Quirk '`PanicNoKextDump`' is covered by Clover in `Kernel & Kext Patches` > `PanicNoKextDump`. `AppleXcpmCfgLock` is handled automatically and internally by Clover depending if the `MSR 0xE2` register is locked or unlocked.
+
 _________________________
 ## Special Credits for this repo to these fellow hackintoshers:
 **whatnameisit**: main contributor; maintainer of the [VivoBook X510UA-BQ490 repo](https://github.com/whatnameisit/Asus-Vivobook-X510UA-BQ490-Hackintosh/) | **tctien342**: originator of this VivoBook S15 repo ([archived](https://github.com/tctien342/Asus-Vivobook-S510UA-Hackintosh/releases)) | **hieplpvip**: originator of the underlying/ upstream [ZenBook repo](https://github.com/hieplpvip/Asus-Zenbook-Hackintosh) and [AsusSMC](https://github.com/hieplpvip/AsusSMC); contributor | **[fewtarius](https://github.com/fewtarius)**: facilitator | To [many](https://github.com/whatnameisit/Asus-Vivobook-X510UA-BQ490-Hackintosh/blob/master/README.md#credits) *MANY* others .........

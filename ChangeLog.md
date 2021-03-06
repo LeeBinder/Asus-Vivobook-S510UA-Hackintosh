@@ -1,3 +1,6 @@
+### 2021-03-06:
+- **ReadMe**: added Knowledge Base section with item `Quirks`; **Clover config.plist**: updated comment about Quirks
+
 ## [Release v.11.0.1, Mar. 04 2021](https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh/releases/tag/11.0.1)
 
 Minor non-functional fine-tuning suggested by whatnameisit/ Syncing with [his VivoBook repo](https://github.com/whatnameisit/Asus-Vivobook-X510UA-BQ490-Hackintosh):
