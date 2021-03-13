@@ -1,3 +1,6 @@
+### 2021-03-13:
+-  added **MSR E2 register unlock** info to ***ReadMe***, ***Tool*** **entries** to OC and Clover config.plists, and ***Tools*** **folder** to OC and Clover EFI folders
+
 ### 2021-03-06:
 - **ReadMe**: added Knowledge Base section with item `Quirks`; **Clover config.plist**: updated comment about Quirks
 

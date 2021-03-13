@@ -6,8 +6,8 @@
 
 # Details
 
-    Version:    	11.0.1
-    Date:       	Mar. 04, 2021
+    Version:    	11.0.2
+    Date:       	Mar. 13, 2021
     Status: 	Stable
     Support:    	All BIOS (verified 301-310)
     Technology:	OpenCore and Clover with ACPI hotpatch by RehabMan  
@@ -24,9 +24,9 @@
     • Audio:		Conexant Audio CX8050
     • Touchpad:		ELAN 1300
     • Keyboard Backlight:	Yes
-    • BIOS Version:		x510UAR 310
+    • BIOS:		x510UAR 310 (X510UARAS310.zip)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font style="font-family: Courier; font-size:30px; font-style:bold">T</font>his repo is the continuation of [tctien342's repo](https://github.com/tctien342/Asus-Vivobook-S510UA-Hackintosh/releases) which has been archived because he upgraded to a different hackbook and gave his VivoBook away. It's based on whatnameisit's brilliant and cutting-edge [repo for his VivoBook X510UA-BQ490](https://github.com/whatnameisit/Asus-Vivobook-X510UA-BQ490-Hackintosh) based on OpenCore ("OC"). The two main differences are:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font style="font-family: Courier; font-size:30px; font-style:bold">T</font>his repo is the continuation of the now discontinued [tctien342 repo](https://github.com/tctien342/Asus-Vivobook-S510UA-Hackintosh/releases) which has been archived because he upgraded to a different hackbook and gave his VivoBook away. It's based on whatnameisit's brilliant and cutting-edge [repo for his VivoBook X510UA-BQ490](https://github.com/whatnameisit/Asus-Vivobook-X510UA-BQ490-Hackintosh) based on OpenCore ("OC"). The two main differences are:
 
 1. re-added keyboard backlight support
 2. re-added a Clover EFI as *secondary* bootloader alternative by backporting OC's ACPI into Clover config.
@@ -39,11 +39,11 @@ Of the two bootloaders offered in this repo, [OpenCore](https://github.com/acida
 
 # Unsupported Hardware & Features
 
-    • dGPU like NVIDIA GeForce 940MX
+    • dGPU like NVIDIA GeForce 940MX, MX150 etc.
     • Fingerprint reader
     • FN + media controller key combo
     • Apple Safe Sleep ("Hibernate")
-    • Intel Wi-Fi - replacement see below
+    • Intel Wi-Fi - replacement options see below
 The support for DRM contents is limited due to incompatible firmware. Please see the [DRM Compatibility Chart](https://github.com/acidanthera/WhateverGreen/blob/master/Manual/FAQ.Chart.md)
 
 # VivoBooks with an additional dGPU (NVIDIA GeForce 940MX, MX150 etc.)
@@ -95,17 +95,29 @@ If there is more than one boot-arg, make sure you separate them from each other 
 	- Disable Secure Boot
 	- recommended: set the EFI partition with OC as the first boot loader
 
-2. Prepare a macOS installer on a USB flash drive with OC or Clover added
-3. Replace the EFI folder in the USB EFI partition with the matching one (OC or Clover) from this repo
-4. Boot into USB and select macOS installer
-5. Recommended: a mouse connected via USB in case Trackpad does not work right away
-6. Follow macOS install instructions (you can find them in your favorite hackintosh forum) to boot into macOS.
+2. Prepare a macOS installer on a USB flash drive or external hard disk
+
+3. **Download this repo**, preferably as **.dmg package** from the [Releases](https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh/releases) section because **a)** each release was tested thoroughly and can be considered a stable mile stone for most users, and **b)** macOS native icons and labels are maintained.<br/>  Alternatively you can download the repo at it's current "0-day" state if you see that's more recent than the latest release date and contains one or more updates you are looking for via the green "Clone or Download" button on the top right of the [repo's main page](https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh), "Download ZIP". Consider the non-release state as BETA, and be aware that GitHub does ***not*** (yet?) sustain macOS native icons and labels in its open repo!
+
+To be able to boot from your macOS install USB, it needs either one of this repo's EFI folders (recommended: OC EFI) on its FAT (16 or 32) partition.
+
+4. Recommended: connect a mouse via USB in case Trackpad does not work right away
+
+4. Boot your USB macOS installer device into the hackintosh bootloader.<br>
+**RECOMMENDED:** already fix CFG lock before install by [unlocking the MSR E2 register](#unlock-the-msr-e2-register), reboot.
+
+5. Again boot into your USB installer and this time select the `macOS installer` entry
+
+6. Follow macOS' installation instructions (you can find them in your favorite hackintosh forum) to set up and boot into macOS.
 
 # Steps after installing macOS
     
-1. **Download this repo**, preferably as **.dmg package** from the [Releases](https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh/releases) section because **a)** each release was tested thoroughly and can be considered a stable mile stone for most users, and **b)** macOS native icons and labels are maintained.<br/>  Alternatively you can download the repo at it's current "0-day" state if you see that's more recent than the latest release date and contains one or more updates you are looking for via the green "Clone or Download" button on the top right of the [repo's main page](https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh), "Download ZIP". Consider the non-release state as BETA, and be aware that GitHub does ***not*** (yet?) sustain macOS native icons and labels in its open repo!
+1. If you haven't done already before macOS install, fix CFG lock by [unlocking the MSR E2 register](#unlock-the-msr-e2-register), reboot.
+
 2. Open the folder "**post macOS Installations**" and install *all* from within its subfolders for Hibernate prevention, additional function keys, etc. Also (strongly recommended!) study and consider the content of the folder [Optional]!
+
 3. **Fill your internal hard disk's EFI partition with the OC or Clover EFI folder**. You can use the matching Configurator to mount your system ESP (EFI System Partition). Next back up the existing System EFI folder and copy one of this release's EFI folders to your system's ESP.
+
 4. **OpenCore Configurator**:
     * click onto **PlatformInfo** in the side bar on the left
     * on the right top, click onto the 1st tab 'DataHub - Generic - PlatformNVRAM'. You will see four text fields with `update this field`
@@ -124,6 +136,45 @@ If there is more than one boot-arg, make sure you separate them from each other 
 
 5. **Reboot and ENJOY :)**
 
+# Unlock the MSR E2 register
+
+from OpenCore Post-Install/[Fixing CFG Lock](https://dortania.github.io/OpenCore-Post-Install/misc/msr-lock.html) *(English slightly corrected)*:
+
+> CFG-Lock is a setting in your BIOS that allows for a specific register (in this case the MSR 0xE2) to be written to. By default, most motherboards lock this variable with many even hiding the option outright in the GUI. And why we care about it is that **macOS actually wants to write to this variable**, and not just one part of macOS. Instead **both the Kernel(XNU) and AppleIntelPowerManagement want this register**.
+> 
+> So to fix it we have 2 options:
+> 
+> 1. depreciated: patch macOS to work with our hardware
+> 
+>     This creates instability and unnecessary patching for many
+>     The 2 patches we use for this: 
+> 
+>       * ~~AppleCpuPmCfgLock for AppleIntelPowerManagement.kext~~ *(not necessary for our VivoBooks)*<br>
+>       * AppleXcpmCfgLock for the Kernel(XNU)
+> 
+> 2. **recommended: patch our firmware to support MSR E2 write**
+> 
+>     Very much preferred, as avoiding patching allows for greater flexibility regarding stability and OS upgrades.
+
+**OpenCore:**
+
+1. In OC's Boot GUI, launch the 2nd-to-last entry labeled `ControlMsrE2.efi`.
+2. Confirm with `y` or the equivalent key on your keyboard if it's non-English (should be the key underneath the 6 and 7 keys).
+3. reboot
+4. OpenCore Configurator > Kernel: disable `AppleXcpmCfgLock`, save<br>
+   (note: optionally, before saving, you can also deactivate `Boot` > `Tools`:  `ControlMsrE2.efi`)
+5. reboot
+
+**Clover:**
+
+1. In Clover's Boot GUI, navigate into the Tools section below the icons and launch `CFGLock.efi`. ***ATTENTION***: Clover 5131 introduced a bug keeping `CFGLock.efi` from functioning. Therefore this repo's current `EFI/Boot/BOOTX64.efi` is 5130.
+2. Confirm with `y` or the equivalent key on your keyboard if it's non-English (should be the key underneath the 6 and 7 keys).
+3. reboot
+4. recommended: update Clover to the latest version. For your convenience, you can find 5131 `BOOTX64.efi` in `/EFI/BOOT/5131`
+
+**You're done**! Now you should have correct CPU power management :)
+
+- **IMPORTANT**: Every time you reset your BIOS by loading Setup Defaults or install a different BIOS version, you will need to flip this bit again! Resetting or clearing NVRAM, however, should ***not*** re-lock the MSR E2 register.
 
 # Wi-Fi Replacement
 

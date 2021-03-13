@@ -1,6 +1,7 @@
 File system:
-	added reduced OC Resources folder; added font framd by blackOSX for better readability
-
+	- added reduced OC Resources folder; added font framd by blackOSX for better readability
+	- added Tools/ControlMsrE2.efi
+-------------------------------------
 config.plist:
 
 ACPI:
@@ -16,8 +17,8 @@ Kernel:
 	
 Misc:
 	- Boot > LauncherOption: disabled
+	- Boot > Tools: added ControlMsrE2.efi
 	- Security > Expose Sensitive Data: 3
 	
 UEFI
 	- Drivers: enabled AudioDxe.efi, added CrScreenshotDxe.efi
-
