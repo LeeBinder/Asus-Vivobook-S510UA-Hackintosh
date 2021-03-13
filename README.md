@@ -24,7 +24,7 @@
     • Audio:		Conexant Audio CX8050
     • Touchpad:		ELAN 1300
     • Keyboard Backlight:	Yes
-    • BIOS:		x510UAR 310 (X510UARAS310.zip)
+    • BIOS:			x510UAR 310 (X510UARAS310.zip)
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font style="font-family: Courier; font-size:30px; font-style:bold">T</font>his repo is the continuation of the now discontinued [tctien342 repo](https://github.com/tctien342/Asus-Vivobook-S510UA-Hackintosh/releases) which has been archived because he upgraded to a different hackbook and gave his VivoBook away. It's based on whatnameisit's brilliant and cutting-edge [repo for his VivoBook X510UA-BQ490](https://github.com/whatnameisit/Asus-Vivobook-X510UA-BQ490-Hackintosh) based on OpenCore ("OC"). The two main differences are:
 
