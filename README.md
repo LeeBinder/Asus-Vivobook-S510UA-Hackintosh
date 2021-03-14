@@ -87,7 +87,6 @@ If there is more than one boot-arg, make sure you separate them from each other 
 
 # Steps to install macOS
 
-
 1. Enter the BIOS and set the following options:
 
 	- Display memory: 64MB
@@ -167,16 +166,20 @@ from OpenCore Post-Install/[Fixing CFG Lock](https://dortania.github.io/OpenCore
 
 **Clover:**
 
-1. In Clover's Boot GUI, navigate into the Tools section below the icons and launch `CFGLock.efi`. ***ATTENTION***: Clover 5131 introduced a [regression (issue #377)](https://github.com/CloverHackyColor/CloverBootloader/issues/377) keeping `CFGLock.efi` from functioning; another [bug (#376)](https://github.com/CloverHackyColor/CloverBootloader/issues/376) makes `ControlMsrE2.efi` incompatible. Therefore this repo's current `EFI/Boot/BOOTX64.efi` is 5130 until at least one of these issues is solved.
-2. Confirm with `y` or the equivalent key on your keyboard if it's non-English (should be the key underneath the 6 and 7 keys).
-3. reboot
-4. recommended: update Clover to the latest version. For your convenience, you can find 5131 `BOOTX64.efi` in `/EFI/BOOT/5131`
+1. Right after turning on or rebooting your VivoBook, press the ESC key to intercept booting and to enter the built-in Boot Menu. **THIS STEP IS MANDATORY** so `CFGLock.efi` can find the CFG variable if run as a tool from within Clover - DON'T SKIP IT! 
+2. Choose your partition with Clover and boot it. 
+3.  In Clover's Boot GUI, navigate into the Tools section below the icons and launch `CFGLock.efi`. 
+4. Confirm with `y` or the equivalent key on your keyboard if it's non-English (should be the key underneath the 6 and 7 keys).<br>
+*(Note: only if you get an error like "`Couldn't find any Variable with cfg in name`"), choose the next tool entry `CleanNvram`, reboot, and start again)* 
+5. reboot
+
+ *(Note: Clover as of r5131 does not support running the more current `ControlMsrE2.efi` as a tool (see [bug #376)](https://github.com/CloverHackyColor/CloverBootloader/issues/376) which is why the older `CFGLock.efi` is being used)*
 
 **Compliments, you're DONE**! Now you should have correct CPU power management :)
 
-- **IMPORTANT**: Every time you reset your BIOS by loading Setup Defaults or install a different BIOS version, you will need to flip this bit again! Resetting or clearing NVRAM, however, should ***not*** re-lock the MSR E2 register.
+- **IMPORTANT**: Every time you reset your BIOS by loading ("Optimized")  Defaults (F9) or install a different BIOS version, you will need to flip this bit again! Resetting or clearing NVRAM, however, should ***not*** re-lock the MSR E2 register.
 
-Links: [OC Debug](https://github.com/utopia-team/opencore-debug/releases) (contains ControlMsrE2.efi - by utopia team) | [CFGLock.efi](https://www.insanelymac.com/forum/topic/344035-cfglock-unlock-msr-0xe2/) (legacy 2020-06 - by Brummbär) | [RU - CFG LOCK/Unlocking - Alternative method](https://www.reddit.com/r/hackintosh/comments/hz2rtm/cfg_lockunlocking_alternative_method/)
+Links: [OC Debug](https://github.com/utopia-team/opencore-debug/releases) (contains `ControlMsrE2.efi` - by utopia team) | [CFGLock.efi](https://www.insanelymac.com/forum/topic/344035-cfglock-unlock-msr-0xe2/) (legacy 2020-06 - by Brummbär) | [RU - CFG LOCK/Unlocking - Alternative method](https://www.reddit.com/r/hackintosh/comments/hz2rtm/cfg_lockunlocking_alternative_method/)
 
 # Wi-Fi Replacement
 
