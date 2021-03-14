@@ -158,6 +158,11 @@ from OpenCore Post-Install/[Fixing CFG Lock](https://dortania.github.io/OpenCore
 **OpenCore:**
 
 1. In OC's Boot GUI, launch the 2nd-to-last entry labeled `ControlMsrE2.efi`.
+<details>
+  <summary>image - click to expand</summary> 
+
+
+</details>
 2. Confirm with `y` or the equivalent key on your keyboard if it's non-English (should be the key underneath the 6 and 7 keys).
 3. reboot
 4. OpenCore Configurator > Kernel: disable `AppleXcpmCfgLock`, save<br>
@@ -168,9 +173,13 @@ from OpenCore Post-Install/[Fixing CFG Lock](https://dortania.github.io/OpenCore
 
 1. Right after turning on or rebooting your VivoBook, press the ESC key to intercept booting and to enter the built-in Boot Menu. **THIS STEP IS MANDATORY** so `CFGLock.efi` can find the CFG variable if run as a tool from within Clover - DON'T SKIP IT! 
 2. Choose your partition with Clover and boot it. 
-3.  In Clover's Boot GUI, navigate into the Tools section below the icons and launch `CFGLock.efi`. 
+3.  In Clover's Boot GUI, navigate into the `Tools` section below the icons and launch `CFGLock.efi`.<br>
+You should see: <details>
+  <summary>image - click to expand</summary> 
+<img src="https://user-images.githubusercontent.com/39203497/110780283-d2ce2d80-8264-11eb-928f-5eda2ae163ee.jpg" width="600" height="">
+</details> 
 4. Confirm with `y` or the equivalent key on your keyboard if it's non-English (should be the key underneath the 6 and 7 keys).<br>
-*(Note: only if you get an error like "`Couldn't find any Variable with cfg in name`"), choose the next tool entry `CleanNvram`, reboot, and start again)* 
+*(Note: only if you get an error like "`Couldn't find any Variable with cfg in name`"), choose the next tool entry `CleanNvram`, reboot, and start again)*
 5. reboot
 
  *(Note: Clover as of r5131 does not support running the more current `ControlMsrE2.efi` as a tool (see [bug #376)](https://github.com/CloverHackyColor/CloverBootloader/issues/376) which is why the older `CFGLock.efi` is being used)*
