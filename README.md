@@ -174,7 +174,7 @@ from OpenCore Post-Install/[Fixing CFG Lock](https://dortania.github.io/OpenCore
 *(Note: only if you get an error like "`Couldn't find any Variable with cfg in name`"), choose the next tool entry `CleanNvram`, reboot, and start again)*
 5. reboot
 
-  *(Note: Clover as of r5131 does not support running the more current `ControlMsrE2.efi` as a tool (see [bug #376)](https://github.com/CloverHackyColor/CloverBootloader/issues/376) which is why the older `CFGLock.efi` is being used)*
+   *(Note: Clover as of r5131 does not support running the more current `ControlMsrE2.efi` as a tool (see [bug #376)](https://github.com/CloverHackyColor/CloverBootloader/issues/376) which is why the older `CFGLock.efi` is being used)*
 
 **Compliments, you're DONE**! Now you should have correct CPU power management :)
 
