@@ -176,7 +176,7 @@ from OpenCore Post-Install/[Fixing CFG Lock](https://dortania.github.io/OpenCore
 4. You should see:<br>
 <img src="https://user-images.githubusercontent.com/39203497/110780283-d2ce2d80-8264-11eb-928f-5eda2ae163ee.jpg" width="600" height=""> 
 5. If the variable read already displays the value `0`, skip this step because `0` is the desired value. Otherwise, confirm with `y` or the equivalent key on your keyboard if it's non-English (should be the key underneath the 6 and 7 keys).<br>
-*(Note: only if you get an error like "`Couldn't find any Variable with cfg in name`"), choose the next tool entry `CleanNvram`, reboot, and start again)* 
+_(Note: only if you get an error like "`Couldn't find any Variable with cfg in name`"), choose the next tool entry `CleanNvram`, reboot, and start again)_
 6. reboot
 
    *(Note: Clover as of r5131 does not support running the more current `ControlMsrE2.efi` as a tool (see [bug #376)](https://github.com/CloverHackyColor/CloverBootloader/issues/376) which is why the older `CFGLock.efi` is being used)*
