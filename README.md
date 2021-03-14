@@ -158,7 +158,7 @@ from OpenCore Post-Install/[Fixing CFG Lock](https://dortania.github.io/OpenCore
 **OpenCore:**
 
 1. In OC's Boot GUI, launch the 2nd-to-last entry labeled `ControlMsrE2.efi`:<br>
-<img src="https://user-images.githubusercontent.com/39203497/111084597-704e8900-8513-11eb-9292-209a14dd6a66.jpg" width="260">
+   <img src="https://user-images.githubusercontent.com/39203497/111084597-704e8900-8513-11eb-9292-209a14dd6a66.jpg" width="260">
 2. Confirm with `y` or the equivalent key on your keyboard if it's non-English (should be the key underneath the 6 and 7 keys). 
 3. reboot 
 4. OpenCore Configurator > Kernel: disable `AppleXcpmCfgLock`, save<br>
