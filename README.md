@@ -176,7 +176,7 @@ from OpenCore Post-Install/[Fixing CFG Lock](https://dortania.github.io/OpenCore
 
 - **IMPORTANT**: Every time you reset your BIOS by loading Setup Defaults or install a different BIOS version, you will need to flip this bit again! Resetting or clearing NVRAM, however, should ***not*** re-lock the MSR E2 register.
 
-Links: [OC Debug](https://github.com/utopia-team/opencore-debug/releases) (contains ControlMsrE2.efi - by utopia team) | [CFGLock.efi](https://www.insanelymac.com/forum/topic/344035-cfglock-unlock-msr-0xe2/) (legacy 2020-06 - by Brummbär)
+Links: [OC Debug](https://github.com/utopia-team/opencore-debug/releases) (contains ControlMsrE2.efi - by utopia team) | [CFGLock.efi](https://www.insanelymac.com/forum/topic/344035-cfglock-unlock-msr-0xe2/) (legacy 2020-06 - by Brummbär) | [RU - CFG LOCK/Unlocking - Alternative method](https://www.reddit.com/r/hackintosh/comments/hz2rtm/cfg_lockunlocking_alternative_method/)
 
 # Wi-Fi Replacement
 
