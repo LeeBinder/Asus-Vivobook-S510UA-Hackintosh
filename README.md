@@ -7,7 +7,7 @@
 # Details
 
     Version:    	11.0.2
-    Date:       	Mar. 13, 2021
+    Date:       	Mar. 14, 2021
     Status: 	Stable
     Support:    	All BIOS (verified 301-310)
     Technology:	OpenCore and Clover with ACPI hotpatch by RehabMan  
