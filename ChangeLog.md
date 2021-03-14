@@ -1,5 +1,5 @@
 ### 2021-03-13:
--  added **MSR E2 register unlock** info to ***ReadMe***, ***Tool*** **entries** to OC and Clover config.plists, and ***Tools*** **folder** to OC and Clover EFI folders
+-  added [**MSR E2 register unlock** info to ***ReadMe***](https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh/#unlock-the-msr-e2-register), ***Tool*** **entries** to OC and Clover config.plists, and ***Tools*** **folder** to OC and Clover EFI folders
 
 ### 2021-03-06:
 - **ReadMe**: added Knowledge Base section with item `Quirks`; **Clover config.plist**: updated comment about Quirks
@@ -50,3 +50,4 @@ It contains (among others) the following changes:
 - [[SOLVED] VivoBook doesn't go to sleep properly on low battery but rather crashes](https://github.com/tctien342/Asus-Vivobook-S510UA-Hackintosh/issues/39)
 
 
+[](https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh/#unlock-the-msr-e2-register)

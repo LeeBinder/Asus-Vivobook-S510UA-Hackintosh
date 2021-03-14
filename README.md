@@ -167,12 +167,12 @@ from OpenCore Post-Install/[Fixing CFG Lock](https://dortania.github.io/OpenCore
 
 **Clover:**
 
-1. In Clover's Boot GUI, navigate into the Tools section below the icons and launch `CFGLock.efi`. ***ATTENTION***: Clover 5131 introduced a bug keeping `CFGLock.efi` from functioning. Therefore this repo's current `EFI/Boot/BOOTX64.efi` is 5130.
+1. In Clover's Boot GUI, navigate into the Tools section below the icons and launch `CFGLock.efi`. ***ATTENTION***: Clover 5131 introduced a [regression (issue #377)](https://github.com/CloverHackyColor/CloverBootloader/issues/377) keeping `CFGLock.efi` from functioning; another [bug (#376)](https://github.com/CloverHackyColor/CloverBootloader/issues/376) makes `ControlMsrE2.efi` incompatible. Therefore this repo's current `EFI/Boot/BOOTX64.efi` is 5130 until at least one of these issues is solved.
 2. Confirm with `y` or the equivalent key on your keyboard if it's non-English (should be the key underneath the 6 and 7 keys).
 3. reboot
 4. recommended: update Clover to the latest version. For your convenience, you can find 5131 `BOOTX64.efi` in `/EFI/BOOT/5131`
 
-**You're done**! Now you should have correct CPU power management :)
+**Compliments, you're DONE**! Now you should have correct CPU power management :)
 
 - **IMPORTANT**: Every time you reset your BIOS by loading Setup Defaults or install a different BIOS version, you will need to flip this bit again! Resetting or clearing NVRAM, however, should ***not*** re-lock the MSR E2 register.
 
