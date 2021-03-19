@@ -1,13 +1,14 @@
 # Asus VivoBook S15 S510UA/ F510UA series
 
-**This build enables you to run macOS on your VivoBook as long as it matches below System specifications as close as possible - verified with macOS Mojave 10.14.6 - Big Sur 11.2.2**
+**This build enables you to run macOS on your VivoBook as long as it matches below System specifications as close as possible - verified with macOS Mojave 10.14.6 - Big Sur 11.2.3**
 
 ![Alt text](https://ivanov-audio.com/wp-content/uploads/2014/01/Hackintosh-Featured-Image.png)
 
 # Details
 
     Version:    	11.0.2
-    Date:       	Mar. 14, 2021
+    Repo Date:      Mar. 14, 2021
+    ReadMe Date: 	Mar. 19, 2021
     Status: 	Stable
     Support:    	All BIOS (verified 301-310)
     Technology:	OpenCore and Clover with ACPI hotpatch by RehabMan  
@@ -110,7 +111,7 @@ To be able to boot from your macOS install USB, it needs either one of this repo
 6. Follow macOS' installation instructions (you can find them in your favorite hackintosh forum) to set up and boot into macOS.
 
 # Steps after installing macOS
-    
+
 1. If you haven't done already before macOS install, fix CFG lock by [unlocking the MSR E2 register](#unlock-the-msr-e2-register), reboot.
 
 2. Open the folder "**post macOS Installations**" and install *all* from within its subfolders for Hibernate prevention, additional function keys, etc. Also (strongly recommended!) study and consider the content of the folder [Optional]!
@@ -124,9 +125,9 @@ To be able to boot from your macOS install USB, it needs either one of this repo
     * in the provided OC config.plist in the 1st window, fill ONLY the text fields reading `update this field` with the corresponding values from the 2nd window instance
     * *existing user*: if you have already been booting via Clover config.plist: copy the matching values over according to [these conversion translations](https://dortania.github.io/OpenCore-Install-Guide/clover-conversion/Clover-config.html#smbios)
     * save
- 
+
     **Clover Configurator**:
-    
+
     * *new user*: click onto **SMBIOS** in the side bar on the left. Under 'System', next to 'Serial Number', click onto the `Generate New` button. That will change both, system and board serial number.
     * *existing user*: use (recommended) [PrefEdit](https://www.bresink.com/osx/PrefEdit.html) to first remove the dummy SMBIOS section and replace it with your existing one
     * Save.
@@ -140,19 +141,19 @@ To be able to boot from your macOS install USB, it needs either one of this repo
 from OpenCore Post-Install/[Fixing CFG Lock](https://dortania.github.io/OpenCore-Post-Install/misc/msr-lock.html) *(English slightly corrected)*:
 
 > CFG-Lock is a setting in your BIOS that allows for a specific register (in this case the MSR 0xE2) to be written to. By default, most motherboards lock this variable with many even hiding the option outright in the GUI. And why we care about it is that **macOS actually wants to write to this variable**, and not just one part of macOS. Instead **both the Kernel(XNU) and AppleIntelPowerManagement want this register**.
-> 
+>
 > So to fix it we have 2 options:
-> 
+>
 > 1. depreciated: patch macOS to work with our hardware
-> 
+>
 >     This creates instability and unnecessary patching for many
->     The 2 patches we use for this: 
-> 
+>     The 2 patches we use for this:
+>
 >       * ~~AppleCpuPmCfgLock for AppleIntelPowerManagement.kext~~ *(not necessary for our VivoBooks)*<br>
 >       * AppleXcpmCfgLock for the Kernel(XNU)
-> 
+>
 > 2. **recommended: patch our firmware to support MSR E2 write**
-> 
+>
 >     Very much preferred, as avoiding patching allows for greater flexibility regarding stability and OS upgrades.
 
 **OpenCore:**
