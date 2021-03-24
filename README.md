@@ -168,7 +168,7 @@ from OpenCore Post-Install/[Fixing CFG Lock](https://dortania.github.io/OpenCore
    (note: optionally, before saving, you can also deactivate `Boot` > `Tools`:  `ControlMsrE2.efi`) 
 5. reboot
 
-**Clover:**
+<p id=msr-unlock-clover><strong>Clover:</strong></p>
 
 1. Right after turning on or rebooting your VivoBook, press the ESC key to intercept booting and to enter the built-in Boot Menu. **THIS STEP IS MANDATORY** so `CFGLock.efi` can find the CFG variable if run as a tool from within Clover - DON'T SKIP IT! 
 2. Choose your partition with Clover and boot it. 
