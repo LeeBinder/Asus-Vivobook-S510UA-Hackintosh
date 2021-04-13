@@ -1,7 +1,7 @@
 ## [Release v.11.1, Apr. 14 2021](https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh/releases/tag/11.1) (pending)
 - **MSR E2** ("_CFG Lock_") unlocking:
-  - **Clover**: dropped `CFGLock.efi` and switched to `ControlMsrE2.efi` (now packaged with Clover)
   - **OC**: updated `ControlMsrE2.efi`
+  - **Clover**: dropped `CFGLock.efi` and switched to `ControlMsrE2.efi` (now packaged with Clover)
 - **Adopted changes from [whatnameisit's VivoBook repo](https://github.com/whatnameisit/Asus-Vivobook-X510UA-BQ490-Hackintosh)**:
   - **Sleep, Wake-from-Sleep, Shutdown Optimization**: added custom SSDT + 3 ACPI patches ¹. Added SSDT:
     - **OC**: ACPI/SSDT-PTSWAK-RP01_PEGP.aml
