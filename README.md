@@ -8,7 +8,7 @@
 
     Version:    	11.1 RC1
     Repo Date:      Apr. 14, 2021
-    ReadMe Date: 	Apr. 14, 2021
+    ReadMe Date: 	Apr. 13, 2021
     Status: 	Stable
     Support:    	All BIOS (verified 301-310)
     Technology:	OpenCore and Clover with ACPI hotpatch by RehabMan  
