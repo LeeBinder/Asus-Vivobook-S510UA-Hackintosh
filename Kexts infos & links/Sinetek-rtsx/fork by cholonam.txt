@@ -1,0 +1,5 @@
+For those interested, I've released a new version of this kext:
+
+https://github.com/cholonam/Sinetek-rtsx/releases
+
+I have added more code from the Linux driver, which will improve stability with RTS525A and may help with other chips too, since some code is common to all chips (it may also introduce some regression, please let me know if it does). 

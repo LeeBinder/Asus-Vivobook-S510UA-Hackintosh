@@ -6,9 +6,9 @@
 
 # Details
 
-    Version:    	11.0.2
-    Repo Date:      Mar. 14, 2021
-    ReadMe Date: 	Mar. 19, 2021
+    Version:    	11.1
+    Repo Date:      Apr. 14, 2021
+    ReadMe Date: 	Apr. 14, 2021
     Status: 	Stable
     Support:    	All BIOS (verified 301-310)
     Technology:	OpenCore and Clover with ACPI hotpatch by RehabMan  
@@ -23,7 +23,7 @@
     • Card Reader:		Realtek (RTL8411B_RTS5226_RTS5227)
     • Camera:		ASUS UVC HD
     • Audio:		Conexant Audio CX8050
-    • Touchpad:		ELAN 1300
+    • Touchpad:		ELAN 1300 I2C (ELAN 1200 supported, too)
     • Keyboard Backlight:	Yes
     • BIOS:			x510UAR 310 (X510UARAS310.zip)
 
@@ -172,15 +172,13 @@ from OpenCore Post-Install/[Fixing CFG Lock](https://dortania.github.io/OpenCore
 
 1. Right after turning on or rebooting your VivoBook, press the ESC key to intercept booting and to enter the built-in Boot Menu. **THIS STEP IS MANDATORY** so `CFGLock.efi` can find the CFG variable if run as a tool from within Clover - DON'T SKIP IT! 
 2. Choose your partition with Clover and boot it. 
-3. In Clover's Boot GUI, navigate into the `Tools` section below the icons and launch `CFGLock.efi`:<br>
-![CFGLock](https://user-images.githubusercontent.com/39203497/111084752-43e73c80-8514-11eb-9321-b4034e1d8a27.png)<br>
+3. In Clover's Boot GUI, navigate into the `Tools` section below the icons and launch `ControlMsrE2`:<br>
+![CFGLock](https://user-images.githubusercontent.com/39203497/113349871-327d9d00-9328-11eb-8c0e-28fcc94761cb.jpg)<br>
 You should see:<br>
 <img src="https://user-images.githubusercontent.com/39203497/110780283-d2ce2d80-8264-11eb-928f-5eda2ae163ee.jpg" width="600" height=""> 
-4. If the variable read already displays the value `0`, skip this step because `0` is the desired value. Otherwise, confirm with `y` or the equivalent key on your keyboard if it's non-English (should be the key underneath the 6 and 7 keys).<br>
+4. Confirm with `y` or the equivalent key on your keyboard if it's non-English (should be the key underneath the 6 and 7 keys). <br>
 _(Note: only if you get an error like "`Couldn't find any Variable with cfg in name`"), choose the next tool entry `CleanNvram`, reboot, and start again)_
 5. reboot
-
-   *(Note: Clover as of r5131 does not support running the more current `ControlMsrE2.efi` as a tool (see [bug #376)](https://github.com/CloverHackyColor/CloverBootloader/issues/376) which is why the older `CFGLock.efi` is being used)*
 
 **Compliments, you're DONE**! Now you should have correct CPU power management :)
 
@@ -190,7 +188,7 @@ Links: [OC Debug](https://github.com/utopia-team/opencore-debug/releases) (conta
 
 # Wi-Fi Replacement
 
-As of 2021-02-23 there is still no fully working macOS driver for the `Intel AC 8265 M.2` card - progress see at [OpenIntelWireless](https://github.com/OpenIntelWireless). Therefore best replace it, preferably with a [Fenvi BCM94360NG](https://www.google.com/search?btnG=Search&q=Fenvi+BCM94360NG+M.2) because it has macOS native Wi-Fi and Bluetooth chipset and IDs. If you do so, you can/ should:
+As of 2021-02-23 there is still no fully working macOS driver for the `Intel AC 8265 M.2` card - progress see at [OpenIntelWireless](https://github.com/OpenIntelWireless). Therefore best replace it, preferably with a [Fenvi BCM94360NG](https://www.google.com/search?btnG=Search&q=Fenvi+BCM94360NG+M.2) because it has macOS native Wi-Fi and Bluetooth chipset and IDs which should deliver a better Continuity experience. If you do so, you can/ should:
 
 - remove *ALL* related kexts from inside your EFI folder(s) (`AirportBrcmFixup`, `BrcmBluetoothInjector`, `BrcmFirmwareData`, `BrcmPatchRAM2`, `BrcmPatchRAM3`)
 - remove *ALL* related entries (brcmfx-country=US bpr_postresetdelay=400 bpr_initialdelay=400 bpr_probedelay=200) from your config.plist(s):
@@ -218,6 +216,12 @@ Alternatively you can use a [Dell DW1560](https://www.google.com/search?btnG=Sea
 **Clover**: Boot > Arguments
 - Want to edit your VivoBook's U**EFI BIOS boot menu**? The simplest and quickest tool I found is the Windows freeware [BootIce](https://www.softpedia.com/get/System/Boot-Manager-Disk/Bootice.shtml), regardless of its age: [UEFI > Edit boot entries](https://www.google.com/search?q=BootIce+UEFI+Edit+boot+entries&tbm=isch&ved=2ahUKEwjPjeOrmovvAhUYG-wKHamZDVoQ2-cCegQIABAA&oq=BootIce+UEFI+Edit+boot+entries&gs_lcp=CgNpbWcQAzoECCMQJzoECAAQGDoECAAQHlCXlANYmpUEYK63BGgDcAB4AIABX4gBxg-SAQIyN5gBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=AdQ6YI-JMpi2sAeps7bQBQ&bih=908&biw=1680)
 
+# Instructions to update from a previous version of this repo
+**Recommended procedure:**
+- **rename** your existing /EFI/EFI to something else, e.g. EFI_202y-mm-dd
+- **copy** the new release's EFI folder as base to your /EFI volume
+- **incorporate** your custom changes to the previous release into the new one via copy/ paste, either with **PrefEdit**, or with (OC or Clover) **Configurator** - most importantly your `SMBIOS` (Clover) respectively `PlatformInfo` (OC) section.
+
 # Troubleshooting
 **Many issues can be solved by performing a NVRAM Reset**, in OC via the last entry in the boot menu picker, and in Clover Boot menu by pressing F11! Note that this will also clear custom boot entries in your UEFI BIOS boot menu.
 
@@ -230,8 +234,8 @@ If your issue is not listed or persists, either post to the [VivoBook S15 X510UA
 
 # Knowledge Base
 
-* **Quirks:** Accdg. to [Clover Documentation](https://drovosek01.github.io/CloverHackyColor-WebVersion/) at the time of this writing (r5129), Clover does not interpret the following Quirks taken from the VivoBook OC config.plist: `SetApfsTrimTimeout`, `TscSyncTimeout`, `RequestBootVarRouting`. They might or might not be functional at some point and can be considered placeholders or reminders until they are either relevant or removed.<br>
-OC's Quirk '`PanicNoKextDump`' is covered by Clover in `Kernel & Kext Patches` > `PanicNoKextDump`. `AppleXcpmCfgLock` is handled automatically and internally by Clover depending if the `MSR 0xE2` register is locked or unlocked.
+* **Quirks:** Accdg. to [Clover Documentation](https://drovosek01.github.io/CloverHackyColor-WebVersion/) at the time of  writing this section (r5129), Clover does not interpret the following Quirks taken from the VivoBook OC config.plist: `SetApfsTrimTimeout`, `TscSyncTimeout`, `RequestBootVarRouting`. They might or might not be functional at some point and can be considered placeholders or reminders until they are either relevant or removed.<br>
+OC's Quirk '`PanicNoKextDump`' is covered by Clover in `Kernel & Kext Patches` > `PanicNoKextDump`. `AppleXcpmCfgLock` is handled automatically and internally by Clover depending on if the `MSR 0xE2` register is locked or unlocked.
 
 _________________________
 ## Special Credits for this repo to these fellow hackintoshers:

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ACPI</key>
+	<dict>
+		<key>DSDT</key>
+		<dict>
+			<key>Patches</key>
+			<array>
+				<dict>
+					<key>Comment</key>
+					<string>Sleep &amp; Shutdown: _PTS to ZPTS(1,N) (copied from Daliansky's OC-Little)</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					X1BUUwE=					</data>
+					<key>Replace</key>
+					<data>
+					WlBUUwE=					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Wake from Sleep: _WAK to ZWAK(1,N) (copied from Daliansky's OC-Little)</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					X1dBSwE=					</data>
+					<key>Replace</key>
+					<data>
+					WldBSwE=					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>EC firmware: _REG to XREG(2,N) in EC0 and tailing bytes (copied from hieplpvip's ASUS Zenbook repo)</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					X1JFRwKgCw==					</data>
+					<key>Replace</key>
+					<data>
+					WFJFRwKgCw==					</data>
+				</dict>
+</array>
+		</dict>
+		<key>DisabledAML</key>
+		<array>
+			<string>SSDT-PTS.aml</string>
+			<string>SSDT-Trackpad_polling-I2C1_USTP.aml</string>
+			<string>SSDT-PTS.aml</string>
+</array>
+	</dict>
+	<key>KernelAndKextPatches</key>
+	<dict>
+		<key>KernelToPatch</key>
+		<array>
+			<dict>
+				<key>Comment</key>
+				<string>MSR 0xE2 _xcpm_idle instant reboot(c) Pike R. Alpha (Delete this patch after unlocking MSR 0xE2)</string>
+				<key>Disabled</key>
+				<true/>
+				<key>Find</key>
+				<data>
+				ILniAAAADzA=				</data>
+				<key>Replace</key>
+				<data>
+				ILniAAAAkJA=				</data>
+			</dict>
+</array>
+		<key>KextsToPatch</key>
+		<array>
+			<dict>
+				<key>Comment</key>
+				<string>Enable TRIM for SSD</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				AEFQUExFIFNTRAA=				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>Name</key>
+				<string>com.apple.iokit.IOAHCIBlockStorage</string>
+				<key>Replace</key>
+				<data>
+				AAAAAAAAAAAAAAA=				</data>
+			</dict>
+</array>
+	</dict>
+</dict>
+</plist>

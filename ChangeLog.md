@@ -1,5 +1,39 @@
+## [Release v.11.1, Apr. 14 2021](https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh/releases/tag/11.1)
+- **MSR E2** ("_CFG Lock_") unlocking:
+  - **Clover**: dropped `CFGLock.efi` and switched to `ControlMsrE2.efi` (now packaged with Clover)
+  - **OC**: updated `ControlMsrE2.efi`
+- **Adopted changes from [whatnameisit's VivoBook repo](https://github.com/whatnameisit/Asus-Vivobook-X510UA-BQ490-Hackintosh)**:
+  - **Sleep, Wake-from-Sleep, Shutdown Optimization**: added custom SSDT + 3 ACPI patches ¹. Added SSDT:
+    - **OC**: ACPI/SSDT-PTSWAK-RP01_PEGP.aml
+    - **Clover**: ACPI/patched/SSDT-PTSWAK-RP01_PEGP.aml
+
+    _**Lots of KUDOS to whatnameisit for [his efforts](https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh/tree/main/docs/SSDT-PTSWAK-RP01_PEGP) which should also make this work on VivoBooks with Nvidia GeForce 940MX and tentatively other Nvidia Optimus dGPUs!**_
+  - **Trackpad**: switched from polling to more energy friendly interrupts mode because UEFI BIOS 310 for x510UAR no longer appears to have flaws in the GPIO. Make sure you run your VivoBook with the latest BIOS! ¹
+    &nbsp;&nbsp;&nbsp;&nbsp;_¡**Current repo users**: before you add below file, make sure you disable `SSDT-I2C1_USTP.aml`!_
+  **Added file**:
+    - **OC**: ACPI/SSDT-Trackpad_interrupts.aml
+    - **Clover**: ACPI/patched/SSDT-Trackpad_interrupts.aml
+- (re-)enabled **TRIM for SSD:**
+  - **OC**: `Kernel/ Quirks/ ThirdPartyDrives`
+  - **Clover**: `Kernel and Kext Patches/ KextsToPatch` ¹
+- **Kexts**: apart from updating many kexts:
+  - updated Sinetek's old SD-card reader **Sinetek-rtsx.kext** to latest release from [current fork by cholonam](https://github.com/cholonam/Sinetek-rtsx/releases)
+  - as per recommendations/ agreements, **VoodooInput** now as separate kext and thus deactivated in both, VoodooPS2Controller and VoodooI2C
+- **Refinements** in repo and ReadMe
+
+####**Bootloader specific:**
+**OC**:
+- updated to **[v.0.6.8](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.6.8)** incl. [required changes to config.plist](https://www.tonymacx86.com/threads/guide-new-voodooi2c-asus-vivobook-s15-x510uar-10-13.245445/page-63#post-2240234)
+- added latest **Resources folder** from [OcBinaryData](https://github.com/acidanthera/OcBinaryData/tree/master) for v.0.6.8 graphical UI compatibility, having to force-overwrite blackosx' better readable custom framd with stock OC Helvetica font due to (hopefully temporary) OpenCanopy boot picker restrictions
+
+**Clover**:
+- updated to **[r5133](https://github.com/CloverHackyColor/CloverBootloader/releases/tag/5133)** incl. `ControlMsrE2.efi`
+
+--
+¹ For config.plist changes against repo release v.11.0.2 see [OC diff.plist](https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh/blob/main/OpenCore/diff.plist) and/or [Clover diff.plist](https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh/blob/main/Clover/diff.plist).
+
 ### 2021-03-13:
--  added [**MSR E2 register unlock** info to ***ReadMe***](https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh/#unlock-the-msr-e2-register), ***Tool*** **entries** to OC and Clover config.plists, and ***Tools*** **folder** to OC and Clover EFI folders
+-  Added [**MSR E2 register unlock** info to ***ReadMe***](https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh/#unlock-the-msr-e2-register), ***Tool*** **entries** to OC and Clover config.plists, and ***Tools*** **folder** to OC and Clover EFI folders
 
 ### 2021-03-06:
 - **ReadMe**: added Knowledge Base section with item `Quirks`; **Clover config.plist**: updated comment about Quirks

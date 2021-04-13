@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ACPI</key>
+	<dict>
+		<key>Add</key>
+		<array>
+			<dict>
+				<key>Comment</key>
+				<string>Enable trackpad in interrupts mode</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-Trackpad_interrupts.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Enable FMCN and SSCN on SKL Touchpad model in polling mode</string>
+				<key>Enabled</key>
+				<false/>
+				<key>Path</key>
+				<string>SSDT-Trackpad_polling-I2C1_USTP.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Fix restart from shutdown</string>
+				<key>Enabled</key>
+				<false/>
+				<key>Path</key>
+				<string>SSDT-PTS.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Optimize Sleep, Wake from Sleep, Shutdown (by whatnameisit)</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-PTSWAK-RP01_PEGP.aml</string>
+			</dict>
+</array>
+		<key>Patch</key>
+		<array>
+			<dict>
+				<key>Base</key>
+				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
+				<key>Comment</key>
+				<string>Sleep &amp; Shutdown: _PTS to ZPTS(1,N) (copied from Daliansky's OC-Little)</string>
+				<key>Count</key>
+				<integer>1</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>
+				X1BUUwE=				</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data>
+								</data>
+				<key>OemTableId</key>
+				<data>
+				AAAAAAAAAAA=				</data>
+				<key>Replace</key>
+				<data>
+				WlBUUwE=				</data>
+				<key>ReplaceMask</key>
+				<data>
+								</data>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data>
+								</data>
+			</dict>
+			<dict>
+				<key>Base</key>
+				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
+				<key>Comment</key>
+				<string>Wake from Sleep: _WAK to ZWAK(1,N) (copied from Daliansky's OC-Little)</string>
+				<key>Count</key>
+				<integer>1</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>
+				X1dBSwE=				</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data>
+								</data>
+				<key>OemTableId</key>
+				<data>
+				AAAAAAAAAAA=				</data>
+				<key>Replace</key>
+				<data>
+				WldBSwE=				</data>
+				<key>ReplaceMask</key>
+				<data>
+								</data>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data>
+								</data>
+			</dict>
+			<dict>
+				<key>Base</key>
+				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
+				<key>Comment</key>
+				<string>EC firmware: _REG to XREG(2,N) in EC0 and tailing bytes (copied from hieplpvip's ASUS Zenbook repo)</string>
+				<key>Count</key>
+				<integer>1</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>
+				X1JFRwKgCw==				</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data>
+								</data>
+				<key>OemTableId</key>
+				<data>
+				AAAAAAAAAAA=				</data>
+				<key>Replace</key>
+				<data>
+				WFJFRwKgCw==				</data>
+				<key>ReplaceMask</key>
+				<data>
+								</data>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data>
+								</data>
+			</dict>
+</array>
+	</dict>
+	<key>Kernel</key>
+	<dict>
+		<key>Quirks</key>
+		<dict>
+			<key>ThirdPartyDrives</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>UEFI</key>
+	<dict>
+		<key>AppleInput</key>
+		<dict>
+			<key>AppleEvent</key>
+			<string>Builtin</string>
+			<key>CustomDelays</key>
+			<string>Auto</string>
+			<key>KeyInitialDelay</key>
+			<integer>0</integer>
+			<key>KeySubsequentDelay</key>
+			<integer>5</integer>
+			<key>PointerSpeedDiv</key>
+			<integer>1</integer>
+			<key>PointerSpeedMul</key>
+			<integer>4</integer>
+		</dict>
+		<key>Input</key>
+		<dict>
+			<key>KeySwap</key>
+			<true/>
+			<key>PointerSupport</key>
+			<true/>
+			<key>PointerSupportMode</key>
+			<string>ASUS</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

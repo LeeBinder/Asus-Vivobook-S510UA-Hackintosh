@@ -4,30 +4,521 @@
 <dict>
 	<key>ACPI</key>
 	<dict>
-		<key>SSDT</key>
+		<key>AutoMerge</key>
+		<true/>
+		<key>Comment-DisabledAML</key>
+		<string>Disable other forms of CPU PM due to SSDT/Generate/PluginType=true</string>
+		<key>DSDT</key>
 		<dict>
-			<key>Generate</key>
-			<dict>
-				<key>APSN</key>
-				<false/>
-				<key>PluginType</key>
-				<true/>
-				<key>PStates</key>
-				<false/>
-				<key>APLF</key>
-				<false/>
-				<key>CStates</key>
-				<false/>
-			</dict>
-			<key>PluginType</key>
-			<string>1</string>
-			<key>UnderVoltStep</key>
-			<string>0</string>
-			<key>DropOem</key>
+			<key>DropOEM_DSM</key>
 			<false/>
-			<key>NoOemTableId</key>
-			<true/>
+			<key>Fixes</key>
+			<dict>
+				<key>FixRTC</key>
+				<true/>
+				<key>FixTMR</key>
+				<true/>
+			</dict>
+			<key>Patches</key>
+			<array>
+				<dict>
+					<key>Comment</key>
+					<string>AICPUPM: Rename APSS to APXX</string>
+					<key>Count</key>
+					<integer>1</integer>
+					<key>Disabled</key>
+					<false/>
+					<key>Enabled</key>
+					<true/>
+					<key>Find</key>
+					<data>
+					QVBTUw==					</data>
+					<key>Limit</key>
+					<integer>0</integer>
+					<key>Mask</key>
+					<data>
+										</data>
+					<key>OemTableId</key>
+					<data>
+					AAAAAAAAAAA=					</data>
+					<key>Replace</key>
+					<data>
+					QVBYWA==					</data>
+					<key>ReplaceMask</key>
+					<data>
+										</data>
+					<key>Skip</key>
+					<integer>0</integer>
+					<key>TableLength</key>
+					<integer>0</integer>
+					<key>TableSignature</key>
+					<data>
+					AAA=					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>ATK support: Rename M(IANE) to XANE</string>
+					<key>Count</key>
+					<integer>1</integer>
+					<key>Disabled</key>
+					<false/>
+					<key>Enabled</key>
+					<true/>
+					<key>Find</key>
+					<data>
+					SUFORQk=					</data>
+					<key>Limit</key>
+					<integer>0</integer>
+					<key>Mask</key>
+					<data>
+										</data>
+					<key>OemTableId</key>
+					<data>
+					AAAAAAAAAAA=					</data>
+					<key>Replace</key>
+					<data>
+					WEFORQk=					</data>
+					<key>ReplaceMask</key>
+					<data>
+										</data>
+					<key>Skip</key>
+					<integer>0</integer>
+					<key>TableLength</key>
+					<integer>0</integer>
+					<key>TableSignature</key>
+					<data>
+					AAA=					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>ATK support: Rename M(_Q0A) to XQ0A F1</string>
+					<key>Count</key>
+					<integer>1</integer>
+					<key>Disabled</key>
+					<false/>
+					<key>Enabled</key>
+					<true/>
+					<key>Find</key>
+					<data>
+					X1EwQQ==					</data>
+					<key>Limit</key>
+					<integer>0</integer>
+					<key>Mask</key>
+					<data>
+										</data>
+					<key>OemTableId</key>
+					<data>
+					AAAAAAAAAAA=					</data>
+					<key>Replace</key>
+					<data>
+					WFEwQQ==					</data>
+					<key>ReplaceMask</key>
+					<data>
+										</data>
+					<key>Skip</key>
+					<integer>0</integer>
+					<key>TableLength</key>
+					<integer>0</integer>
+					<key>TableSignature</key>
+					<data>
+					AAA=					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>ATK support: Rename M(_Q0B) to XQ0B F2</string>
+					<key>Count</key>
+					<integer>1</integer>
+					<key>Disabled</key>
+					<false/>
+					<key>Enabled</key>
+					<true/>
+					<key>Find</key>
+					<data>
+					X1EwQg==					</data>
+					<key>Limit</key>
+					<integer>0</integer>
+					<key>Mask</key>
+					<data>
+										</data>
+					<key>OemTableId</key>
+					<data>
+					AAAAAAAAAAA=					</data>
+					<key>Replace</key>
+					<data>
+					WFEwQg==					</data>
+					<key>ReplaceMask</key>
+					<data>
+										</data>
+					<key>Skip</key>
+					<integer>0</integer>
+					<key>TableLength</key>
+					<integer>0</integer>
+					<key>TableSignature</key>
+					<data>
+					AAA=					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>ATK support: Rename M(_Q0E) to XQ0E F5</string>
+					<key>Count</key>
+					<integer>1</integer>
+					<key>Disabled</key>
+					<false/>
+					<key>Enabled</key>
+					<true/>
+					<key>Find</key>
+					<data>
+					X1EwRQ==					</data>
+					<key>Limit</key>
+					<integer>0</integer>
+					<key>Mask</key>
+					<data>
+										</data>
+					<key>OemTableId</key>
+					<data>
+					AAAAAAAAAAA=					</data>
+					<key>Replace</key>
+					<data>
+					WFEwRQ==					</data>
+					<key>ReplaceMask</key>
+					<data>
+										</data>
+					<key>Skip</key>
+					<integer>0</integer>
+					<key>TableLength</key>
+					<integer>0</integer>
+					<key>TableSignature</key>
+					<data>
+					AAA=					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>ATK support: Rename M(_Q0F) to XQ0F F6</string>
+					<key>Count</key>
+					<integer>1</integer>
+					<key>Disabled</key>
+					<false/>
+					<key>Enabled</key>
+					<true/>
+					<key>Find</key>
+					<data>
+					X1EwRg==					</data>
+					<key>Limit</key>
+					<integer>0</integer>
+					<key>Mask</key>
+					<data>
+										</data>
+					<key>OemTableId</key>
+					<data>
+					AAAAAAAAAAA=					</data>
+					<key>Replace</key>
+					<data>
+					WFEwRg==					</data>
+					<key>ReplaceMask</key>
+					<data>
+										</data>
+					<key>Skip</key>
+					<integer>0</integer>
+					<key>TableLength</key>
+					<integer>0</integer>
+					<key>TableSignature</key>
+					<data>
+					AAA=					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>ATK support: Rename M(_Q11) to XQ11 F8</string>
+					<key>Count</key>
+					<integer>1</integer>
+					<key>Disabled</key>
+					<false/>
+					<key>Enabled</key>
+					<true/>
+					<key>Find</key>
+					<data>
+					X1ExMQ==					</data>
+					<key>Limit</key>
+					<integer>0</integer>
+					<key>Mask</key>
+					<data>
+										</data>
+					<key>OemTableId</key>
+					<data>
+					AAAAAAAAAAA=					</data>
+					<key>Replace</key>
+					<data>
+					WFExMQ==					</data>
+					<key>ReplaceMask</key>
+					<data>
+										</data>
+					<key>Skip</key>
+					<integer>0</integer>
+					<key>TableLength</key>
+					<integer>0</integer>
+					<key>TableSignature</key>
+					<data>
+					AAA=					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Battery fix: Rename M(BIFA) to XBIF</string>
+					<key>Count</key>
+					<integer>1</integer>
+					<key>Disabled</key>
+					<false/>
+					<key>Enabled</key>
+					<true/>
+					<key>Find</key>
+					<data>
+					QklGQQA=					</data>
+					<key>Limit</key>
+					<integer>0</integer>
+					<key>Mask</key>
+					<data>
+										</data>
+					<key>OemTableId</key>
+					<data>
+					AAAAAAAAAAA=					</data>
+					<key>Replace</key>
+					<data>
+					WEJJRgA=					</data>
+					<key>ReplaceMask</key>
+					<data>
+										</data>
+					<key>Skip</key>
+					<integer>0</integer>
+					<key>TableLength</key>
+					<integer>0</integer>
+					<key>TableSignature</key>
+					<data>
+					AAA=					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Battery fix: Rename M(FBST) to XBST</string>
+					<key>Count</key>
+					<integer>0</integer>
+					<key>Disabled</key>
+					<false/>
+					<key>Enabled</key>
+					<true/>
+					<key>Find</key>
+					<data>
+					RkJTVAQ=					</data>
+					<key>Limit</key>
+					<integer>0</integer>
+					<key>Mask</key>
+					<data>
+										</data>
+					<key>OemTableId</key>
+					<data>
+					AAAAAAAAAAA=					</data>
+					<key>Replace</key>
+					<data>
+					WEJTVAQ=					</data>
+					<key>ReplaceMask</key>
+					<data>
+										</data>
+					<key>Skip</key>
+					<integer>0</integer>
+					<key>TableLength</key>
+					<integer>0</integer>
+					<key>TableSignature</key>
+					<data>
+					AAA=					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Battery fix: Rename M(SMBR) to XSMR</string>
+					<key>Count</key>
+					<integer>1</integer>
+					<key>Disabled</key>
+					<false/>
+					<key>Enabled</key>
+					<true/>
+					<key>Find</key>
+					<data>
+					U01CUgs=					</data>
+					<key>Limit</key>
+					<integer>0</integer>
+					<key>Mask</key>
+					<data>
+										</data>
+					<key>OemTableId</key>
+					<data>
+					AAAAAAAAAAA=					</data>
+					<key>Replace</key>
+					<data>
+					WE1CUgs=					</data>
+					<key>ReplaceMask</key>
+					<data>
+										</data>
+					<key>Skip</key>
+					<integer>0</integer>
+					<key>TableLength</key>
+					<integer>0</integer>
+					<key>TableSignature</key>
+					<data>
+					AAA=					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Battery fix: Rename M(SMBW) to XSMW</string>
+					<key>Count</key>
+					<integer>1</integer>
+					<key>Disabled</key>
+					<false/>
+					<key>Enabled</key>
+					<true/>
+					<key>Find</key>
+					<data>
+					U01CVw0=					</data>
+					<key>Limit</key>
+					<integer>0</integer>
+					<key>Mask</key>
+					<data>
+										</data>
+					<key>OemTableId</key>
+					<data>
+					AAAAAAAAAAA=					</data>
+					<key>Replace</key>
+					<data>
+					WE1CVw0=					</data>
+					<key>ReplaceMask</key>
+					<data>
+										</data>
+					<key>Skip</key>
+					<integer>0</integer>
+					<key>TableLength</key>
+					<integer>0</integer>
+					<key>TableSignature</key>
+					<data>
+					AAA=					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Battery fix: Rename M(_BIX) to XBIX</string>
+					<key>Count</key>
+					<integer>1</integer>
+					<key>Disabled</key>
+					<false/>
+					<key>Enabled</key>
+					<true/>
+					<key>Find</key>
+					<data>
+					X0JJWAA=					</data>
+					<key>Limit</key>
+					<integer>0</integer>
+					<key>Mask</key>
+					<data>
+										</data>
+					<key>OemTableId</key>
+					<data>
+					AAAAAAAAAAA=					</data>
+					<key>Replace</key>
+					<data>
+					WEJJWAA=					</data>
+					<key>ReplaceMask</key>
+					<data>
+										</data>
+					<key>Skip</key>
+					<integer>0</integer>
+					<key>TableLength</key>
+					<integer>0</integer>
+					<key>TableSignature</key>
+					<data>
+					AAA=					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Sleep fix: Rename M(GPRW) to XPRW</string>
+					<key>Count</key>
+					<integer>1</integer>
+					<key>Disabled</key>
+					<false/>
+					<key>Enabled</key>
+					<true/>
+					<key>Find</key>
+					<data>
+					R1BSVwI=					</data>
+					<key>Limit</key>
+					<integer>0</integer>
+					<key>Mask</key>
+					<data>
+										</data>
+					<key>OemTableId</key>
+					<data>
+					AAAAAAAAAAA=					</data>
+					<key>Replace</key>
+					<data>
+					WFBSVwI=					</data>
+					<key>ReplaceMask</key>
+					<data>
+										</data>
+					<key>Skip</key>
+					<integer>0</integer>
+					<key>TableLength</key>
+					<integer>0</integer>
+					<key>TableSignature</key>
+					<data>
+					AAA=					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>ALS: change Method(RALS,0,S) XALS</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					UkFMUwA=					</data>
+					<key>Replace</key>
+					<data>
+					WEFMUwA=					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Sleep &amp; Shutdown: _PTS to ZPTS(1,N) (copied from Daliansky's OC-Little)</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					X1BUUwE=					</data>
+					<key>Replace</key>
+					<data>
+					WlBUUwE=					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Wake from Sleep: _WAK to ZWAK(1,N) (copied from Daliansky's OC-Little)</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					X1dBSwE=					</data>
+					<key>Replace</key>
+					<data>
+					WldBSwE=					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>EC firmware: _REG to XREG(2,N) in EC0 and tailing bytes (copied from hieplpvip's ASUS Zenbook repo)</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					X1JFRwKgCw==					</data>
+					<key>Replace</key>
+					<data>
+					WFJFRwKgCw==					</data>
+				</dict>
+</array>
 		</dict>
+		<key>DisabledAML</key>
+		<array>
+			<string>SSDT-RP01_PEGP.aml</string>
+			<string>SSDT-Trackpad_polling-I2C1_USTP.aml</string>
+			<string>SSDT-PTS.aml</string>
+</array>
 		<key>DropTables</key>
 		<array>
 			<dict>
@@ -41,512 +532,159 @@
 				<string>DMAR</string>
 			</dict>
 			<dict>
-				<key>TableId</key>
-				<string>xh_rvp10</string>
 				<key>Signature</key>
 				<string>SSDT</string>
+				<key>TableId</key>
+				<string>xh_rvp10</string>
 			</dict>
 </array>
-		<key>DisabledAML</key>
-		<array>
-			<string>SSDT-RP01_PEGP.aml</string>
-</array>
-		<key>Comment-DisabledAML</key>
-		<string>Disable other forms of CPU PM due to SSDT/Generate/PluginType=true</string>
 		<key>FixHeaders</key>
 		<true/>
-		<key>DSDT</key>
+		<key>SSDT</key>
 		<dict>
-			<key>Patches</key>
-			<array>
-				<dict>
-					<key>Mask</key>
-					<data>
-										</data>
-					<key>Disabled</key>
-					<false/>
-					<key>OemTableId</key>
-					<data>
-					AAAAAAAAAAA=					</data>
-					<key>Skip</key>
-					<integer>0</integer>
-					<key>TableLength</key>
-					<integer>0</integer>
-					<key>ReplaceMask</key>
-					<data>
-										</data>
-					<key>Replace</key>
-					<data>
-					QVBYWA==					</data>
-					<key>Comment</key>
-					<string>AICPUPM: Rename APSS to APXX</string>
-					<key>Count</key>
-					<integer>1</integer>
-					<key>Find</key>
-					<data>
-					QVBTUw==					</data>
-					<key>TableSignature</key>
-					<data>
-					AAA=					</data>
-					<key>Enabled</key>
-					<true/>
-					<key>Limit</key>
-					<integer>0</integer>
-				</dict>
-				<dict>
-					<key>Mask</key>
-					<data>
-										</data>
-					<key>Disabled</key>
-					<false/>
-					<key>OemTableId</key>
-					<data>
-					AAAAAAAAAAA=					</data>
-					<key>Skip</key>
-					<integer>0</integer>
-					<key>TableLength</key>
-					<integer>0</integer>
-					<key>ReplaceMask</key>
-					<data>
-										</data>
-					<key>Replace</key>
-					<data>
-					WEFORQk=					</data>
-					<key>Comment</key>
-					<string>ATK support: Rename M(IANE) to XANE</string>
-					<key>Count</key>
-					<integer>1</integer>
-					<key>Find</key>
-					<data>
-					SUFORQk=					</data>
-					<key>TableSignature</key>
-					<data>
-					AAA=					</data>
-					<key>Enabled</key>
-					<true/>
-					<key>Limit</key>
-					<integer>0</integer>
-				</dict>
-				<dict>
-					<key>Mask</key>
-					<data>
-										</data>
-					<key>Disabled</key>
-					<false/>
-					<key>OemTableId</key>
-					<data>
-					AAAAAAAAAAA=					</data>
-					<key>Skip</key>
-					<integer>0</integer>
-					<key>TableLength</key>
-					<integer>0</integer>
-					<key>ReplaceMask</key>
-					<data>
-										</data>
-					<key>Replace</key>
-					<data>
-					WFEwQQ==					</data>
-					<key>Comment</key>
-					<string>ATK support: Rename M(_Q0A) to XQ0A F1</string>
-					<key>Count</key>
-					<integer>1</integer>
-					<key>Find</key>
-					<data>
-					X1EwQQ==					</data>
-					<key>TableSignature</key>
-					<data>
-					AAA=					</data>
-					<key>Enabled</key>
-					<true/>
-					<key>Limit</key>
-					<integer>0</integer>
-				</dict>
-				<dict>
-					<key>Mask</key>
-					<data>
-										</data>
-					<key>Disabled</key>
-					<false/>
-					<key>OemTableId</key>
-					<data>
-					AAAAAAAAAAA=					</data>
-					<key>Skip</key>
-					<integer>0</integer>
-					<key>TableLength</key>
-					<integer>0</integer>
-					<key>ReplaceMask</key>
-					<data>
-										</data>
-					<key>Replace</key>
-					<data>
-					WFEwQg==					</data>
-					<key>Comment</key>
-					<string>ATK support: Rename M(_Q0B) to XQ0B F2</string>
-					<key>Count</key>
-					<integer>1</integer>
-					<key>Find</key>
-					<data>
-					X1EwQg==					</data>
-					<key>TableSignature</key>
-					<data>
-					AAA=					</data>
-					<key>Enabled</key>
-					<true/>
-					<key>Limit</key>
-					<integer>0</integer>
-				</dict>
-				<dict>
-					<key>Mask</key>
-					<data>
-										</data>
-					<key>Disabled</key>
-					<false/>
-					<key>OemTableId</key>
-					<data>
-					AAAAAAAAAAA=					</data>
-					<key>Skip</key>
-					<integer>0</integer>
-					<key>TableLength</key>
-					<integer>0</integer>
-					<key>ReplaceMask</key>
-					<data>
-										</data>
-					<key>Replace</key>
-					<data>
-					WFEwRQ==					</data>
-					<key>Comment</key>
-					<string>ATK support: Rename M(_Q0E) to XQ0E F5</string>
-					<key>Count</key>
-					<integer>1</integer>
-					<key>Find</key>
-					<data>
-					X1EwRQ==					</data>
-					<key>TableSignature</key>
-					<data>
-					AAA=					</data>
-					<key>Enabled</key>
-					<true/>
-					<key>Limit</key>
-					<integer>0</integer>
-				</dict>
-				<dict>
-					<key>Mask</key>
-					<data>
-										</data>
-					<key>Disabled</key>
-					<false/>
-					<key>OemTableId</key>
-					<data>
-					AAAAAAAAAAA=					</data>
-					<key>Skip</key>
-					<integer>0</integer>
-					<key>TableLength</key>
-					<integer>0</integer>
-					<key>ReplaceMask</key>
-					<data>
-										</data>
-					<key>Replace</key>
-					<data>
-					WFEwRg==					</data>
-					<key>Comment</key>
-					<string>ATK support: Rename M(_Q0F) to XQ0F F6</string>
-					<key>Count</key>
-					<integer>1</integer>
-					<key>Find</key>
-					<data>
-					X1EwRg==					</data>
-					<key>TableSignature</key>
-					<data>
-					AAA=					</data>
-					<key>Enabled</key>
-					<true/>
-					<key>Limit</key>
-					<integer>0</integer>
-				</dict>
-				<dict>
-					<key>Mask</key>
-					<data>
-										</data>
-					<key>Disabled</key>
-					<false/>
-					<key>OemTableId</key>
-					<data>
-					AAAAAAAAAAA=					</data>
-					<key>Skip</key>
-					<integer>0</integer>
-					<key>TableLength</key>
-					<integer>0</integer>
-					<key>ReplaceMask</key>
-					<data>
-										</data>
-					<key>Replace</key>
-					<data>
-					WFExMQ==					</data>
-					<key>Comment</key>
-					<string>ATK support: Rename M(_Q11) to XQ11 F8</string>
-					<key>Count</key>
-					<integer>1</integer>
-					<key>Find</key>
-					<data>
-					X1ExMQ==					</data>
-					<key>TableSignature</key>
-					<data>
-					AAA=					</data>
-					<key>Enabled</key>
-					<true/>
-					<key>Limit</key>
-					<integer>0</integer>
-				</dict>
-				<dict>
-					<key>Mask</key>
-					<data>
-										</data>
-					<key>Disabled</key>
-					<false/>
-					<key>OemTableId</key>
-					<data>
-					AAAAAAAAAAA=					</data>
-					<key>Skip</key>
-					<integer>0</integer>
-					<key>TableLength</key>
-					<integer>0</integer>
-					<key>ReplaceMask</key>
-					<data>
-										</data>
-					<key>Replace</key>
-					<data>
-					WEJJRgA=					</data>
-					<key>Comment</key>
-					<string>Battery fix: Rename M(BIFA) to XBIF</string>
-					<key>Count</key>
-					<integer>1</integer>
-					<key>Find</key>
-					<data>
-					QklGQQA=					</data>
-					<key>TableSignature</key>
-					<data>
-					AAA=					</data>
-					<key>Enabled</key>
-					<true/>
-					<key>Limit</key>
-					<integer>0</integer>
-				</dict>
-				<dict>
-					<key>Mask</key>
-					<data>
-										</data>
-					<key>Disabled</key>
-					<false/>
-					<key>OemTableId</key>
-					<data>
-					AAAAAAAAAAA=					</data>
-					<key>Skip</key>
-					<integer>0</integer>
-					<key>TableLength</key>
-					<integer>0</integer>
-					<key>ReplaceMask</key>
-					<data>
-										</data>
-					<key>Replace</key>
-					<data>
-					WEJTVAQ=					</data>
-					<key>Comment</key>
-					<string>Battery fix: Rename M(FBST) to XBST</string>
-					<key>Count</key>
-					<integer>0</integer>
-					<key>Find</key>
-					<data>
-					RkJTVAQ=					</data>
-					<key>TableSignature</key>
-					<data>
-					AAA=					</data>
-					<key>Enabled</key>
-					<true/>
-					<key>Limit</key>
-					<integer>0</integer>
-				</dict>
-				<dict>
-					<key>Mask</key>
-					<data>
-										</data>
-					<key>Disabled</key>
-					<false/>
-					<key>OemTableId</key>
-					<data>
-					AAAAAAAAAAA=					</data>
-					<key>Skip</key>
-					<integer>0</integer>
-					<key>TableLength</key>
-					<integer>0</integer>
-					<key>ReplaceMask</key>
-					<data>
-										</data>
-					<key>Replace</key>
-					<data>
-					WE1CUgs=					</data>
-					<key>Comment</key>
-					<string>Battery fix: Rename M(SMBR) to XSMR</string>
-					<key>Count</key>
-					<integer>1</integer>
-					<key>Find</key>
-					<data>
-					U01CUgs=					</data>
-					<key>TableSignature</key>
-					<data>
-					AAA=					</data>
-					<key>Enabled</key>
-					<true/>
-					<key>Limit</key>
-					<integer>0</integer>
-				</dict>
-				<dict>
-					<key>Mask</key>
-					<data>
-										</data>
-					<key>Disabled</key>
-					<false/>
-					<key>OemTableId</key>
-					<data>
-					AAAAAAAAAAA=					</data>
-					<key>Skip</key>
-					<integer>0</integer>
-					<key>TableLength</key>
-					<integer>0</integer>
-					<key>ReplaceMask</key>
-					<data>
-										</data>
-					<key>Replace</key>
-					<data>
-					WE1CVw0=					</data>
-					<key>Comment</key>
-					<string>Battery fix: Rename M(SMBW) to XSMW</string>
-					<key>Count</key>
-					<integer>1</integer>
-					<key>Find</key>
-					<data>
-					U01CVw0=					</data>
-					<key>TableSignature</key>
-					<data>
-					AAA=					</data>
-					<key>Enabled</key>
-					<true/>
-					<key>Limit</key>
-					<integer>0</integer>
-				</dict>
-				<dict>
-					<key>Mask</key>
-					<data>
-										</data>
-					<key>Disabled</key>
-					<false/>
-					<key>OemTableId</key>
-					<data>
-					AAAAAAAAAAA=					</data>
-					<key>Skip</key>
-					<integer>0</integer>
-					<key>TableLength</key>
-					<integer>0</integer>
-					<key>ReplaceMask</key>
-					<data>
-										</data>
-					<key>Replace</key>
-					<data>
-					WEJJWAA=					</data>
-					<key>Comment</key>
-					<string>Battery fix: Rename M(_BIX) to XBIX</string>
-					<key>Count</key>
-					<integer>1</integer>
-					<key>Find</key>
-					<data>
-					X0JJWAA=					</data>
-					<key>TableSignature</key>
-					<data>
-					AAA=					</data>
-					<key>Enabled</key>
-					<true/>
-					<key>Limit</key>
-					<integer>0</integer>
-				</dict>
-				<dict>
-					<key>Mask</key>
-					<data>
-										</data>
-					<key>Disabled</key>
-					<false/>
-					<key>OemTableId</key>
-					<data>
-					AAAAAAAAAAA=					</data>
-					<key>Skip</key>
-					<integer>0</integer>
-					<key>TableLength</key>
-					<integer>0</integer>
-					<key>ReplaceMask</key>
-					<data>
-										</data>
-					<key>Replace</key>
-					<data>
-					WFBSVwI=					</data>
-					<key>Comment</key>
-					<string>Sleep fix: Rename M(GPRW) to XPRW</string>
-					<key>Count</key>
-					<integer>1</integer>
-					<key>Find</key>
-					<data>
-					R1BSVwI=					</data>
-					<key>TableSignature</key>
-					<data>
-					AAA=					</data>
-					<key>Enabled</key>
-					<true/>
-					<key>Limit</key>
-					<integer>0</integer>
-				</dict>
-				<dict>
-					<key>Find</key>
-					<data>
-					UkFMUwA=					</data>
-					<key>Replace</key>
-					<data>
-					WEFMUwA=					</data>
-					<key>Disabled</key>
-					<false/>
-					<key>Comment</key>
-					<string>ALS: change Method(RALS,0,S) XALS</string>
-				</dict>
-</array>
-			<key>Fixes</key>
+			<key>DropOem</key>
+			<false/>
+			<key>Generate</key>
 			<dict>
-				<key>FixTMR</key>
-				<true/>
-				<key>FixRTC</key>
+				<key>APLF</key>
+				<false/>
+				<key>APSN</key>
+				<false/>
+				<key>CStates</key>
+				<false/>
+				<key>PStates</key>
+				<false/>
+				<key>PluginType</key>
 				<true/>
 			</dict>
-			<key>DropOEM_DSM</key>
-			<false/>
+			<key>NoOemTableId</key>
+			<true/>
+			<key>PluginType</key>
+			<string>1</string>
+			<key>UnderVoltStep</key>
+			<string>0</string>
 		</dict>
-		<key>AutoMerge</key>
-		<true/>
 	</dict>
 	<key>Boot</key>
 	<dict>
-		<key>NeverHibernate</key>
-		<true/>
-		<key>Secure</key>
-		<false/>
-		<key>Arguments</key>
-		<string>-v alcid=13 brcmfx-country=US bpr_probedelay=200 bpr_initialdelay=400 bpr_postresetdelay=400</string>
 		<key>#Arguments - 2</key>
 		<string></string>
-		<key>XMPDetection</key>
-		<false/>
 		<key>#Comment-#Arguments - 2</key>
 		<string>If you do not have DW1560</string>
 		<key>#Comment-Arguments</key>
 		<string>Only if you have DW1560</string>
-		<key>Timeout</key>
-		<integer>0</integer>
+		<key>Arguments</key>
+		<string>-v alcid=13 brcmfx-country=US bpr_probedelay=200 bpr_initialdelay=400 bpr_postresetdelay=400</string>
 		<key>DefaultVolume</key>
 		<string>macOS</string>
+		<key>NeverHibernate</key>
+		<true/>
+		<key>Secure</key>
+		<false/>
+		<key>Timeout</key>
+		<integer>0</integer>
+		<key>XMPDetection</key>
+		<false/>
+	</dict>
+	<key>CPU</key>
+	<dict>
+		<key>C2</key>
+		<false/>
+		<key>C4</key>
+		<false/>
+		<key>C6</key>
+		<false/>
+		<key>HWPEnable</key>
+		<false/>
+		<key>UseARTFrequency</key>
+		<false/>
+	</dict>
+	<key>Comment</key>
+	<string>This config was created by @hieplpvip for S510 (Kaby Lake R), modified for my VivoBook BQ514T (90NB0FQ1-M08550) @Lee Binder/ BuxB</string>
+	<key>Devices</key>
+	<dict>
+		<key>Audio</key>
+		<dict>
+			<key>ResetHDA</key>
+			<false/>
+		</dict>
+		<key>Properties</key>
+		<dict>
+			<key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal</string>
+				<key>device_type</key>
+				<string>Audio Controller</string>
+				<key>hda-gfx</key>
+				<string>onboard-1</string>
+				<key>layout-id</key>
+				<data>
+				AwAAAA==				</data>
+				<key>model</key>
+				<string>Conexant CX8050 High-Definition Audio</string>
+				<key>name</key>
+				<string>audio</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
+			<dict>
+				<key># LVDS, Dummy, HDMI, Dummy</key>
+				<string>LVDS@0 and HDMI@2</string>
+				<key>AAPL,ig-platform-id</key>
+				<data>
+				AAAWWQ==				</data>
+				<key>AAPL,slot-name</key>
+				<string>Internal</string>
+				<key>device-id</key>
+				<data>
+				FlkAAA==				</data>
+				<key>device_type</key>
+				<string>Display Controller</string>
+				<key>framebuffer-con1-busid</key>
+				<data>
+				AAAAAA==				</data>
+				<key>framebuffer-con1-enable</key>
+				<data>
+				AQAAAA==				</data>
+				<key>framebuffer-con1-flags</key>
+				<data>
+				IAAAAA==				</data>
+				<key>framebuffer-con1-index</key>
+				<data>
+				/////w==				</data>
+				<key>framebuffer-con1-pipe</key>
+				<data>
+				AAAAAA==				</data>
+				<key>framebuffer-con1-type</key>
+				<data>
+				AQAAAA==				</data>
+				<key>framebuffer-patch-enable</key>
+				<data>
+				AQAAAA==				</data>
+				<key>framebuffer-unifiedmem</key>
+				<data>
+				AAAAgA==				</data>
+				<key>hda-gfx</key>
+				<string>onboard-1</string>
+				<key>model</key>
+				<string>Intel UHD Graphics 620</string>
+				<key>name</key>
+				<string>display</string>
+			</dict>
+		</dict>
+		<key>USB</key>
+		<dict>
+			<key>AddClockID</key>
+			<true/>
+			<key>FixOwnership</key>
+			<true/>
+			<key>HighCurrent</key>
+			<false/>
+			<key>Inject</key>
+			<true/>
+		</dict>
+		<key>UseIntelHDMI</key>
+		<false/>
 	</dict>
 	<key>GUI</key>
 	<dict>
@@ -555,157 +693,57 @@
 			<key>Tool</key>
 			<array>
 				<dict>
-					<key>FullTitle</key>
-					<string>CFGLock</string>
-					<key>Ignore</key>
-					<false/>
-					<key>Hidden</key>
-					<false/>
 					<key>Disabled</key>
 					<false/>
+					<key>FullTitle</key>
+					<string>ControlMsrE2</string>
+					<key>Hidden</key>
+					<false/>
+					<key>Ignore</key>
+					<false/>
 					<key>Path</key>
-					<string>\EFI\Clover\Tools\CFGLock.efi</string>
+					<string>\EFI\Clover\Tools\ControlMsrE2.efi</string>
 					<key>Volume</key>
 					<string>\</string>
 				</dict>
 				<dict>
+					<key>Disabled</key>
+					<false/>
 					<key>FullTitle</key>
 					<string>CleanNvram</string>
-					<key>Ignore</key>
-					<false/>
 					<key>Hidden</key>
 					<false/>
-					<key>Disabled</key>
+					<key>Ignore</key>
 					<false/>
 					<key>Path</key>
 					<string>\EFI\Clover\Tools\CleanNvram.efi</string>
 					<key>Volume</key>
 					<string>\</string>
-					<key>Arguments</key>
-					<string></string>
 				</dict>
 </array>
-		</dict>
-		<key>Mouse</key>
-		<dict>
-			<key>Enabled</key>
-			<false/>
 		</dict>
 		<key>Hide</key>
 		<array>
 			<string>Recovery</string>
 </array>
+		<key>Mouse</key>
+		<dict>
+			<key>Enabled</key>
+			<false/>
+		</dict>
 		<key>Scan</key>
 		<dict>
-			<key>Tool</key>
-			<true/>
 			<key>Entries</key>
 			<true/>
 			<key>Legacy</key>
 			<false/>
 			<key>Linux</key>
 			<true/>
+			<key>Tool</key>
+			<true/>
 		</dict>
 		<key>ScreenResolution</key>
 		<string>1920x1080</string>
-	</dict>
-	<key>CPU</key>
-	<dict>
-		<key>UseARTFrequency</key>
-		<false/>
-		<key>C4</key>
-		<false/>
-		<key>HWPEnable</key>
-		<false/>
-		<key>C6</key>
-		<false/>
-		<key>C2</key>
-		<false/>
-	</dict>
-	<key>Devices</key>
-	<dict>
-		<key>Properties</key>
-		<dict>
-			<key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
-			<dict>
-				<key>name</key>
-				<string>audio</string>
-				<key>layout-id</key>
-				<data>
-				AwAAAA==				</data>
-				<key>model</key>
-				<string>Conexant CX8050 High-Definition Audio</string>
-				<key>hda-gfx</key>
-				<string>onboard-1</string>
-				<key>AAPL,slot-name</key>
-				<string>Internal</string>
-				<key>device_type</key>
-				<string>Audio Controller</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
-			<dict>
-				<key>name</key>
-				<string>display</string>
-				<key>framebuffer-con1-busid</key>
-				<data>
-				AAAAAA==				</data>
-				<key># LVDS, Dummy, HDMI, Dummy</key>
-				<string>LVDS@0 and HDMI@2</string>
-				<key>device-id</key>
-				<data>
-				FlkAAA==				</data>
-				<key>framebuffer-con1-pipe</key>
-				<data>
-				AAAAAA==				</data>
-				<key>device_type</key>
-				<string>Display Controller</string>
-				<key>framebuffer-con1-index</key>
-				<data>
-				/////w==				</data>
-				<key>hda-gfx</key>
-				<string>onboard-1</string>
-				<key>framebuffer-patch-enable</key>
-				<data>
-				AQAAAA==				</data>
-				<key>framebuffer-con1-type</key>
-				<data>
-				AQAAAA==				</data>
-				<key>AAPL,slot-name</key>
-				<string>Internal</string>
-				<key>AAPL,ig-platform-id</key>
-				<data>
-				AAAWWQ==				</data>
-				<key>framebuffer-con1-flags</key>
-				<data>
-				IAAAAA==				</data>
-				<key>model</key>
-				<string>Intel UHD Graphics 620</string>
-				<key>framebuffer-con1-enable</key>
-				<data>
-				AQAAAA==				</data>
-				<key>framebuffer-unifiedmem</key>
-				<data>
-				AAAAgA==				</data>
-			</dict>
-		</dict>
-		<key>Audio</key>
-		<dict>
-			<key>ResetHDA</key>
-			<false/>
-		</dict>
-		<key>USB</key>
-		<dict>
-			<key>FixOwnership</key>
-			<true/>
-			<key>AddClockID</key>
-			<true/>
-			<key>Inject</key>
-			<true/>
-			<key>HighCurrent</key>
-			<false/>
-		</dict>
-		<key>UseIntelHDMI</key>
-		<false/>
 	</dict>
 	<key>Graphics</key>
 	<dict>
@@ -728,90 +766,6 @@
 	<dict>
 		<key>AppleRTC</key>
 		<false/>
-		<key>KernelPm</key>
-		<false/>
-		<key>KextsToPatch</key>
-		<array>
-			<dict>
-				<key>Find</key>
-				<data>
-				SU9LaXQ=				</data>
-				<key>Name</key>
-				<string>AppleIntelLpssI2CController</string>
-				<key>Replace</key>
-				<data>
-				SU9LaXM=				</data>
-				<key>Disabled</key>
-				<true/>
-				<key>Comment</key>
-				<string>Prevent Apple I2C kexts from attaching to I2C controllers, credit CoolStar</string>
-				<key>InfoPlistPatch</key>
-				<true/>
-			</dict>
-			<dict>
-				<key>Find</key>
-				<data>
-				SU9LaXQ=				</data>
-				<key>Name</key>
-				<string>AppleIntelLpssI2C</string>
-				<key>Replace</key>
-				<data>
-				SU9LaXM=				</data>
-				<key>Disabled</key>
-				<true/>
-				<key>Comment</key>
-				<string>Prevent Apple I2C kexts from attaching to I2C controllers, credit CoolStar</string>
-				<key>InfoPlistPatch</key>
-				<true/>
-			</dict>
-			<dict>
-				<key>Find</key>
-				<data>
-				AEFQUExFIFNTRAA=				</data>
-				<key>Name</key>
-				<string>com.apple.iokit.IOAHCIBlockStorage</string>
-				<key>Replace</key>
-				<data>
-				AAAAAAAAAAAAAAA=				</data>
-				<key>Disabled</key>
-				<true/>
-				<key>Comment</key>
-				<string>Enable TRIM for SSD</string>
-				<key>InfoPlistPatch</key>
-				<false/>
-			</dict>
-</array>
-		<key>PanicNoKextDump</key>
-		<true/>
-		<key>KernelToPatch</key>
-		<array>
-			<dict>
-				<key>Find</key>
-				<data>
-				ILniAAAADzA=				</data>
-				<key>Replace</key>
-				<data>
-				ILniAAAAkJA=				</data>
-				<key>Disabled</key>
-				<false/>
-				<key>Comment</key>
-				<string>MSR 0xE2 _xcpm_idle instant reboot(c) Pike R. Alpha (Delete this patch after unlocking MSR 0xE2)</string>
-			</dict>
-			<dict>
-				<key>Find</key>
-				<data>
-				igKEwHRC				</data>
-				<key>Replace</key>
-				<data>
-				igKEwOtC				</data>
-				<key>Disabled</key>
-				<true/>
-				<key>Comment</key>
-				<string>Disable panic kext logging on 10.14 release kernel (credit vit9696)</string>
-				<key>MatchOS</key>
-				<string>10.14.x</string>
-			</dict>
-</array>
 		<key>DellSMBIOSPatch</key>
 		<false/>
 		<key>ForceKextsToLoad</key>
@@ -820,6 +774,115 @@
 </array>
 		<key>KernelLapic</key>
 		<false/>
+		<key>KernelPm</key>
+		<false/>
+		<key>KernelToPatch</key>
+		<array>
+			<dict>
+				<key>Comment</key>
+				<string>MSR 0xE2 _xcpm_idle instant reboot(c) Pike R. Alpha (Delete this patch after unlocking MSR 0xE2)</string>
+				<key>Disabled</key>
+				<true/>
+				<key>Find</key>
+				<data>
+				ILniAAAADzA=				</data>
+				<key>Replace</key>
+				<data>
+				ILniAAAAkJA=				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Disable panic kext logging on 10.14 release kernel (credit vit9696)</string>
+				<key>Disabled</key>
+				<true/>
+				<key>Find</key>
+				<data>
+				igKEwHRC				</data>
+				<key>MatchOS</key>
+				<string>10.14.x</string>
+				<key>Replace</key>
+				<data>
+				igKEwOtC				</data>
+			</dict>
+</array>
+		<key>KextsToPatch</key>
+		<array>
+			<dict>
+				<key>Comment</key>
+				<string>Prevent Apple I2C kexts from attaching to I2C controllers, credit CoolStar</string>
+				<key>Disabled</key>
+				<true/>
+				<key>Find</key>
+				<data>
+				SU9LaXQ=				</data>
+				<key>InfoPlistPatch</key>
+				<true/>
+				<key>Name</key>
+				<string>AppleIntelLpssI2CController</string>
+				<key>Replace</key>
+				<data>
+				SU9LaXM=				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Prevent Apple I2C kexts from attaching to I2C controllers, credit CoolStar</string>
+				<key>Disabled</key>
+				<true/>
+				<key>Find</key>
+				<data>
+				SU9LaXQ=				</data>
+				<key>InfoPlistPatch</key>
+				<true/>
+				<key>Name</key>
+				<string>AppleIntelLpssI2C</string>
+				<key>Replace</key>
+				<data>
+				SU9LaXM=				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Enable TRIM for SSD</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				AEFQUExFIFNTRAA=				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>Name</key>
+				<string>com.apple.iokit.IOAHCIBlockStorage</string>
+				<key>Replace</key>
+				<data>
+				AAAAAAAAAAAAAAA=				</data>
+			</dict>
+</array>
+		<key>PanicNoKextDump</key>
+		<true/>
+	</dict>
+	<key>Quirks</key>
+	<dict>
+		<key>AvoidRuntimeDefrag</key>
+		<true/>
+		<key>Comment</key>
+		<string>As of r5129, Clover does not interpret the following Quirks taken from the VivoBook OC config.plist: SetApfsTrimTimeout, TscSyncTimeout, RequestBootVarRouting. They might or might not be functional at some point and can be considered placeholders or reminders until they are either relevant or removed. OC's Quirk 'PanicNoKextDump' is covered by Clover in K &amp; K Patches, PanicNoKextDump.</string>
+		<key>DisableIoMapper</key>
+		<true/>
+		<key>DisableLinkeditJettison</key>
+		<true/>
+		<key>EnableWriteUnprotector</key>
+		<true/>
+		<key>ExitBootServicesDelay</key>
+		<integer>0</integer>
+		<key>ProvideMaxSlide</key>
+		<integer>0</integer>
+		<key>RequestBootVarRouting</key>
+		<true/>
+		<key>SetApfsTrimTimeout</key>
+		<integer>-1</integer>
+		<key>SetupVirtualMap</key>
+		<true/>
+		<key>TscSyncTimeout</key>
+		<integer>0</integer>
 	</dict>
 	<key>RtVariables</key>
 	<dict>
@@ -830,44 +893,44 @@
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
-		<key>FirmwareFeatures</key>
-		<string>0xFD8FF426</string>
+		<key>BiosReleaseDate</key>
+		<string>01/06/2021</string>
+		<key>BiosVendor</key>
+		<string>Apple Inc.</string>
+		<key>BiosVersion</key>
+		<string>MBP154.88Z.F000.B00.2101062059</string>
 		<key>Board-ID</key>
 		<string>Mac-53FDB3D8DB8CA971</string>
-		<key>FirmwareFeaturesMask</key>
-		<string>0xFF9FFF3F</string>
+		<key>BoardManufacturer</key>
+		<string>Apple Inc.</string>
+		<key>BoardType</key>
+		<integer>10</integer>
 		<key>BoardVersion</key>
 		<string>MacBookPro15,4</string>
-		<key>Manufacturer</key>
+		<key>ChassisAssetTag</key>
+		<string>Asset Tag#</string>
+		<key>ChassisManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>ChassisType</key>
 		<string>0x9</string>
-		<key>BiosVersion</key>
-		<string>MBP154.88Z.F000.B00.2101062059</string>
-		<key>BoardManufacturer</key>
-		<string>Apple Inc.</string>
-		<key>ChassisAssetTag</key>
-		<string>Asset Tag#</string>
-		<key>PlatformFeature</key>
-		<string>0x32</string>
-		<key>Family</key>
-		<string>MacBook Pro</string>
-		<key>Mobile</key>
-		<true/>
-		<key>ChassisManufacturer</key>
-		<string>Apple Inc.</string>
-		<key>BiosVendor</key>
-		<string>Apple Inc.</string>
-		<key>ProductName</key>
-		<string>MacBookPro15,4</string>
-		<key>BoardType</key>
-		<integer>10</integer>
 		<key>EfiVersion</key>
 		<string>1554.80.3.0.0</string>
+		<key>Family</key>
+		<string>MacBook Pro</string>
+		<key>FirmwareFeatures</key>
+		<string>0xFD8FF426</string>
+		<key>FirmwareFeaturesMask</key>
+		<string>0xFF9FFF3F</string>
 		<key>LocationInChassis</key>
 		<string>Part Component</string>
-		<key>BiosReleaseDate</key>
-		<string>01/06/2021</string>
+		<key>Manufacturer</key>
+		<string>Apple Inc.</string>
+		<key>Mobile</key>
+		<true/>
+		<key>PlatformFeature</key>
+		<string>0x32</string>
+		<key>ProductName</key>
+		<string>MacBookPro15,4</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
@@ -878,32 +941,5 @@
 		<key>InjectSystemID</key>
 		<true/>
 	</dict>
-	<key>Quirks</key>
-	<dict>
-		<key>SetupVirtualMap</key>
-		<true/>
-		<key>DisableIoMapper</key>
-		<true/>
-		<key>SetApfsTrimTimeout</key>
-		<integer>-1</integer>
-		<key>Comment</key>
-		<string>As of r5129, Clover does not interpret the following Quirks taken from the VivoBook OC config.plist: SetApfsTrimTimeout, TscSyncTimeout, RequestBootVarRouting. They might or might not be functional at some point and can be considered placeholders or reminders until they are either relevant or removed. OC's Quirk 'PanicNoKextDump' is covered by Clover in K &amp; K Patches, PanicNoKextDump.</string>
-		<key>ProvideMaxSlide</key>
-		<integer>0</integer>
-		<key>ExitBootServicesDelay</key>
-		<integer>0</integer>
-		<key>RequestBootVarRouting</key>
-		<true/>
-		<key>AvoidRuntimeDefrag</key>
-		<true/>
-		<key>DisableLinkeditJettison</key>
-		<true/>
-		<key>TscSyncTimeout</key>
-		<integer>0</integer>
-		<key>EnableWriteUnprotector</key>
-		<true/>
-	</dict>
-	<key>Comment</key>
-	<string>This config was created by @hieplpvip for S510 (Kaby Lake R), modified for my VivoBook BQ514T (90NB0FQ1-M08550) @Lee Binder/ BuxB</string>
 </dict>
 </plist>
