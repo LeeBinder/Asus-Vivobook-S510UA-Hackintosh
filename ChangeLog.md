@@ -10,7 +10,7 @@
     _**Lots of KUDOS to whatnameisit for [his efforts](https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh/tree/main/docs/SSDT-PTSWAK-RP01_PEGP) which should also make this work on VivoBooks with Nvidia GeForce 940MX and tentatively other Nvidia Optimus dGPUs!**_
   - **Trackpad**: switched from polling to more energy friendly interrupts mode because UEFI BIOS 310 for x510UAR no longer appears to have flaws in the GPIO. Make sure you run your VivoBook with the latest BIOS! ¹<br>
   **Added file**:<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;_¡**Current repo users**: before you add below file, make sure you disable `SSDT-I2C1_USTP.aml`!_<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;_¡**Current repo users**: before you add below file, make sure you disable `SSDT-I2C1_USTP.aml`!_
     - **OC**: ACPI/SSDT-Trackpad_interrupts.aml
     - **Clover**: ACPI/patched/SSDT-Trackpad_interrupts.aml
 - (re-)enabled **TRIM for SSD:**
