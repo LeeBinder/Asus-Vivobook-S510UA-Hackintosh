@@ -29,6 +29,8 @@
 **Clover**:
 - updated to **[r5133](https://github.com/CloverHackyColor/CloverBootloader/releases/tag/5133)** incl. `ControlMsrE2.efi`
 
+**Current repo users:** follow the [**update instructions**](https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh#instructions-to-update-from-a-previous-version-of-this-repo)
+
 --
 ¹ For config.plist changes against repo release v.11.0.2 see [OC diff.plist](https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh/blob/main/OpenCore/diff.plist) and/or [Clover diff.plist](https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh/blob/main/Clover/diff.plist).
 
