@@ -22,6 +22,7 @@
 - **Refinements** in repo and ReadMe
 
 ####Bootloader specific:
+
 **OC**:
 - updated to **[v.0.6.8](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.6.8)** incl. [required changes to config.plist](https://www.tonymacx86.com/threads/guide-new-voodooi2c-asus-vivobook-s15-x510uar-10-13.245445/page-63#post-2240234)
 - added latest **Resources folder** from [OcBinaryData](https://github.com/acidanthera/OcBinaryData/tree/master) for v.0.6.8 graphical UI compatibility, having to force-overwrite blackosx' better readable custom framd with stock OC Helvetica font due to (hopefully temporary) OpenCanopy boot picker restrictions
