@@ -1,4 +1,4 @@
-## [Release v.11.1, Apr. 14 2021](https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh/releases/tag/11.1)
+## [Release v.11.1, Apr. 14 2021](https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh/releases/tag/11.1) (pending)
 - **MSR E2** ("_CFG Lock_") unlocking:
   - **Clover**: dropped `CFGLock.efi` and switched to `ControlMsrE2.efi` (now packaged with Clover)
   - **OC**: updated `ControlMsrE2.efi`
