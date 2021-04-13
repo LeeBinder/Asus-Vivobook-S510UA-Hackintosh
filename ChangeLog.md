@@ -11,8 +11,8 @@
   - **Trackpad**: switched from polling to more energy friendly interrupts mode because UEFI BIOS 310 for x510UAR no longer appears to have flaws in the GPIO. Make sure you run your VivoBook with the latest BIOS! ¹<br>
   **Added file**:<br>
       &nbsp;&nbsp;&nbsp;&nbsp;_¡**Current repo users**: before you add below file, make sure you disable `SSDT-I2C1_USTP.aml`!_
-    - **OC**: ACPI/SSDT-Trackpad_interrupts.aml
-    - **Clover**: ACPI/patched/SSDT-Trackpad_interrupts.aml
+    * **OC**: ACPI/SSDT-Trackpad_interrupts.aml
+    * **Clover**: ACPI/patched/SSDT-Trackpad_interrupts.aml
 - (re-)enabled **TRIM for SSD:**
   - **OC**: `Kernel/ Quirks/ ThirdPartyDrives`
   - **Clover**: `Kernel and Kext Patches/ KextsToPatch` ¹
