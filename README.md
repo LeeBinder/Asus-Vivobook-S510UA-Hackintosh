@@ -6,7 +6,7 @@
 
 # Details
 
-    Version:    	11.1
+    Version:    	11.1 RC1
     Repo Date:      Apr. 14, 2021
     ReadMe Date: 	Apr. 14, 2021
     Status: 	Stable
