@@ -226,7 +226,7 @@ Alternatively you can use a [Dell DW1560](https://www.google.com/search?btnG=Sea
 
 # Recommendations
 1. **OC (1st) + Clover (2nd)**: On your SSD's ESP, have OC's EFI folder so OC is your main bootloader; additionally create a separate FAT partition with at least 50+ MB, label it `Clover` and copy the Clover EFI folder onto it and onfigure it accdg. to above instructions. Make sure you use the same SMBIOS Platform Info in both config.plists so you don't experience oddities!
-2. **Downscale monitor resolution to 1600 x 900** for two reasons: **a)** you will need to squint much less or ideally not at all because human eyes are simply not made for a 1920 x 1080 resolution on a 15,6" screen, period; and b) your monitor will use less energy = longer battery life!
+2. **Downscale monitor resolution to 1600 x 900** for two reasons: **a)** you will need to squint much less or ideally not at all because human eyes are simply not made for a 1920 x 1080 resolution on a 15,6" screen, period; and **b)** your monitor will use less energy = longer battery life!
 3. **Sound quality** isn't great because the speakers are mediocre in general, and to make things even worse, Asus placed them into the bottom of the case, mostly facing down. For tips to improve the sound, please look at "[docs/BetterSound.html](https://htmlpreview.github.io/?https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh/blob/master/docs/BetterSound.html)"
 
 # Fine-tuning
@@ -234,7 +234,10 @@ Alternatively you can use a [Dell DW1560](https://www.google.com/search?btnG=Sea
 - When all is working fine for you and you prefer not to look at all the lines flashing by during boot, **remove the `-v` verbose mode** switch:<br>
 **OC**: NVRAM > 7C436110-AB2A-4BBB-A880-FE41995C9F82 > boot-args<br>
 **Clover**: Boot > Arguments
-- Want to edit your VivoBook's U**EFI BIOS boot menu**? The simplest and quickest tool I found is the Windows freeware [BootIce](https://www.softpedia.com/get/System/Boot-Manager-Disk/Bootice.shtml), regardless of its age: [UEFI > Edit boot entries](https://www.google.com/search?q=BootIce+UEFI+Edit+boot+entries&tbm=isch&ved=2ahUKEwjPjeOrmovvAhUYG-wKHamZDVoQ2-cCegQIABAA&oq=BootIce+UEFI+Edit+boot+entries&gs_lcp=CgNpbWcQAzoECCMQJzoECAAQGDoECAAQHlCXlANYmpUEYK63BGgDcAB4AIABX4gBxg-SAQIyN5gBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=AdQ6YI-JMpi2sAeps7bQBQ&bih=908&biw=1680)
+- Want to edit (or even backup) your VivoBook's **UEFI BIOS boot menu**? I know of three Windows tools you can use:
+  - [DiskGenius](https://www.diskgenius.com/how-to/manage-uefi-boot-options.php) (freeware) - incl. UEFI boot entries backup & restores
+  - [BootIce](https://www.softpedia.com/get/System/Boot-Manager-Disk/Bootice.shtml) (freeware) - old yet still working: [UEFI > Edit boot entries](https://www.google.com/search?q=BootIce+UEFI+Edit+boot+entries&tbm=isch&ved=2ahUKEwjPjeOrmovvAhUYG-wKHamZDVoQ2-cCegQIABAA&oq=BootIce+UEFI+Edit+boot+entries&gs_lcp=CgNpbWcQAzoECCMQJzoECAAQGDoECAAQHlCXlANYmpUEYK63BGgDcAB4AIABX4gBxg-SAQIyN5gBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=AdQ6YI-JMpi2sAeps7bQBQ&bih=908&biw=1680)
+  - [EasyUEFI](https://www.easyuefi.com/index-us.html) (trial ware)
 
 # Instructions to update from a previous version of this repo
 **Recommended procedure:**
@@ -243,7 +246,11 @@ Alternatively you can use a [Dell DW1560](https://www.google.com/search?btnG=Sea
 - **incorporate** your custom changes to the previous release into the new one via copy/ paste, either with **PrefEdit**, or with (OC or Clover) **Configurator** - most importantly your `SMBIOS` (Clover) respectively `PlatformInfo` (OC) section.
 
 # Troubleshooting
-**Many issues can be solved by performing a NVRAM Reset**, in OC via the last entry in the boot menu picker, and in Clover Boot menu by pressing F11! Note that this will also clear custom boot entries in your UEFI BIOS boot menu.
+**Many issues can be solved by performing a NVRAM Reset, then reboot**. Recommended: use **Clover** to do that by booting into its Boot menu, then press F11: Clover nicely keeps your UEFI BIOS boot menu intact by NOT touching your custom entries in there!
+
+**OC**'s NVRAM reset will also wipe any custom boot entries in your UEFI BIOS boot menu! You execute it either via the last entry in the boot menu picker, or via keyboard key combo <kbd>Windows + Alt + P + R</kbd>
+
+**Further topics:**
 
 - [[SOLVED] Sporadic black screen on wake from sleep](https://github.com/tctien342/Asus-Vivobook-S510UA-High-Sierra-10.13-Hackintosh/issues/41)
 - [[SOLVED] VivoBook doesn't go to sleep properly on low battery but rather crashes](https://github.com/tctien342/Asus-Vivobook-S510UA-Hackintosh/issues/39)
