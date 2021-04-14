@@ -7,7 +7,7 @@
 # Table of contents
 - [Repo Details](#repo-details)
 - [Changelog/ Version History](https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh/blob/master/ChangeLog.md)
-- [System specification & Introduction](#system-specification)
+- [System specification & Introduction](#system-specification--introduction)
 - [Unsupported Hardware & Features](#unsupported-hardware--features)
 - [VivoBooks with an additional NVIDIA GeForce dGPU](#vivobooks-with-an-additional-dgpu-nvidia-geforce-940mx-mx150-etc)
 - [Known Issues, weaknesses and oddities](#known-issues-weaknesses-and-oddities)
