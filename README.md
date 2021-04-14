@@ -4,7 +4,27 @@
 
 ![Alt text](https://ivanov-audio.com/wp-content/uploads/2014/01/Hackintosh-Featured-Image.png)
 
-# Details
+# Table of contents
+- [Repo Details](#repo-details)
+- [Changelog/ Version History](https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh/blob/master/ChangeLog.md)
+- [System specification & Introduction](#system-specification)
+- [Unsupported Hardware & Features](#unsupported-hardware--features)
+- [VivoBooks with an additional NVIDIA GeForce dGPU](#vivobooks-with-an-additional-dgpu-nvidia-geforce-940mx-mx150-etc)
+- [Known Issues, weaknesses and oddities](#known-issues-weaknesses-and-oddities)
+- [Tools to use](#tools-to-use)
+- [Steps to install macOS](#steps-to-install-macos)
+- [Steps after installing macOS](#steps-after-installing-macos)
+- [Unlock the MSR E2 register](#unlock-the-msr-e2-register)
+- [Wi-Fi Replacement](#wi-fi-replacement)
+- [ATTENTION: _be careful with Updates_!](#attention---be-careful-with-updates)
+- [Recommendations](#recommendations)
+- [Fine-tuning](#fine-tuning)
+- [Instructions to update from a previous version of this repo](#instructions-to-update-from-a-previous-version-of-this-repo)
+- [Troubleshooting](#troubleshooting)
+- [Knowledge Base](#knowledge-base)
+- [Credits](#special-credits-for-this-repo-to-these-fellow-hackintoshers)
+
+# Repo Details
 
     Version:    	11.1 RC1
     Repo Date:      Apr. 14, 2021
@@ -14,7 +34,7 @@
     Technology:	OpenCore and Clover with ACPI hotpatch by RehabMan  
    Changelog:   	see [Changelog.md](https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh/blob/master/ChangeLog.md)
 
-# System specification
+# System specification & Introduction
 
     • Model Name:		Asus VivoBook S510UA BQ514T
     • CPU:			Intel Core i5-8250U Kaby Lake R 8th Gen. i5
@@ -200,7 +220,7 @@ As of 2021-02-23 there is still no fully working macOS driver for the `Intel AC 
 
 Alternatively you can use a [Dell DW1560](https://www.google.com/search?btnG=Search&q=Dell+DW1560+M.2) or a [Lenovo FRU 04X6020](https://www.google.com/search?btnG=Search&q=Lenovo+FRU+04X6020+M.2) (or even a different kind if you can find a better one). If you opt for one of these, you should adapt the boot argument `brcmfx-country=US` to match your country code. Example: `brcmfx-country=DE` for Germany, `VN` for Vietnam etc. You find it at the same spot(s) as described above.
 
-# _ATTENTION - be careful with Updates_!
+# ATTENTION: _be careful with Updates_!
 1. **Clover only**: after updating `AirportBrcmFixup.kext` and/or `VoodooPS2Controller.kext` and (esp.) if you're running Big Sur, you ***have to*** (!!) run `/EFI/CLOVER/kexts/Other/remove problematic kexts after update` or Big Sur won't boot. See [here](https://github.com/CloverHackyColor/CloverBootloader/issues/350) for the sad and stubborn details...
 2. **VirtualSMC**: The VirtualSMC version should match those of accompanying plugin kexts (**SMCProcessor**, **SMCBatteryManager**) to avoid touchpad and battery issues! Please make sure you download the most recent stable release of the **complete** SMC package [from its repo](https://github.com/acidanthera/VirtualSMC/releases) and replace ***each*** existing file with the matching new one.
 

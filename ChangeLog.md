@@ -10,7 +10,7 @@
     _**Lots of KUDOS to whatnameisit for [his efforts](https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh/tree/main/docs/SSDT-PTSWAK-RP01_PEGP) which should also make this work on VivoBooks with Nvidia GeForce 940MX and tentatively other Nvidia Optimus dGPUs!**_
   - **Trackpad**: switched from polling to more energy friendly interrupts mode because UEFI BIOS 310 for x510UAR no longer appears to have flaws in the GPIO. Make sure you run your VivoBook with the latest BIOS! ¹<br><br>
   **Added file**:<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;_¡**Current repo users**: before you add below file, make sure you disable `SSDT-I2C1_USTP.aml`! It has been renamed to `SSDT-Trackpad_polling-I2C1_USTP.aml` in this release to remain as backup_
+      &nbsp;&nbsp;&nbsp;&nbsp;_¡**Current repo users**: before you add below file, make sure you disable `SSDT-I2C1_USTP.aml`! It has been renamed to `SSDT-Trackpad_polling-I2C1_USTP.aml` in this release to remain as backup in case you need to revert_
     * **OC**: ACPI/SSDT-Trackpad_interrupts.aml
     * **Clover**: ACPI/patched/SSDT-Trackpad_interrupts.aml
 - (re-)enabled **TRIM for SSD:**
@@ -25,7 +25,7 @@
 
 **OC**:
 - updated to **[v.0.6.8](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.6.8)** incl. [required changes to config.plist](https://www.tonymacx86.com/threads/guide-new-voodooi2c-asus-vivobook-s15-x510uar-10-13.245445/page-63#post-2240234)
-- added latest **Resources folder** from [OcBinaryData](https://github.com/acidanthera/OcBinaryData/tree/master) for v.0.6.8 graphical UI compatibility, having to force-overwrite blackosx' better readable custom framd with stock OC Helvetica font due to (hopefully temporary) OpenCanopy boot picker restrictions
+- added latest **Resources folder** from [OcBinaryData](https://github.com/acidanthera/OcBinaryData/tree/master) for v.0.6.8 graphical UI compatibility, having to force-overwrite blackosx' better readable custom framd front with the stock OC Helvetica font due to (hopefully temporary) OpenCanopy boot picker restrictions.
 
 **Clover**:
 - updated to **[r5133](https://github.com/CloverHackyColor/CloverBootloader/releases/tag/5133)** incl. `ControlMsrE2.efi`
