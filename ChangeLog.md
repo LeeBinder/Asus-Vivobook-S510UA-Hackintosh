@@ -18,8 +18,8 @@
   - **Clover**: `Kernel and Kext Patches/ KextsToPatch` ¹
 - **Kexts**: apart from updating many kexts:
   - updated Sinetek's old SD-card reader **Sinetek-rtsx.kext** to latest release from [current fork by cholonam](https://github.com/cholonam/Sinetek-rtsx/releases)
-  - as per recommendations/ agreements, **VoodooInput** now as separate kext and thus deactivated in both, VoodooPS2Controller and VoodooI2C
-- **Refinements** in repo and ReadMe
+  - as per recommendations/ agreements, **VoodooInput** is now provided as a separate kext and thus deactivated inside both, VoodooPS2Controller and VoodooI2C
+- _many_ **Refinements** in repo and ReadMe
 
 ### Bootloader specific:
 
@@ -30,7 +30,7 @@
 **Clover**:
 - updated to **[r5133](https://github.com/CloverHackyColor/CloverBootloader/releases/tag/5133)** incl. `ControlMsrE2.efi`
 
-**Current repo users:** follow the [**update instructions**](https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh#instructions-to-update-from-a-previous-version-of-this-repo)
+**Current repo users:** follow the [**repo update instructions**](https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh#instructions-to-update-from-a-previous-version-of-this-repo)
 
 --<br>
 ¹ For config.plist changes against repo release v.11.0.2 see [OC diff.plist](https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh/blob/main/OpenCore/diff.plist) and/or [Clover diff.plist](https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh/blob/main/Clover/diff.plist).
