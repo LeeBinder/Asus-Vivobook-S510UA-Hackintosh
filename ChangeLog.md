@@ -19,7 +19,7 @@
 - **Kexts**: apart from updating many kexts:
   - updated Sinetek's old SD-card reader **Sinetek-rtsx.kext** to latest release from [current fork by cholonam](https://github.com/cholonam/Sinetek-rtsx/releases)
   - as per recommendations/ agreements, **VoodooInput** is now provided as a separate kext and thus deactivated inside both, VoodooPS2Controller and VoodooI2C
-- _many_ **Refinements** in repo and ReadMe
+- _many_ **Refinements** in repo and [ReadMe](https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh/blob/main/README.md)
 
 ### Bootloader specific:
 
