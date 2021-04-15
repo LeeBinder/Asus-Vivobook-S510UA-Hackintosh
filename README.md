@@ -28,7 +28,7 @@
 
     Version:    	11.1 RC2
     Repo Date:      Apr. 14, 2021
-    ReadMe Date: 	Apr. 14, 2021
+    ReadMe Date: 	Apr. 15, 2021
     Status: 	Stable
     Support:    	All BIOS (verified 301-310)
     Technology:	OpenCore and Clover with ACPI hotpatch by RehabMan  
@@ -244,6 +244,10 @@ Alternatively you can use a [Dell DW1560](https://www.google.com/search?btnG=Sea
 - **rename** your existing /EFI/EFI to something else, e.g. EFI_202y-mm-dd
 - **copy** the new release's EFI folder as base to your /EFI volume
 - **incorporate** your custom changes to the previous release into the new one via copy/ paste, either with **PrefEdit**, or with (OC or Clover) **Configurator** - most importantly your `SMBIOS` (Clover) respectively `PlatformInfo` (OC) section.
+
+**Alternative procedure:** integrate new repo release changes into your EFI folder
+- see [Changelog](https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh/blob/main/ChangeLog.md) for added, removed or renamed files
+- for `config.plist` changes against the previous repo release see [OC diff.plist](https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh/blob/main/OpenCore/diff.plist) and/or [Clover diff.plist](https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh/blob/main/Clover/diff.plist).
 
 # Troubleshooting
 **Many issues can be solved by performing a NVRAM Reset, then reboot**. Recommended: use **Clover** to do that by booting into its Boot menu, then press F11: Clover nicely keeps your UEFI BIOS boot menu intact by NOT touching your custom entries in there!
