@@ -1,2 +1,2 @@
 # don't include any file & folder in release's source code
-#* export-ignore
+* export-ignore
