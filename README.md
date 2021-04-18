@@ -26,9 +26,9 @@
 
 # Repo Details
 
-    Version:    	11.1 RC2
-    Repo Date:      Apr. 14, 2021
-    ReadMe Date: 	Apr. 15, 2021
+    Version:    	11.1
+    Repo Date:      Apr. 18, 2021
+    ReadMe Date: 	Apr. 18, 2021
     Status: 	Stable
     Support:    	All BIOS (verified 301-310)
     Technology:	OpenCore and Clover with ACPI hotpatch by RehabMan  
@@ -47,7 +47,7 @@
     • Keyboard Backlight:	Yes
     • BIOS:			x510UAR 310 (X510UARAS310.zip)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font style="font-family: Courier; font-size:30px; font-style:bold">T</font>his repo is the continuation of the now discontinued [tctien342 repo](https://github.com/tctien342/Asus-Vivobook-S510UA-Hackintosh/releases) which has been archived because he upgraded to a different hackbook and gave his VivoBook away. It's based on whatnameisit's brilliant and cutting-edge [repo for his VivoBook X510UA-BQ490](https://github.com/whatnameisit/Asus-Vivobook-X510UA-BQ490-Hackintosh) based on OpenCore ("OC"). The two main differences are:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font style="font-family: Courier; font-size:30px; font-style:bold">T</font>his repo is the continuation of the now archived [tctien342 repo](https://github.com/tctien342/Asus-Vivobook-S510UA-Hackintosh/releases) which has been  discontinued because he upgraded to a different hackbook and gave his VivoBook away. It's based on whatnameisit's brilliant and cutting-edge [repo for his VivoBook X510UA-BQ490](https://github.com/whatnameisit/Asus-Vivobook-X510UA-BQ490-Hackintosh) based on OpenCore ("OC"). The two main differences are:
 
 1. re-added keyboard backlight support
 2. re-added a Clover EFI as *secondary* bootloader alternative by backporting OC's ACPI into Clover config.
@@ -267,6 +267,9 @@ If your issue is not listed or persists, either post to the [VivoBook S15 X510UA
 
 * **Quirks:** Accdg. to [Clover Documentation](https://drovosek01.github.io/CloverHackyColor-WebVersion/) at the time of  writing this section (r5129), Clover does not interpret the following Quirks taken from the VivoBook OC config.plist: `SetApfsTrimTimeout`, `TscSyncTimeout`, `RequestBootVarRouting`. They might or might not be functional at some point and can be considered placeholders or reminders until they are either relevant or removed.<br>
 OC's Quirk '`PanicNoKextDump`' is covered by Clover in `Kernel & Kext Patches` > `PanicNoKextDump`. `AppleXcpmCfgLock` is handled automatically and internally by Clover depending on if the `MSR 0xE2` register is locked or unlocked.
+
+* **Battery threshold**: in general, a upper charging level limit is recommended for rechargeable lithium ion batteries. If you boot Windows and have the latest utilities and drivers from Asus installed, battery charging should halt at 83%. Hieplpvip adhered to that and included the same threshold in AsusSMC ever since v.1.4.0 which works in macOS 10.15+.
+You are advised to keep it turned on, but f you need full 100% charge for longer off-the-grid usage, it can be disabled by turning off `Battery Health` in the `Energy Saver` 10.15+ System Preference. Also the battery should charge up to 100% if you power your VivoBook off, then connect the power adapter.
 
 _________________________
 ## Special Credits for this repo to these fellow hackintoshers:
