@@ -217,6 +217,7 @@ As of 2021-02-23 there is still no fully working macOS driver for the `Intel AC 
   **Clover:** Boot > Arguments (remove via the `-`)
 
 - save and reboot
+- **Windows**: Fenvi also delivers a [driver for Windows](http://en-files.fenvi.com/driver_download/FV-T919/win%2010%2064.zip) which you can install **_AFTER_** you first completely remove _any_ existing WiFi and Bluetooth drivers via Programs Uninstall, plus any such entries in Device Manager incl. their drivers!
 
 Alternatively you can use a [Dell DW1560](https://www.google.com/search?btnG=Search&q=Dell+DW1560+M.2) or a [Lenovo FRU 04X6020](https://www.google.com/search?btnG=Search&q=Lenovo+FRU+04X6020+M.2) (or even a different kind if you can find a better one). If you opt for one of these, you should adapt the boot argument `brcmfx-country=US` to match your country code. Example: `brcmfx-country=DE` for Germany, `VN` for Vietnam etc. You find it at the same spot(s) as described above.
 
