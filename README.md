@@ -1,6 +1,6 @@
 # Asus VivoBook S15 S510UA/ F510UA series
 
-**This build enables you to run macOS on your VivoBook as long as it matches below System specifications as close as possible - verified with macOS Mojave 10.14.6 - Big Sur 11.2.3**
+**This build enables you to run macOS on your VivoBook as long as it matches below System specifications as close as possible - verified with macOS Mojave 10.14.6 - Big Sur 11.3**
 
 ![Alt text](https://ivanov-audio.com/wp-content/uploads/2014/01/Hackintosh-Featured-Image.png)
 
@@ -28,7 +28,7 @@
 
     Version:    	11.1
     Repo Date:      Apr. 18, 2021
-    ReadMe Date: 	Apr. 18, 2021
+    ReadMe Date: 	Apr. 27, 2021
     Status: 	Stable
     Support:    	All BIOS (verified 301-310)
     Technology:	OpenCore and Clover with ACPI hotpatch by RehabMan  
