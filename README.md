@@ -95,7 +95,7 @@ If there is more than one boot-arg, make sure you separate them from each other 
 * Your favorite macOS or hackintosh USB installer maker
 * Hackintool: [Forum thread](https://www.insanelymac.com/forum/topic/335018-hackintool-v286/) | [Direct download always latest version](http://headsoft.com.au/download/mac/Hackintool.zip)
 * Kext Updater: [Download](https://bitbucket.org/profdrluigi/kextupdater/downloads/) | [Main forum thread](https://www.hackintosh-forum.de/forum/thread/32621-kext-updater-neue-version-3-x/) {German}
-* A XML property list editor like [PrefEdit](https://www.bresink.com/osx/PrefEdit.html) if you don't have Apple's [XCode](https://apps.apple.com/us/app/xcode/id497799835) installed
+* A good XML property list editor like [PlistEdit Pro](https://www.fatcatsoftware.com/plisteditpro/) (recommened) or [PrefEdit](https://www.bresink.com/osx/PrefEdit.html) if you don't have Apple's [XCode](https://apps.apple.com/us/app/xcode/id497799835) installed
 
  ### OpenCore:
  * [OpenCore Configurator](https://mackie100projects.altervista.org/download-opencore-configurator/)
@@ -149,7 +149,7 @@ To be able to boot from your macOS install USB, it needs either one of this repo
     **Clover Configurator**:
 
     * *new user*: click onto **SMBIOS** in the side bar on the left. Under 'System', next to 'Serial Number', click onto the `Generate New` button. That will change both, system and board serial number.
-    * *existing user*: use (recommended) [PrefEdit](https://www.bresink.com/osx/PrefEdit.html) to first remove the dummy SMBIOS section and replace it with your existing one
+    * *existing user*: use (recommended) [PlistEdit Pro](https://www.fatcatsoftware.com/plisteditpro/) to first remove the dummy SMBIOS section and replace it with your existing one
     * Save.
 
  Above steps are necessary to - amongst other things - hopefully enable the use of iCloud.
@@ -244,7 +244,7 @@ Alternatively you can use a [Dell DW1560](https://www.google.com/search?btnG=Sea
 **Recommended procedure:**
 - **rename** your existing /EFI/EFI to something else, e.g. EFI_202y-mm-dd
 - **copy** the new release's EFI folder as base to your /EFI volume
-- **incorporate** your custom changes to the previous release into the new one via copy/ paste, either with **PrefEdit**, or with (OC or Clover) **Configurator** - most importantly your `SMBIOS` (Clover) respectively `PlatformInfo` (OC) section.
+- **incorporate** your custom changes to the previous release into the new one via copy/ paste, either with **[PlistEdit Pro](https://www.fatcatsoftware.com/plisteditpro/)**, or with (OC or Clover) **Configurator** - most importantly your `SMBIOS` (Clover) respectively `PlatformInfo` (OC) section.
 
 **Alternative procedure:** integrate new repo release changes into your EFI folder
 - see [Changelog](https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh/blob/main/ChangeLog.md) for added, removed or renamed files
