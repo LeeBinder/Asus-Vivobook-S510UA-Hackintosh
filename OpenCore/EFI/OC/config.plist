@@ -1623,7 +1623,7 @@
 		<key>AppleInput</key>
 		<dict>
 			<key>AppleEvent</key>
-			<string>OEM</string>
+			<string>Auto</string>
 			<key>CustomDelays</key>
 			<string>Auto</string>
 			<key>KeyInitialDelay</key>
