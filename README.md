@@ -1,6 +1,8 @@
 # Asus VivoBook S15 S510UA/ F510UA series
 
-**This build enables you to run macOS on your VivoBook as long as it matches below System specifications as close as possible - verified with macOS Mojave 10.14.6 - Big Sur 11.3**
+This build enables you to run macOS on your VivoBook as long as it matches below System specifications as close as possible - verified with macOS Mojave 10.14.6 - Big Sur 11.3
+
+🏳🚩**For macOS Monterey compatibility, see [macOS Monterey 12.x upgrade instructions for existing EFIs running pre-Monterey macOS](https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh/issues/11).** ✅
 
 ![Alt text](https://ivanov-audio.com/wp-content/uploads/2014/01/Hackintosh-Featured-Image.png)
 
