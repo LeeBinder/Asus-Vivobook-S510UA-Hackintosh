@@ -32,28 +32,32 @@
 					<true/>
 					<key>Find</key>
 					<data>
-					QVBTUw==					</data>
+					QVBTUw==
+					</data>
 					<key>Limit</key>
 					<integer>0</integer>
 					<key>Mask</key>
 					<data>
-										</data>
+					</data>
 					<key>OemTableId</key>
 					<data>
-					AAAAAAAAAAA=					</data>
+					AAAAAAAAAAA=
+					</data>
 					<key>Replace</key>
 					<data>
-					QVBYWA==					</data>
+					QVBYWA==
+					</data>
 					<key>ReplaceMask</key>
 					<data>
-										</data>
+					</data>
 					<key>Skip</key>
 					<integer>0</integer>
 					<key>TableLength</key>
 					<integer>0</integer>
 					<key>TableSignature</key>
 					<data>
-					AAA=					</data>
+					AAA=
+					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -66,28 +70,32 @@
 					<true/>
 					<key>Find</key>
 					<data>
-					SUFORQk=					</data>
+					SUFORQk=
+					</data>
 					<key>Limit</key>
 					<integer>0</integer>
 					<key>Mask</key>
 					<data>
-										</data>
+					</data>
 					<key>OemTableId</key>
 					<data>
-					AAAAAAAAAAA=					</data>
+					AAAAAAAAAAA=
+					</data>
 					<key>Replace</key>
 					<data>
-					WEFORQk=					</data>
+					WEFORQk=
+					</data>
 					<key>ReplaceMask</key>
 					<data>
-										</data>
+					</data>
 					<key>Skip</key>
 					<integer>0</integer>
 					<key>TableLength</key>
 					<integer>0</integer>
 					<key>TableSignature</key>
 					<data>
-					AAA=					</data>
+					AAA=
+					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -100,28 +108,32 @@
 					<true/>
 					<key>Find</key>
 					<data>
-					X1EwQQ==					</data>
+					X1EwQQ==
+					</data>
 					<key>Limit</key>
 					<integer>0</integer>
 					<key>Mask</key>
 					<data>
-										</data>
+					</data>
 					<key>OemTableId</key>
 					<data>
-					AAAAAAAAAAA=					</data>
+					AAAAAAAAAAA=
+					</data>
 					<key>Replace</key>
 					<data>
-					WFEwQQ==					</data>
+					WFEwQQ==
+					</data>
 					<key>ReplaceMask</key>
 					<data>
-										</data>
+					</data>
 					<key>Skip</key>
 					<integer>0</integer>
 					<key>TableLength</key>
 					<integer>0</integer>
 					<key>TableSignature</key>
 					<data>
-					AAA=					</data>
+					AAA=
+					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -134,28 +146,32 @@
 					<true/>
 					<key>Find</key>
 					<data>
-					X1EwQg==					</data>
+					X1EwQg==
+					</data>
 					<key>Limit</key>
 					<integer>0</integer>
 					<key>Mask</key>
 					<data>
-										</data>
+					</data>
 					<key>OemTableId</key>
 					<data>
-					AAAAAAAAAAA=					</data>
+					AAAAAAAAAAA=
+					</data>
 					<key>Replace</key>
 					<data>
-					WFEwQg==					</data>
+					WFEwQg==
+					</data>
 					<key>ReplaceMask</key>
 					<data>
-										</data>
+					</data>
 					<key>Skip</key>
 					<integer>0</integer>
 					<key>TableLength</key>
 					<integer>0</integer>
 					<key>TableSignature</key>
 					<data>
-					AAA=					</data>
+					AAA=
+					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -168,28 +184,32 @@
 					<true/>
 					<key>Find</key>
 					<data>
-					X1EwRQ==					</data>
+					X1EwRQ==
+					</data>
 					<key>Limit</key>
 					<integer>0</integer>
 					<key>Mask</key>
 					<data>
-										</data>
+					</data>
 					<key>OemTableId</key>
 					<data>
-					AAAAAAAAAAA=					</data>
+					AAAAAAAAAAA=
+					</data>
 					<key>Replace</key>
 					<data>
-					WFEwRQ==					</data>
+					WFEwRQ==
+					</data>
 					<key>ReplaceMask</key>
 					<data>
-										</data>
+					</data>
 					<key>Skip</key>
 					<integer>0</integer>
 					<key>TableLength</key>
 					<integer>0</integer>
 					<key>TableSignature</key>
 					<data>
-					AAA=					</data>
+					AAA=
+					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -202,28 +222,32 @@
 					<true/>
 					<key>Find</key>
 					<data>
-					X1EwRg==					</data>
+					X1EwRg==
+					</data>
 					<key>Limit</key>
 					<integer>0</integer>
 					<key>Mask</key>
 					<data>
-										</data>
+					</data>
 					<key>OemTableId</key>
 					<data>
-					AAAAAAAAAAA=					</data>
+					AAAAAAAAAAA=
+					</data>
 					<key>Replace</key>
 					<data>
-					WFEwRg==					</data>
+					WFEwRg==
+					</data>
 					<key>ReplaceMask</key>
 					<data>
-										</data>
+					</data>
 					<key>Skip</key>
 					<integer>0</integer>
 					<key>TableLength</key>
 					<integer>0</integer>
 					<key>TableSignature</key>
 					<data>
-					AAA=					</data>
+					AAA=
+					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -236,28 +260,32 @@
 					<true/>
 					<key>Find</key>
 					<data>
-					X1ExMQ==					</data>
+					X1ExMQ==
+					</data>
 					<key>Limit</key>
 					<integer>0</integer>
 					<key>Mask</key>
 					<data>
-										</data>
+					</data>
 					<key>OemTableId</key>
 					<data>
-					AAAAAAAAAAA=					</data>
+					AAAAAAAAAAA=
+					</data>
 					<key>Replace</key>
 					<data>
-					WFExMQ==					</data>
+					WFExMQ==
+					</data>
 					<key>ReplaceMask</key>
 					<data>
-										</data>
+					</data>
 					<key>Skip</key>
 					<integer>0</integer>
 					<key>TableLength</key>
 					<integer>0</integer>
 					<key>TableSignature</key>
 					<data>
-					AAA=					</data>
+					AAA=
+					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -270,28 +298,32 @@
 					<true/>
 					<key>Find</key>
 					<data>
-					QklGQQA=					</data>
+					QklGQQA=
+					</data>
 					<key>Limit</key>
 					<integer>0</integer>
 					<key>Mask</key>
 					<data>
-										</data>
+					</data>
 					<key>OemTableId</key>
 					<data>
-					AAAAAAAAAAA=					</data>
+					AAAAAAAAAAA=
+					</data>
 					<key>Replace</key>
 					<data>
-					WEJJRgA=					</data>
+					WEJJRgA=
+					</data>
 					<key>ReplaceMask</key>
 					<data>
-										</data>
+					</data>
 					<key>Skip</key>
 					<integer>0</integer>
 					<key>TableLength</key>
 					<integer>0</integer>
 					<key>TableSignature</key>
 					<data>
-					AAA=					</data>
+					AAA=
+					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -304,28 +336,32 @@
 					<true/>
 					<key>Find</key>
 					<data>
-					RkJTVAQ=					</data>
+					RkJTVAQ=
+					</data>
 					<key>Limit</key>
 					<integer>0</integer>
 					<key>Mask</key>
 					<data>
-										</data>
+					</data>
 					<key>OemTableId</key>
 					<data>
-					AAAAAAAAAAA=					</data>
+					AAAAAAAAAAA=
+					</data>
 					<key>Replace</key>
 					<data>
-					WEJTVAQ=					</data>
+					WEJTVAQ=
+					</data>
 					<key>ReplaceMask</key>
 					<data>
-										</data>
+					</data>
 					<key>Skip</key>
 					<integer>0</integer>
 					<key>TableLength</key>
 					<integer>0</integer>
 					<key>TableSignature</key>
 					<data>
-					AAA=					</data>
+					AAA=
+					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -338,28 +374,32 @@
 					<true/>
 					<key>Find</key>
 					<data>
-					U01CUgs=					</data>
+					U01CUgs=
+					</data>
 					<key>Limit</key>
 					<integer>0</integer>
 					<key>Mask</key>
 					<data>
-										</data>
+					</data>
 					<key>OemTableId</key>
 					<data>
-					AAAAAAAAAAA=					</data>
+					AAAAAAAAAAA=
+					</data>
 					<key>Replace</key>
 					<data>
-					WE1CUgs=					</data>
+					WE1CUgs=
+					</data>
 					<key>ReplaceMask</key>
 					<data>
-										</data>
+					</data>
 					<key>Skip</key>
 					<integer>0</integer>
 					<key>TableLength</key>
 					<integer>0</integer>
 					<key>TableSignature</key>
 					<data>
-					AAA=					</data>
+					AAA=
+					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -372,28 +412,32 @@
 					<true/>
 					<key>Find</key>
 					<data>
-					U01CVw0=					</data>
+					U01CVw0=
+					</data>
 					<key>Limit</key>
 					<integer>0</integer>
 					<key>Mask</key>
 					<data>
-										</data>
+					</data>
 					<key>OemTableId</key>
 					<data>
-					AAAAAAAAAAA=					</data>
+					AAAAAAAAAAA=
+					</data>
 					<key>Replace</key>
 					<data>
-					WE1CVw0=					</data>
+					WE1CVw0=
+					</data>
 					<key>ReplaceMask</key>
 					<data>
-										</data>
+					</data>
 					<key>Skip</key>
 					<integer>0</integer>
 					<key>TableLength</key>
 					<integer>0</integer>
 					<key>TableSignature</key>
 					<data>
-					AAA=					</data>
+					AAA=
+					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -406,28 +450,32 @@
 					<true/>
 					<key>Find</key>
 					<data>
-					X0JJWAA=					</data>
+					X0JJWAA=
+					</data>
 					<key>Limit</key>
 					<integer>0</integer>
 					<key>Mask</key>
 					<data>
-										</data>
+					</data>
 					<key>OemTableId</key>
 					<data>
-					AAAAAAAAAAA=					</data>
+					AAAAAAAAAAA=
+					</data>
 					<key>Replace</key>
 					<data>
-					WEJJWAA=					</data>
+					WEJJWAA=
+					</data>
 					<key>ReplaceMask</key>
 					<data>
-										</data>
+					</data>
 					<key>Skip</key>
 					<integer>0</integer>
 					<key>TableLength</key>
 					<integer>0</integer>
 					<key>TableSignature</key>
 					<data>
-					AAA=					</data>
+					AAA=
+					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -440,28 +488,32 @@
 					<true/>
 					<key>Find</key>
 					<data>
-					R1BSVwI=					</data>
+					R1BSVwI=
+					</data>
 					<key>Limit</key>
 					<integer>0</integer>
 					<key>Mask</key>
 					<data>
-										</data>
+					</data>
 					<key>OemTableId</key>
 					<data>
-					AAAAAAAAAAA=					</data>
+					AAAAAAAAAAA=
+					</data>
 					<key>Replace</key>
 					<data>
-					WFBSVwI=					</data>
+					WFBSVwI=
+					</data>
 					<key>ReplaceMask</key>
 					<data>
-										</data>
+					</data>
 					<key>Skip</key>
 					<integer>0</integer>
 					<key>TableLength</key>
 					<integer>0</integer>
 					<key>TableSignature</key>
 					<data>
-					AAA=					</data>
+					AAA=
+					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -470,10 +522,12 @@
 					<false/>
 					<key>Find</key>
 					<data>
-					UkFMUwA=					</data>
+					UkFMUwA=
+					</data>
 					<key>Replace</key>
 					<data>
-					WEFMUwA=					</data>
+					WEFMUwA=
+					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -482,10 +536,12 @@
 					<false/>
 					<key>Find</key>
 					<data>
-					X1BUUwE=					</data>
+					X1BUUwE=
+					</data>
 					<key>Replace</key>
 					<data>
-					WlBUUwE=					</data>
+					WlBUUwE=
+					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -494,10 +550,12 @@
 					<false/>
 					<key>Find</key>
 					<data>
-					X1dBSwE=					</data>
+					X1dBSwE=
+					</data>
 					<key>Replace</key>
 					<data>
-					WldBSwE=					</data>
+					WldBSwE=
+					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -506,19 +564,21 @@
 					<false/>
 					<key>Find</key>
 					<data>
-					X1JFRwKgCw==					</data>
+					X1JFRwKgCw==
+					</data>
 					<key>Replace</key>
 					<data>
-					WFJFRwKgCw==					</data>
+					WFJFRwKgCw==
+					</data>
 				</dict>
-</array>
+			</array>
 		</dict>
 		<key>DisabledAML</key>
 		<array>
 			<string>SSDT-RP01_PEGP.aml</string>
 			<string>SSDT-Trackpad_polling-I2C1_USTP.aml</string>
 			<string>SSDT-PTS.aml</string>
-</array>
+		</array>
 		<key>DropTables</key>
 		<array>
 			<dict>
@@ -537,7 +597,7 @@
 				<key>TableId</key>
 				<string>xh_rvp10</string>
 			</dict>
-</array>
+		</array>
 		<key>FixHeaders</key>
 		<true/>
 		<key>SSDT</key>
@@ -620,7 +680,8 @@
 				<string>onboard-1</string>
 				<key>layout-id</key>
 				<data>
-				AwAAAA==				</data>
+				AwAAAA==
+				</data>
 				<key>model</key>
 				<string>Conexant CX8050 High-Definition Audio</string>
 				<key>name</key>
@@ -632,38 +693,48 @@
 				<string>LVDS@0 and HDMI@2</string>
 				<key>AAPL,ig-platform-id</key>
 				<data>
-				AAAWWQ==				</data>
+				AAAWWQ==
+				</data>
 				<key>AAPL,slot-name</key>
 				<string>Internal</string>
 				<key>device-id</key>
 				<data>
-				FlkAAA==				</data>
+				FlkAAA==
+				</data>
 				<key>device_type</key>
 				<string>Display Controller</string>
 				<key>framebuffer-con1-busid</key>
 				<data>
-				AAAAAA==				</data>
+				AAAAAA==
+				</data>
 				<key>framebuffer-con1-enable</key>
 				<data>
-				AQAAAA==				</data>
+				AQAAAA==
+				</data>
 				<key>framebuffer-con1-flags</key>
 				<data>
-				IAAAAA==				</data>
+				IAAAAA==
+				</data>
 				<key>framebuffer-con1-index</key>
 				<data>
-				/////w==				</data>
+				/////w==
+				</data>
 				<key>framebuffer-con1-pipe</key>
 				<data>
-				AAAAAA==				</data>
+				AAAAAA==
+				</data>
 				<key>framebuffer-con1-type</key>
 				<data>
-				AQAAAA==				</data>
+				AQAAAA==
+				</data>
 				<key>framebuffer-patch-enable</key>
 				<data>
-				AQAAAA==				</data>
+				AQAAAA==
+				</data>
 				<key>framebuffer-unifiedmem</key>
 				<data>
-				AAAAgA==				</data>
+				AAAAgA==
+				</data>
 				<key>hda-gfx</key>
 				<string>onboard-1</string>
 				<key>model</key>
@@ -720,12 +791,12 @@
 					<key>Volume</key>
 					<string>\</string>
 				</dict>
-</array>
+			</array>
 		</dict>
 		<key>Hide</key>
 		<array>
 			<string>Recovery</string>
-</array>
+		</array>
 		<key>Mouse</key>
 		<dict>
 			<key>Enabled</key>
@@ -771,7 +842,7 @@
 		<key>ForceKextsToLoad</key>
 		<array>
 			<string>\System\Library\Extensions\IONetworkingFamily.kext</string>
-</array>
+		</array>
 		<key>KernelLapic</key>
 		<false/>
 		<key>KernelPm</key>
@@ -785,10 +856,12 @@
 				<true/>
 				<key>Find</key>
 				<data>
-				ILniAAAADzA=				</data>
+				ILniAAAADzA=
+				</data>
 				<key>Replace</key>
 				<data>
-				ILniAAAAkJA=				</data>
+				ILniAAAAkJA=
+				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -797,14 +870,16 @@
 				<true/>
 				<key>Find</key>
 				<data>
-				igKEwHRC				</data>
+				igKEwHRC
+				</data>
 				<key>MatchOS</key>
 				<string>10.14.x</string>
 				<key>Replace</key>
 				<data>
-				igKEwOtC				</data>
+				igKEwOtC
+				</data>
 			</dict>
-</array>
+		</array>
 		<key>KextsToPatch</key>
 		<array>
 			<dict>
@@ -814,14 +889,16 @@
 				<true/>
 				<key>Find</key>
 				<data>
-				SU9LaXQ=				</data>
+				SU9LaXQ=
+				</data>
 				<key>InfoPlistPatch</key>
 				<true/>
 				<key>Name</key>
 				<string>AppleIntelLpssI2CController</string>
 				<key>Replace</key>
 				<data>
-				SU9LaXM=				</data>
+				SU9LaXM=
+				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -830,14 +907,16 @@
 				<true/>
 				<key>Find</key>
 				<data>
-				SU9LaXQ=				</data>
+				SU9LaXQ=
+				</data>
 				<key>InfoPlistPatch</key>
 				<true/>
 				<key>Name</key>
 				<string>AppleIntelLpssI2C</string>
 				<key>Replace</key>
 				<data>
-				SU9LaXM=				</data>
+				SU9LaXM=
+				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -846,16 +925,18 @@
 				<false/>
 				<key>Find</key>
 				<data>
-				AEFQUExFIFNTRAA=				</data>
+				AEFQUExFIFNTRAA=
+				</data>
 				<key>InfoPlistPatch</key>
 				<false/>
 				<key>Name</key>
 				<string>com.apple.iokit.IOAHCIBlockStorage</string>
 				<key>Replace</key>
 				<data>
-				AAAAAAAAAAAAAAA=				</data>
+				AAAAAAAAAAAAAAA=
+				</data>
 			</dict>
-</array>
+		</array>
 		<key>PanicNoKextDump</key>
 		<true/>
 	</dict>
@@ -864,7 +945,9 @@
 		<key>AvoidRuntimeDefrag</key>
 		<true/>
 		<key>Comment</key>
-		<string>As of r5129, Clover does not interpret the following Quirks taken from the VivoBook OC config.plist: SetApfsTrimTimeout, TscSyncTimeout, RequestBootVarRouting. They might or might not be functional at some point and can be considered placeholders or reminders until they are either relevant or removed. OC's Quirk 'PanicNoKextDump' is covered by Clover in K &amp; K Patches, PanicNoKextDump.</string>
+		<string>As of r5142, Clover does not interpret the following Quirks taken from the VivoBook OC config.plist:
+		RequestBootVarRouting, SetApfsTrimTimeout, TscSyncTimeout.
+		OC's Quirk 'PanicNoKextDump' is covered by Clover in K &amp; K Patches, PanicNoKextDump.</string>
 		<key>DisableIoMapper</key>
 		<true/>
 		<key>DisableLinkeditJettison</key>
@@ -875,14 +958,8 @@
 		<integer>0</integer>
 		<key>ProvideMaxSlide</key>
 		<integer>0</integer>
-		<key>RequestBootVarRouting</key>
-		<true/>
-		<key>SetApfsTrimTimeout</key>
-		<integer>-1</integer>
 		<key>SetupVirtualMap</key>
 		<true/>
-		<key>TscSyncTimeout</key>
-		<integer>0</integer>
 	</dict>
 	<key>RtVariables</key>
 	<dict>

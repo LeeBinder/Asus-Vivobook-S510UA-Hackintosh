@@ -253,9 +253,9 @@ Alternatively you can use a [Dell DW1560](https://www.google.com/search?btnG=Sea
 - for `config.plist` changes against the previous repo release see [OC diff.plist](https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh/blob/main/OpenCore/diff.plist) and/or [Clover diff.plist](https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh/blob/main/Clover/diff.plist).
 
 # Troubleshooting
-**Many issues can be solved by performing a NVRAM Reset, then reboot**. Recommended: use **Clover** to do that by booting into its Boot menu, then press F11: Clover nicely keeps your UEFI BIOS boot menu intact by NOT touching your custom entries in there!
+**Many issues can be solved by performing a NVRAM Reset, then reboot**. **Recommended**: use **_Clover_** to do that because it nicely keeps your UEFI BIOS boot menu intact by _**not**_ touching your custom entries in there: boot into its Boot menu, then press **F11**.
 
-**OC**'s NVRAM reset will also wipe any custom boot entries in your UEFI BIOS boot menu! You execute it either via the last entry in the boot menu picker, or via keyboard key combo <kbd>Windows + Alt + P + R</kbd>
+**OC**'s in contrast to Clover, OC's NVRAM reset will also wipe any custom boot entries in your UEFI BIOS boot menu! You execute it either via the last entry in the boot menu picker, or via keyboard key combo <kbd>Windows + Alt + P + R</kbd>
 
 **Further topics:**
 
