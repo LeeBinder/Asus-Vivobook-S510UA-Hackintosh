@@ -235,7 +235,7 @@ If you're not happy with OIW, neither want to use a USB Wi-Fi dongle but opt for
      * **N-12AE**: [eBay](https://www.ebay.com/sch/i.html?_from=R40&_sacat=0&LH_TitleDesc=0&_nkw=ngff+m2+key+a%2Fe+adapter+for+bcm94360cs2+bcm943224pciebt2+wireless+card&_blrs=spell_check) | [Amazon](https://www.amazon.com/dp/B073W8VKMB/) | [Amazon](https://www.amazon.com/dp/B073XHY68N/) (verified working)
      * **N-12AE** or **F-C30AP** (accdg. to images): [AliExpress](https://www.aliexpress.com/item/4001221386245.html)
 
-<ins>**IMPORTANT**</ins>: if you opt for the BCM94360CS2, it is <ins>crucial</ins> you _DO_ **follow my installation instructions step-by-step 100%**, otherwise you _WILL **brick**_ your VivoBook's motherboard!
+<ins>**IMPORTANT**</ins>: if you opt for the BCM94360CS2, it is <ins>crucial</ins> you _DO_ **follow my [installation instructions](https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh/blob/main/docs/BCM94360CS2/BCM94360CS2%20Wi-Fi:%20BT%20card%20%2B%20NGFF%20M.2%20Adapter%20Installation%20Instructions.md) step-by-step 100%**, otherwise you _WILL **brick**_ your VivoBook's motherboard!
 
 Links to facilitate your decision making process:
 * [my comment @insanelymac](https://www.tonymacx86.com/threads/problem-with-bcm94360ng-on-xps-15-9570.299882/#post-2277277) and [IAmLe02's comment @reddit](https://www.reddit.com/r/thinkpad/comments/f7gkzi/is_broadcom_wifi_card_bcm94360ng_suitable_for/fibu84i/?utm_source=reddit&utm_medium=web2x&context=3/#UserInfoTooltip--t1_fibaqcl) re. _BCM94360NG Wi-Fi in Windows_
