@@ -245,17 +245,18 @@ If you're not happy with OIW, neither want to use a USB Wi-Fi dongle but opt for
 * Wi-Fi: [BCM43x v.7.77.119.0 (2020-04-21).txz.zip](https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh/files/7613210/BCM43x.v.7.77.119.0.2020-04-21.txz.zip) (2.3 MB)
 * Bluetooth: [AppleBTBC v.6.0.6100.0 (2015-08-06).txz.zip](https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh/files/7613213/AppleBTBC.v.6.0.6100.0.2015-08-06.txz.zip)  (1.8 MB)
 
-<a name="Wi-Fi-BT-depreciated"></a>Other alternatives like the [DW1560](https://www.google.com/search?btnG=Search&q=Dell+DW1560+M.2), [DW1830](https://www.google.com/search?btnG=Search&q=Dell+DW1830+M.2) (both Dell) or the [FRU 04X6020](https://www.google.com/search?btnG=Search&q=Lenovo+FRU+04X6020+M.2) (Lenovo) are not recommended due to compromised/ inferior Continuity.
+<a name="Wi-Fi-BT-depreciated"></a>Other alternative Wi-Fi/ BT combo cards like the [DW1560](https://www.google.com/search?btnG=Search&q=Dell+DW1560+M.2), [DW1830](https://www.google.com/search?btnG=Search&q=Dell+DW1830+M.2) (both Dell) or the [FRU 04X6020](https://www.google.com/search?btnG=Search&q=Lenovo+FRU+04X6020+M.2) (Lenovo) are not recommended due to compromised/ inferior Continuity.
 
 If however you're using any of these, follow these steps in macOS, because this repo is now tailored for Apple native chipsets and does not come with extra Broadcom kexts and settings anymore:
 
 - add required kexts (`AirportBrcmFixup`, `BrcmBluetoothInjector`, `BrcmFirmwareData`, `BrcmPatchRAM3`) into your EFI folder(s)
 - add recommended entries (brcmfx-country=xy bpr_postresetdelay=400 bpr_initialdelay=400 bpr_probedelay=200) to your config.plist(s):
 
-  - **OC:** NVRAM -> 7C436110-AB2A-4BBB-A880-FE41995C9F82 -> boot-args
+  - **OC:** NVRAM -> 7C436110-AB2A-4BBB-A880-FE41995C9F82 -> boot-args (for that you can remove they key `boot-args` and rename `#boot-args`to `boot-args`)
   - **Clover:** Boot > Arguments (add via the `+`)
 
-- adapt the boot argument `brcmfx-country=xy` to match your country code. Example: `brcmfx-country=DE` for Germany, `VN` for Vietnam etc.
+  Adapt the boot argument `brcmfx-country=xy` to match your country code. Example: `brcmfx-country=DE` for Germany, `VN` for Vietnam etc.
+- **OC**: enable above mentioned kexts in config.plist's Kernel section
 - save and reboot
 
 # ATTENTION: _be careful with Updates_!
