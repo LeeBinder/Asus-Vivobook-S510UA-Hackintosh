@@ -2,7 +2,7 @@
 
 This build enables you to run macOS on your VivoBook as long as it matches below System specifications as close as possible - verified with macOS Catalina 10.15.7 - Monterey 12.0.1
 
-🏳🚩**For macOS Monterey compatibility, see [macOS Monterey 12.x upgrade instructions for existing EFIs running pre-Monterey macOS](https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh/issues/11){target="_blank"}.** ✅
+🏳🚩**For macOS Monterey compatibility, see [macOS Monterey 12.x upgrade instructions for existing EFIs running pre-Monterey macOS](https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh/issues/11){target="_blank" rel="noopener"}.** ✅
 
 ![Alt text](https://ivanov-audio.com/wp-content/uploads/2014/01/Hackintosh-Featured-Image.png)
 
