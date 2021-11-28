@@ -17,7 +17,7 @@ This build enables you to run macOS on your VivoBook as long as it matches below
 - [Steps to install macOS](#steps-to-install-macos)
 - [Steps after installing macOS](#steps-after-installing-macos)
 - [Unlock the MSR E2 register](#unlock-the-msr-e2-register)
-- [Wi-Fi Replacement](#wi-fi-replacement)
+- [Optional Wi-Fi Replacement](#optional-wi-fi-replacement)
 - [ATTENTION: _be careful with Updates_!](#attention-be-careful-with-updates)
 - [Recommendations](#recommendations)
 - [Fine-tuning](#fine-tuning)
