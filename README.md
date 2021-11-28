@@ -1,6 +1,6 @@
 # Asus VivoBook S15 S510UA/ F510UA series
 
-This build enables you to run macOS on your VivoBook as long as it matches below System specifications as close as possible - verified with macOS Mojave 10.14.6 - Big Sur 11.3
+This build enables you to run macOS on your VivoBook as long as it matches below System specifications as close as possible - verified with macOS Catalina 10.15.7 - Monterey 12.0.1
 
 🏳🚩**For macOS Monterey compatibility, see [macOS Monterey 12.x upgrade instructions for existing EFIs running pre-Monterey macOS](https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh/issues/11).** ✅
 
@@ -28,9 +28,9 @@ This build enables you to run macOS on your VivoBook as long as it matches below
 
 # Repo Details
 
-    Version:    	11.1
+    Version:    	12.0 Beta 1
     Repo Date:      Apr. 18, 2021
-    ReadMe Date: 	Apr. 27, 2021
+    ReadMe Date: 	Nov. 26, 2021
     Status: 	Stable
     Support:    	All BIOS (verified 301-310)
     Technology:	OpenCore and Clover with ACPI hotpatch by RehabMan  
@@ -49,12 +49,17 @@ This build enables you to run macOS on your VivoBook as long as it matches below
     • Keyboard Backlight:	Yes
     • BIOS:			x510UAR 310 (X510UARAS310.zip)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font style="font-family: Courier; font-size:30px; font-style:bold">T</font>his repo is the continuation of the now archived [tctien342 repo](https://github.com/tctien342/Asus-Vivobook-S510UA-Hackintosh/releases) which has been  discontinued because he upgraded to a different hackbook and gave his VivoBook away. It's based on whatnameisit's brilliant and cutting-edge [repo for his VivoBook X510UA-BQ490](https://github.com/whatnameisit/Asus-Vivobook-X510UA-BQ490-Hackintosh) based on OpenCore ("OC"). The two main differences are:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font style="font-family: Courier; font-size:30px; font-style:bold">T</font>his repo is based on now two archived repos:
 
-1. re-added keyboard backlight support
-2. re-added a Clover EFI as *secondary* bootloader alternative by backporting OC's ACPI into Clover config.
+1. Initially tctien342's [VivoBook S510UA-BQ414T repo](https://github.com/tctien342/Asus-Vivobook-S510UA-Hackintosh/releases) which has been  discontinued because he upgraded to a different hackbook and gave his VivoBook away.
+2. Consecutively whatnameisit's brilliant and cutting-edge [VivoBook X510UA-BQ490 repo](https://github.com/whatnameisit/Asus-Vivobook-X510UA-BQ490-Hackintosh) based on OpenCore ("OC"). The two main differences are:
 
-Users with VivoBooks *without* keyboard backlight are advised to rather use [whatnameisit's repo](https://github.com/whatnameisit/Asus-Vivobook-X510UA-BQ490-Hackintosh). He also has been tending it very actively so it is more likely to be as up-to-date as possible! Note that **he does *not* offer a Clover EFI** and that **you *do* need to be able to handle OpenCore**! _In any case_ please do read through his [ReadME](https://github.com/whatnameisit/Asus-Vivobook-X510UA-BQ490-Hackintosh) because it contains a wealth of important info and links which also apply to this repo!
+   * re-added keyboard backlight support
+   * re-added a Clover EFI as *secondary* bootloader alternative by backporting OC's ACPI into Clover config.
+
+Users with VivoBooks *without* keyboard backlight are advised to rather use [whatnameisit's OC-based repo](https://github.com/whatnameisit/Asus-Vivobook-X510UA-BQ490-Hackintosh). He also has been tending it very actively until his VivoBook failed in Oct. 2021. Even if you can still download his [old archived Clover EFI](https://github.com/whatnameisit/Asus-Vivobook-X510UA-BQ490-Hackintosh/blob/master/archives/CLOVER.zip), note that he stopped updating it on 2020-11-22 and merely keeps it for historical purposes.
+
+ _In any case_ please _do_ read through his [ReadME](https://github.com/whatnameisit/Asus-Vivobook-X510UA-BQ490-Hackintosh) because it contains a wealth of important info and links which also apply to this repo!
 
 Of the two bootloaders offered in this repo, [OpenCore](https://github.com/acidanthera/OpenCorePkg) and [Clover](https://github.com/CloverHackyColor/CloverBootloader), OC can be considered the preferred one despite of still being beta by version number. As per whatnameisit and others, in contrast to OC, Clover at this point does not support OEMTableID, masking and many other sophisticated features. For a more detailed comparison, you could read [Why OpenCore over Clover and others](https://dortania.github.io/OpenCore-Install-Guide/why-oc.html#opencore-features).
 
@@ -65,8 +70,8 @@ Of the two bootloaders offered in this repo, [OpenCore](https://github.com/acida
     • dGPU like NVIDIA GeForce 940MX, MX150 etc.
     • Fingerprint reader
     • FN + media controller key combo
-    • Apple Safe Sleep ("Hibernate")
-    • Intel Wi-Fi - replacement options see below
+    • Apple Safe Sleep ("Hibernate") - see additional note below
+    • Partially supported: Intel Wi-Fi - replacement options see below
 The support for DRM contents is limited due to incompatible firmware. Please see the [DRM Compatibility Chart](https://github.com/acidanthera/WhateverGreen/blob/master/Manual/FAQ.Chart.md)
 
 # VivoBooks with an additional dGPU (NVIDIA GeForce 940MX, MX150 etc.)
@@ -88,16 +93,22 @@ If there is more than one boot-arg, make sure you separate them from each other 
 # Known Issues, weaknesses and oddities
 
 1. The **Touchpad** is not perfect - you *might* encounter occasional hangs and possibly erratic movements because **a)** it's a weak piece of hardware to begin with (even under Windows), and **b)** the VoodooI2C driver for macOS is still work in progress. Some older info is archived at [TOUCHPAD » consolidated links to related issues](https://github.com/tctien342/Asus-Vivobook-S510UA-High-Sierra-10.13-Hackintosh/issues/48).
-2. Apple **Safe Sleep** ("Hibernate", "Deep Sleep") doesn't work and has been disabled. In any case, additionally apply "*post macOS Installations/set hibernatemode to 0*"
+<a name="Safe_Sleep"></a>
+2. Apple **Safe Sleep** ("Hibernate", "Deep Sleep") has been disabled due to lack of compatibility. A similar functionality is planned to be integrated from whatnameisit's repo as soon as I find time to do so. For now, apply "*post macOS Installations/set hibernatemode to 0*" for the most reliable sleep experience.
 3. **Battery life** isn't great to begin with, not even in Windows. On some VivoBooks it seems to be even worse in macOS. A S510UQ user ([Quhuy0410](https://www.tonymacx86.com/members/quhuy0410.2255980/)) claims longer battery life with model `MacBookAir8,2` chosen in the SMBIOS section (of Clover config.plist). Feel free to experiment. Mind that `CPUFriendDataProvider.kext` ***must*** match your chosen model. For that sake, navigate to `post macOS Installations/[Optional]/change CPU Performance`
-4. **Sleep**: in macOS, the VivoBook needs appr. 15 secs. to power down completely. You will hear the fan spin up again before the system finally settles (power LED on the left blinking white, indicating sleep mode).
+4. **Sleep**: macOS tends to need up to 40 secs. to power down the VivoBook completely, and the fan spins up again before the system finally settles (power LED on the left blinking white, indicating sleep mode).
 5. **Swapped `<` and `^` keys**: If you have a keyboard with a `<` key next to the left ⇧ and a `^` key below the `ESC` key ([image](https://i.ebayimg.com/images/g/3WUAAOSw9ixe-fAq/s-l1600.jpg)) and these keys are reversed, and you neither want to use a tool like [Karabiner-Elements](https://karabiner-elements.pqrs.org/) nor know how to fix that via SSDT, simply stick to [VoodooPS2Controller.kext v.2.1.9](https://github.com/acidanthera/VoodooPS2/releases/tag/2.1.9) which is the only version I know to map these keys correctly for such VivoBook S15 models like mine.
 
 # Tools to use
-* Your favorite macOS or hackintosh USB installer maker
-* Hackintool: [Forum thread](https://www.insanelymac.com/forum/topic/335018-hackintool-v286/) | [Direct download always latest version](http://headsoft.com.au/download/mac/Hackintool.zip)
-* Kext Updater: [Download](https://bitbucket.org/profdrluigi/kextupdater/downloads/) | [Main forum thread](https://www.hackintosh-forum.de/forum/thread/32621-kext-updater-neue-version-3-x/) {German}
-* A good XML property list editor like [PlistEdit Pro](https://www.fatcatsoftware.com/plisteditpro/) (recommened) or [PrefEdit](https://www.bresink.com/osx/PrefEdit.html) if you don't have Apple's [XCode](https://apps.apple.com/us/app/xcode/id497799835) installed
+* Your favorite macOS or hackintosh **USB installer maker**
+* **Hackintool**: [Forum thread](https://www.insanelymac.com/forum/topic/335018-hackintool-v286/) | [GitHub](https://github.com/headkaze/Hackintool) incl. [Downloads](https://github.com/headkaze/Hackintool/releases)
+* **Kext Updater**: [Homepage](https://www.sl-soft.de/en/kext-updater/) incl. Download | Download current and archive @ [bitbucket](https://bitbucket.org/profdrluigi/kextupdater/downloads/) | [Main forum thread](https://www.hackintosh-forum.de/forum/thread/32621-kext-updater-neue-version-3-x/) {German}
+<a name="PlistEditors"></a>
+* If you don't have Apple's [XCode](https://apps.apple.com/us/app/xcode/id497799835) (which comes with a plist editing feature) installed, a good **XML property list editor**:
+  - [ProperTree](https://github.com/corpnewt/ProperTree) (free) - recommended by OpenCore's Dortania Team
+  - [PlistEDPlus](https://github.com/ic005k/PlistEDPlus) (free)
+  - [PlistEdit Pro](https://www.fatcatsoftware.com/plisteditpro/) ($30)
+  - [PrefEdit](https://www.bresink.com/osx/PrefEdit.html) $10)
 
  ### OpenCore:
  * [OpenCore Configurator](https://mackie100projects.altervista.org/download-opencore-configurator/)
@@ -106,7 +117,7 @@ If there is more than one boot-arg, make sure you separate them from each other 
 
  ### Clover:
  * [Clover Configurator](https://mackie100projects.altervista.org/download-clover-configurator/)
- *  [Online Documentation](https://drovosek01.github.io/CloverHackyColor-WebVersion/) (Russian & English)
+ *  [Clover Crate (unofficial) Online Documentation](https://github.com/5T33Z0/Clover-Crate)
 
 # Steps to install macOS
 
@@ -151,7 +162,7 @@ To be able to boot from your macOS install USB, it needs either one of this repo
     **Clover Configurator**:
 
     * *new user*: click onto **SMBIOS** in the side bar on the left. Under 'System', next to 'Serial Number', click onto the `Generate New` button. That will change both, system and board serial number.
-    * *existing user*: use (recommended) [PlistEdit Pro](https://www.fatcatsoftware.com/plisteditpro/) to first remove the dummy SMBIOS section and replace it with your existing one
+    * *existing user*: use the [plist editor](#PlistEditors) of your choice to first remove the dummy SMBIOS section and replace it with your existing one
     * Save.
 
  Above steps are necessary to - amongst other things - hopefully enable the use of iCloud.
@@ -208,9 +219,33 @@ _(Note: only if you get an error like "`Couldn't find any Variable with cfg in n
 
 Links: [OC Debug](https://github.com/utopia-team/opencore-debug/releases) (contains `ControlMsrE2.efi` - by utopia team) | [CFGLock.efi](https://www.insanelymac.com/forum/topic/344035-cfglock-unlock-msr-0xe2/) (legacy 2020-06 - by Brummbär) | [RU - CFG LOCK/Unlocking - Alternative method](https://www.reddit.com/r/hackintosh/comments/hz2rtm/cfg_lockunlocking_alternative_method/)
 
-# Wi-Fi Replacement
+# Optional Wi-Fi Replacement
 
-As of 2021-02-23 there is still no fully working macOS driver for the `Intel AC 8265 M.2` card - progress see at [OpenIntelWireless](https://github.com/OpenIntelWireless). Therefore best replace it, preferably with a [Fenvi BCM94360NG](https://www.google.com/search?btnG=Search&q=Fenvi+BCM94360NG+M.2) because it has macOS native Wi-Fi and Bluetooth chipset and IDs which should deliver a better Continuity experience. If you do so, you can/ should:
+As of 2021-11-25, according to the OpenIntelWireless team, their macOS community drivers appear to be "working well and stable", which hopefully also applies to our VivoBooks' `Intel AC 8265 M.2`. The Wi-FI kernel extension does, however, require its own Wi-Fi Client to connect. Educate yourself about the current state at [OpenIntelWireless](https://github.com/OpenIntelWireless) ("OIW") and decide for yourself or simply test first, if you are happy with how your VivoBook's stock Wi-Fi and Bluetooth perform with OIW in macOS.
+
+If you're not happy with OIW, neither want to use a USB Wi-Fi dongle but opt for a replacement of the internal Intel AC 8265 M.2, there are several options:
+
+1. If you do _NOT_ run Windows, best replace it with a [Fenvi BCM94360NG](https://www.google.com/search?btnG=Search&q=Fenvi+BCM94360NG+M.2) M.2 because it has:
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a)  the same dimensions as the Intel module and is consequently a simple replacement
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b) generic but macOS native Wi-Fi and Bluetooth chipset and IDs. Even though they are old, they have proven to deliver a reliable Continuity experience.
+<u>Disadvantage</u>: an incompatibility between the Fenvi BCM94360NG and _any/ all_ available drivers for Windows (same for 10 and 11) leads to a BSOD for most as soon as (or shortly after) Wi-Fi is connected to a network! Proven work-around has been to always have a USB device plugged in while connected via Wi-Fi. Decide if that's an option for you if you also run Windows and will use Wi-Fi. All details see [here](https://www.tonymacx86.com/threads/problem-with-bcm94360ng-on-xps-15-9570.299882/#post-2277277).<br><br>
+2. If you also run Windows, need stable Wi-Fi in both, macOS _and_ Windows, don't mind an older ([2013](https://web.archive.org/web/20191003030122/http://wikidevi.com/wiki/Broadcom_BCM94360CS2)) yet original Apple Wi-Fi/ BT combo card, _and_ are capable of doing a bit of grinding on an adapter with a rotary tool, your best option might still be the following card + adapter combo:
+   * **Apple BCM94360CS2 AirPort Extreme (NGFF)**: [eBay](https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=original+bcm94360cs2&_sacat=0&LH_TitleDesc=0&_odkw=Apple+BCM94360CS2+original&_osacat=0) | [AliExpress](https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20211127124039&SearchText=original+bcm94360cs2) | [Amazon](https://www.amazon.com/s?k=original+bcm94360cs2&ref=nb_sb_noss)
+   * **Dual Band NGFF M.2 A/E Key Adapter For 12+6 Pin Wireless Module**:
+     * **N-12AE**: [eBay](https://www.ebay.com/sch/i.html?_from=R40&_sacat=0&LH_TitleDesc=0&_nkw=ngff+m2+key+a%2Fe+adapter+for+bcm94360cs2+bcm943224pciebt2+wireless+card&_blrs=spell_check) | [Amazon](https://www.amazon.com/dp/B073W8VKMB/) | [Amazon](https://www.amazon.com/dp/B073XHY68N/) (verified working)
+     * **N-12AE** or **F-C30AP** (accdg. to images): [AliExpress](https://www.aliexpress.com/item/4001221386245.html)
+
+<ins>**IMPORTANT**</ins>: if you opt for the BCM94360CS2, it is <ins>crucial</ins> you _DO_ **follow my installation instructions step-by-step 100%**, otherwise you _WILL **brick**_ your VivoBook's motherboard!
+
+Links to facilitate your decision making process:
+* [my comment @insanelymac](https://www.tonymacx86.com/threads/problem-with-bcm94360ng-on-xps-15-9570.299882/#post-2277277) and [IAmLe02's comment @reddit](https://www.reddit.com/r/thinkpad/comments/f7gkzi/is_broadcom_wifi_card_bcm94360ng_suitable_for/fibu84i/?utm_source=reddit&utm_medium=web2x&context=3/#UserInfoTooltip--t1_fibaqcl) re. _BCM94360NG Wi-Fi in Windows_
+* [kushwavez' comment @insanelymac](https://www.insanelymac.com/forum/topic/346459-bcm94360ng-strange-behaviour-in-macos-speed-problems/?tab=comments#comment-2755949) re. _BCM94360NG/ BCM94360CS2 comparison_
+
+**Windows**: first completely remove _any_ existing Wi-Fi and Bluetooth drivers via Programs Uninstall, plus any such entries in Device Manager incl. their drivers, and reboot! THEN install the latest available drivers (same for _both_ cards):
+* Wi-Fi: BCM43x v.7.77.119.0 (2020-04-21).zip (4.4 MB)
+* Bluetooth: AppleBTBC v.6.0.6100.0 (2015-08-06).zip (1.8 MB)
+
+**macOS**: regardless which of the BCM94360[..] you installed, you should:
 
 - remove *ALL* related kexts from inside your EFI folder(s) (`AirportBrcmFixup`, `BrcmBluetoothInjector`, `BrcmFirmwareData`, `BrcmPatchRAM2`, `BrcmPatchRAM3`)
 - remove *ALL* related entries (brcmfx-country=US bpr_postresetdelay=400 bpr_initialdelay=400 bpr_probedelay=200) from your config.plist(s):
@@ -219,9 +254,8 @@ As of 2021-02-23 there is still no fully working macOS driver for the `Intel AC 
   **Clover:** Boot > Arguments (remove via the `-`)
 
 - save and reboot
-- **Windows**: Fenvi also delivers a [driver for Windows](http://en-files.fenvi.com/driver_download/FV-T919/win%2010%2064.zip) which you can install **_AFTER_** you first completely remove _any_ existing WiFi and Bluetooth drivers via Programs Uninstall, plus any such entries in Device Manager incl. their drivers!
 
-Alternatively you can use a [Dell DW1560](https://www.google.com/search?btnG=Search&q=Dell+DW1560+M.2) or a [Lenovo FRU 04X6020](https://www.google.com/search?btnG=Search&q=Lenovo+FRU+04X6020+M.2) (or even a different kind if you can find a better one). If you opt for one of these, you should adapt the boot argument `brcmfx-country=US` to match your country code. Example: `brcmfx-country=DE` for Germany, `VN` for Vietnam etc. You find it at the same spot(s) as described above.
+Other alternatives like the [DW1560](https://www.google.com/search?btnG=Search&q=Dell+DW1560+M.2), [DW1830](https://www.google.com/search?btnG=Search&q=Dell+DW1830+M.2) (both Dell) or the [FRU 04X6020](https://www.google.com/search?btnG=Search&q=Lenovo+FRU+04X6020+M.2) (Lenovo) are not recommended due to compromised/ inferior Continuity. If however you're using any of these, you should adapt the boot argument `brcmfx-country=US` to match your country code. Example: `brcmfx-country=DE` for Germany, `VN` for Vietnam etc. You find it at the same spot(s) as described above.
 
 # ATTENTION: _be careful with Updates_!
 1. **Clover only**: after updating `AirportBrcmFixup.kext` and/or `VoodooPS2Controller.kext` and (esp.) if you're running Big Sur, you ***have to*** (!!) run `/EFI/CLOVER/kexts/Other/remove problematic kexts after update` or Big Sur won't boot. See [here](https://github.com/CloverHackyColor/CloverBootloader/issues/350) for the sad and stubborn details...
@@ -246,7 +280,7 @@ Alternatively you can use a [Dell DW1560](https://www.google.com/search?btnG=Sea
 **Recommended procedure:**
 - **rename** your existing /EFI/EFI to something else, e.g. EFI_202y-mm-dd
 - **copy** the new release's EFI folder as base to your /EFI volume
-- **incorporate** your custom changes to the previous release into the new one via copy/ paste, either with **[PlistEdit Pro](https://www.fatcatsoftware.com/plisteditpro/)**, or with (OC or Clover) **Configurator** - most importantly your `SMBIOS` (Clover) respectively `PlatformInfo` (OC) section.
+- **incorporate** your custom changes to the previous release into the new one via copy/ paste, either with a [plist editor](#PlistEditors) or with (OC or Clover) **Configurator** - most importantly your `SMBIOS` (Clover) respectively `PlatformInfo` (OC) section.
 
 **Alternative procedure:** integrate new repo release changes into your EFI folder
 - see [Changelog](https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh/blob/main/ChangeLog.md) for added, removed or renamed files
