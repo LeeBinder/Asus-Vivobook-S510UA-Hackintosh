@@ -242,8 +242,8 @@ If you're not happy with OIW, neither want to use a USB Wi-Fi dongle but opt for
 * [kushwavez' comment @insanelymac](https://www.insanelymac.com/forum/topic/346459-bcm94360ng-strange-behaviour-in-macos-speed-problems/?tab=comments#comment-2755949) re. _BCM94360NG/ BCM94360CS2 comparison_
 
 **Windows**: first completely remove _any_ existing Wi-Fi and Bluetooth drivers via Programs Uninstall, plus any such entries in Device Manager incl. their drivers, and reboot! THEN install the latest available drivers (same for _both_ cards):
-* Wi-Fi: BCM43x v.7.77.119.0 (2020-04-21).zip (4.4 MB)
-* Bluetooth: AppleBTBC v.6.0.6100.0 (2015-08-06).zip (1.8 MB)
+* Wi-Fi: [BCM43x v.7.77.119.0 (2020-04-21).txz.zip](https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh/files/7613210/BCM43x.v.7.77.119.0.2020-04-21.txz.zip) (2.3 MB)
+* Bluetooth: [AppleBTBC v.6.0.6100.0 (2015-08-06).txz.zip](https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh/files/7613213/AppleBTBC.v.6.0.6100.0.2015-08-06.txz.zip)  (1.8 MB)
 
 **macOS**: regardless which of the BCM94360[..] you installed, you should:
 
