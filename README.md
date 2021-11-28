@@ -31,7 +31,7 @@ This build enables you to run macOS on your VivoBook as long as it matches below
     Version:    	12.0 Beta 1
     Repo Date:      Nov. 27, 2021
     ReadMe Date: 	Nov. 27, 2021
-    Status: 	Stable
+    Status: 	Beta
     Support:    	All BIOS (verified 301-310)
     Technology:	OpenCore and Clover with ACPI hotpatch by RehabMan  
    Changelog:   	see [Changelog.md](https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh/blob/master/ChangeLog.md)
@@ -104,11 +104,12 @@ If there is more than one boot-arg, make sure you separate them from each other 
 * **Hackintool**: [Forum thread](https://www.insanelymac.com/forum/topic/335018-hackintool-v286/) | [GitHub](https://github.com/headkaze/Hackintool) incl. [Downloads](https://github.com/headkaze/Hackintool/releases)
 * **Kext Updater**: [Homepage](https://www.sl-soft.de/en/kext-updater/) incl. Download | Download current and archive @ [bitbucket](https://bitbucket.org/profdrluigi/kextupdater/downloads/) | [Main forum thread](https://www.hackintosh-forum.de/forum/thread/32621-kext-updater-neue-version-3-x/) {German}
 <a name="PlistEditors"></a>
-* If you don't have Apple's [XCode](https://apps.apple.com/us/app/xcode/id497799835) (which comes with a plist editing feature) installed, a good **XML property list editor**:
+* A good **XML property list editor**:
   - [ProperTree](https://github.com/corpnewt/ProperTree) (free) - recommended by OpenCore's Dortania Team
   - [PlistEDPlus](https://github.com/ic005k/PlistEDPlus) (free)
   - [PlistEdit Pro](https://www.fatcatsoftware.com/plisteditpro/) ($30)
   - [PrefEdit](https://www.bresink.com/osx/PrefEdit.html) $10)
+  - Apple's [XCode](https://apps.apple.com/us/app/xcode/id497799835) development suite also comes with a plist editing module installed. It's free but "weighs" _many_ GB and is therefore only an alternative if you need it anyway for dev purposes
 
  ### OpenCore:
  * [OpenCore Configurator](https://mackie100projects.altervista.org/download-opencore-configurator/)
