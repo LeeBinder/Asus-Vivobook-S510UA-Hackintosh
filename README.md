@@ -4,7 +4,9 @@ This build enables you to run macOS on your VivoBook as long as it matches below
 
 🏳🚩**For macOS Monterey compatibility, see [macOS Monterey 12.x upgrade instructions for existing EFIs running pre-Monterey macOS](https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh/issues/11)** ✅
 
-🏳🚩**For macOS Monterey compatibility, see <a href="https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh/issues/11/?target=_blank" target=_blank rel=noopener>macOS Monterey 12.x upgrade instructions for existing EFIs running pre-Monterey macOS</a>** ✅
+🏳🚩**For macOS Monterey compatibility, see <a href="https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh/issues/11" target=_blank rel=noopener>macOS Monterey 12.x upgrade instructions for existing EFIs running pre-Monterey macOS</a>** ✅
+
+<a target='_blank' href="https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh/issues/11">test</a>
 
 ![Alt text](https://ivanov-audio.com/wp-content/uploads/2014/01/Hackintosh-Featured-Image.png)
 
@@ -310,12 +312,3 @@ You are advised to keep it turned on, but f you need full 100% charge for longer
 _________________________
 ## Special Credits for this repo to these fellow hackintoshers:
 **whatnameisit**: main contributor; host of the [VivoBook X510UA-BQ490 repo](https://github.com/whatnameisit/Asus-Vivobook-X510UA-BQ490-Hackintosh/) | **tctien342**: originator of this VivoBook S15 repo ([archived](https://github.com/tctien342/Asus-Vivobook-S510UA-Hackintosh/releases)) | **hieplpvip**: originator of the underlying/ upstream [ZenBook repo](https://github.com/hieplpvip/Asus-Zenbook-Hackintosh) and [AsusSMC](https://github.com/hieplpvip/AsusSMC); contributor | **[fewtarius](https://github.com/fewtarius)**: facilitator | To [many](https://github.com/whatnameisit/Asus-Vivobook-X510UA-BQ490-Hackintosh/blob/master/README.md#credits) *MANY* others .........
-
-<script>
-    var links = document.querySelectorAll( '.post-content a' );  
-    for (var i = 0, length = links.length; i < length; i++) {  
-        if (links[i].hostname != window.location.hostname) {
-            links[i].target = '_blank';
-        }
-    }
-</script>
