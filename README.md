@@ -1,3 +1,4 @@
+<base target="_blank">
 # Asus VivoBook S15 S510UA/ F510UA series
 
 This build enables you to run macOS on your VivoBook as long as it matches below System specifications as close as possible - verified with macOS Catalina 10.15.7 - Monterey 12.0.1
