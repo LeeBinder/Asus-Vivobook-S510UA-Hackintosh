@@ -110,6 +110,7 @@ If there is more than one boot-arg, make sure you separate them from each other 
   - [PlistEdit Pro](https://www.fatcatsoftware.com/plisteditpro/) ($30)
   - [PrefEdit](https://www.bresink.com/osx/PrefEdit.html) $10)
   - Apple's [XCode](https://apps.apple.com/us/app/xcode/id497799835) development suite also comes with a plist editing module installed. It's free but "weighs" _many_ GB and is therefore only an alternative if you need it anyway for dev purposes
+* A professional **cloning/ backup utility** like [Carbon Copy Cloner](https://bombich.com/download) or [SuperDuper!](https://www.shirt-pocket.com/SuperDuper/SuperDuperDescription.html)
 
  ### OpenCore:
  * [OpenCore Configurator](https://mackie100projects.altervista.org/download-opencore-configurator/)
@@ -234,13 +235,13 @@ If you're not happy with OIW, neither want to use a USB Wi-Fi dongle but opt for
      * **N-12AE**: [eBay](https://www.ebay.com/sch/i.html?_from=R40&_sacat=0&LH_TitleDesc=0&_nkw=ngff+m2+key+a%2Fe+adapter+for+bcm94360cs2+bcm943224pciebt2+wireless+card&_blrs=spell_check) | [Amazon](https://www.amazon.com/dp/B073W8VKMB/) | [Amazon](https://www.amazon.com/dp/B073XHY68N/) (verified working)
      * **N-12AE** or **F-C30AP**, accdg. to images: [AliExpress](https://www.aliexpress.com/item/4001221386245.html)
 
-<ins>**IMPORTANT**</ins>: if you opt for the BCM94360CS2, it is <ins>crucial</ins> you _DO_ **follow my [installation instructions](https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh/blob/main/docs/BCM94360CS2/BCM94360CS2%20Wi-Fi:%20BT%20card%20%2B%20NGFF%20M.2%20Adapter%20Installation%20Instructions.md) step-by-step 100%**, otherwise you _WILL **brick**_ your VivoBook's motherboard!
+🛑 ⚠ <ins>**IMPORTANT**</ins>: if you opt for the BCM94360CS2, it is <ins>crucial</ins> you _DO_ **follow my [installation instructions](https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh/blob/main/docs/BCM94360CS2/BCM94360CS2%20Wi-Fi:%20BT%20card%20%2B%20NGFF%20M.2%20Adapter%20Installation%20Instructions.md) step-by-step 100%**, otherwise you _WILL **brick**_ your VivoBook's motherboard! ⚠ 🛑
 
 <ins>Links to facilitate your decision making process:</ins>
 * [my comment @insanelymac](https://www.tonymacx86.com/threads/problem-with-bcm94360ng-on-xps-15-9570.299882/#post-2277277) and [IAmLe02's comment @reddit](https://www.reddit.com/r/thinkpad/comments/f7gkzi/is_broadcom_wifi_card_bcm94360ng_suitable_for/fibu84i/?utm_source=reddit&utm_medium=web2x&context=3/#UserInfoTooltip--t1_fibaqcl) re. _BCM94360NG Wi-Fi in Windows_
 * [kushwavez' comment @insanelymac](https://www.insanelymac.com/forum/topic/346459-bcm94360ng-strange-behaviour-in-macos-speed-problems/?tab=comments#comment-2755949) re. _BCM94360NG/ BCM94360CS2 comparison_
 
-**Windows**: first completely remove _any_ existing Wi-Fi and Bluetooth drivers via Programs Uninstall, plus any such entries in Device Manager incl. their drivers, and reboot! THEN install the latest available drivers (same for _both_ cards):
+**Windows**: first completely remove _any_ existing Wi-Fi and Bluetooth drivers via Programs -> Uninstall, plus any corresponding entries in Device Manager incl. their drivers, THEN power down to install the card and on reboot the latest available drivers (same for _both_ cards):
 * Wi-Fi: [BCM43x v.7.77.119.0 (2020-04-21).txz.zip](https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh/files/7613210/BCM43x.v.7.77.119.0.2020-04-21.txz.zip) (2.3 MB)
 * Bluetooth: [AppleBTBC v.6.0.6100.0 (2015-08-06).txz.zip](https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh/files/7613213/AppleBTBC.v.6.0.6100.0.2015-08-06.txz.zip)  (1.8 MB)
 
