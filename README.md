@@ -41,7 +41,7 @@ This build enables you to run macOS on your VivoBook as long as it matches below
     • Model Name:		Asus VivoBook S510UA BQ514T
     • CPU:			Intel Core i5-8250U Kaby Lake R 8th Gen. i5
     • Video Graphics:	Intel UHD 620
-    • Wi-Fi & Bluetooth:	Intel Dual Band Wireless-AC 8265  // replacements see below
+    • Wi-Fi & Bluetooth:	Intel Dual Band Wireless-AC 8265  // possible replacements see below
     • Card Reader:		Realtek (RTL8411B_RTS5226_RTS5227)
     • Camera:		ASUS UVC HD
     • Audio:		Conexant Audio CX8050
