@@ -198,8 +198,7 @@ from OpenCore Post-Install/[Fixing CFG Lock](https://dortania.github.io/OpenCore
    <img src="https://user-images.githubusercontent.com/39203497/110465517-c7e49300-80d4-11eb-827f-38262c063382.jpg" width="620">
 2. Confirm with `y` or the equivalent key on your keyboard if it's non-English (should be the key underneath the 6 and 7 keys). 
 3. reboot 
-4. OpenCore Configurator > Kernel: disable `AppleXcpmCfgLock`, save<br>
-   (note: optionally, before saving, you can also deactivate `Boot` > `Tools`:  `ControlMsrE2.efi`) 
+4. OpenCore Configurator > Kernel: disable `AppleXcpmCfgLock`, save<br>   (note: optionally, before saving, you can also deactivate `Boot` > `Tools`:  `ControlMsrE2.efi`) 
 5. reboot
 
 <p id=msr-unlock-clover><strong>Clover:</strong></p>
@@ -210,8 +209,7 @@ from OpenCore Post-Install/[Fixing CFG Lock](https://dortania.github.io/OpenCore
 ![CFGLock](https://user-images.githubusercontent.com/39203497/113349871-327d9d00-9328-11eb-8c0e-28fcc94761cb.jpg)<br>
 You should see:<br>
 <img src="https://user-images.githubusercontent.com/39203497/110780283-d2ce2d80-8264-11eb-928f-5eda2ae163ee.jpg" width="600" height=""> 
-4. Confirm with `y` or the equivalent key on your keyboard if it's non-English (should be the key underneath the 6 and 7 keys). <br>
-_(Note: only if you get an error like "`Couldn't find any Variable with cfg in name`"), choose the next tool entry `CleanNvram`, reboot, and start again)_
+4. Confirm with `y` or the equivalent key on your keyboard if it's non-English (should be the key underneath the 6 and 7 keys). <br>_(Note: only if you get an error like "`Couldn't find any Variable with cfg in name`"), choose the next tool entry `CleanNvram`, reboot, and start again)_
 5. reboot
 
 **Compliments, you're DONE**! Now you should have correct CPU power management :)
@@ -251,8 +249,7 @@ If you're not happy with OIW, neither want to use a USB Wi-Fi dongle but opt for
 - remove *ALL* related kexts from inside your EFI folder(s) (`AirportBrcmFixup`, `BrcmBluetoothInjector`, `BrcmFirmwareData`, `BrcmPatchRAM2`, `BrcmPatchRAM3`)
 - remove *ALL* related entries (brcmfx-country=US bpr_postresetdelay=400 bpr_initialdelay=400 bpr_probedelay=200) from your config.plist(s):
 
-  **OC:** NVRAM -> 7C436110-AB2A-4BBB-A880-FE41995C9F82 -> boot-args</br>
-  **Clover:** Boot > Arguments (remove via the `-`)
+  **OC:** NVRAM -> 7C436110-AB2A-4BBB-A880-FE41995C9F82 -> boot-args<br>  **Clover:** Boot > Arguments (remove via the `-`)
 
 - save and reboot
 
@@ -269,9 +266,7 @@ Other alternatives like the [DW1560](https://www.google.com/search?btnG=Search&q
 
 # Fine-tuning
 - **Clover**: [how to create a GUI custom entry for Big Sur](https://github.com/CloverHackyColor/CloverBootloader/issues/300#issuecomment-768300847) rather than 'Boot Big Sur from PreBoot'
-- When all is working fine for you and you prefer not to look at all the lines flashing by during boot, **remove the `-v` verbose mode** switch:<br>
-**OC**: NVRAM > 7C436110-AB2A-4BBB-A880-FE41995C9F82 > boot-args<br>
-**Clover**: Boot > Arguments
+- When all is working fine for you and you prefer not to look at all the lines flashing by during boot, **remove the `-v` verbose mode** switch:<br>**OC**: NVRAM > 7C436110-AB2A-4BBB-A880-FE41995C9F82 > boot-args<br>**Clover**: Boot > Arguments
 - Want to edit (or even backup) your VivoBook's **UEFI BIOS boot menu**? I know of three Windows tools you can use:
   - [DiskGenius](https://www.diskgenius.com/how-to/manage-uefi-boot-options.php) (freeware) - incl. UEFI boot entries backup & restores
   - [BootIce](https://www.softpedia.com/get/System/Boot-Manager-Disk/Bootice.shtml) (freeware) - old yet still working: [UEFI > Edit boot entries](https://www.google.com/search?q=BootIce+UEFI+Edit+boot+entries&tbm=isch&ved=2ahUKEwjPjeOrmovvAhUYG-wKHamZDVoQ2-cCegQIABAA&oq=BootIce+UEFI+Edit+boot+entries&gs_lcp=CgNpbWcQAzoECCMQJzoECAAQGDoECAAQHlCXlANYmpUEYK63BGgDcAB4AIABX4gBxg-SAQIyN5gBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=AdQ6YI-JMpi2sAeps7bQBQ&bih=908&biw=1680)
