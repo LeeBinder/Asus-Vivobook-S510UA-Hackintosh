@@ -233,11 +233,11 @@ If you're not happy with OIW, neither want to use a USB Wi-Fi dongle but opt for
    * **Apple BCM94360CS2 AirPort Extreme (NGFF)**: [eBay](https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=original+bcm94360cs2&_sacat=0&LH_TitleDesc=0&_odkw=Apple+BCM94360CS2+original&_osacat=0) | [AliExpress](https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20211127124039&SearchText=original+bcm94360cs2) | [Amazon](https://www.amazon.com/s?k=original+bcm94360cs2&ref=nb_sb_noss)
    * **Dual Band NGFF M.2 A/E Key Adapter For 12+6 Pin Wireless Module**:
      * **N-12AE**: [eBay](https://www.ebay.com/sch/i.html?_from=R40&_sacat=0&LH_TitleDesc=0&_nkw=ngff+m2+key+a%2Fe+adapter+for+bcm94360cs2+bcm943224pciebt2+wireless+card&_blrs=spell_check) | [Amazon](https://www.amazon.com/dp/B073W8VKMB/) | [Amazon](https://www.amazon.com/dp/B073XHY68N/) (verified working)
-     * **N-12AE** or **F-C30AP** (accdg. to images): [AliExpress](https://www.aliexpress.com/item/4001221386245.html)
+     * **N-12AE** or **F-C30AP**, accdg. to images: [AliExpress](https://www.aliexpress.com/item/4001221386245.html)
 
 <ins>**IMPORTANT**</ins>: if you opt for the BCM94360CS2, it is <ins>crucial</ins> you _DO_ **follow my [installation instructions](https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh/blob/main/docs/BCM94360CS2/BCM94360CS2%20Wi-Fi:%20BT%20card%20%2B%20NGFF%20M.2%20Adapter%20Installation%20Instructions.md) step-by-step 100%**, otherwise you _WILL **brick**_ your VivoBook's motherboard!
 
-Links to facilitate your decision making process:
+<ins>Links to facilitate your decision making process:</ins>
 * [my comment @insanelymac](https://www.tonymacx86.com/threads/problem-with-bcm94360ng-on-xps-15-9570.299882/#post-2277277) and [IAmLe02's comment @reddit](https://www.reddit.com/r/thinkpad/comments/f7gkzi/is_broadcom_wifi_card_bcm94360ng_suitable_for/fibu84i/?utm_source=reddit&utm_medium=web2x&context=3/#UserInfoTooltip--t1_fibaqcl) re. _BCM94360NG Wi-Fi in Windows_
 * [kushwavez' comment @insanelymac](https://www.insanelymac.com/forum/topic/346459-bcm94360ng-strange-behaviour-in-macos-speed-problems/?tab=comments#comment-2755949) re. _BCM94360NG/ BCM94360CS2 comparison_
 
@@ -310,4 +310,4 @@ You are advised to keep it turned on, but f you need full 100% charge for longer
 
 _________________________
 ## Special Credits for this repo to these fellow hackintoshers:
-**whatnameisit**: main contributor; maintainer of the [VivoBook X510UA-BQ490 repo](https://github.com/whatnameisit/Asus-Vivobook-X510UA-BQ490-Hackintosh/) | **tctien342**: originator of this VivoBook S15 repo ([archived](https://github.com/tctien342/Asus-Vivobook-S510UA-Hackintosh/releases)) | **hieplpvip**: originator of the underlying/ upstream [ZenBook repo](https://github.com/hieplpvip/Asus-Zenbook-Hackintosh) and [AsusSMC](https://github.com/hieplpvip/AsusSMC); contributor | **[fewtarius](https://github.com/fewtarius)**: facilitator | To [many](https://github.com/whatnameisit/Asus-Vivobook-X510UA-BQ490-Hackintosh/blob/master/README.md#credits) *MANY* others .........
+**whatnameisit**: main contributor; host of the [VivoBook X510UA-BQ490 repo](https://github.com/whatnameisit/Asus-Vivobook-X510UA-BQ490-Hackintosh/) | **tctien342**: originator of this VivoBook S15 repo ([archived](https://github.com/tctien342/Asus-Vivobook-S510UA-Hackintosh/releases)) | **hieplpvip**: originator of the underlying/ upstream [ZenBook repo](https://github.com/hieplpvip/Asus-Zenbook-Hackintosh) and [AsusSMC](https://github.com/hieplpvip/AsusSMC); contributor | **[fewtarius](https://github.com/fewtarius)**: facilitator | To [many](https://github.com/whatnameisit/Asus-Vivobook-X510UA-BQ490-Hackintosh/blob/master/README.md#credits) *MANY* others .........
