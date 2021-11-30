@@ -198,10 +198,6 @@
 		<key>DropTables</key>
 		<array>
 			<dict>
-				<key>Signature</key>
-				<string>#MCFG</string>
-			</dict>
-			<dict>
 				<key>DropForAllOS</key>
 				<false/>
 				<key>Signature</key>
@@ -533,11 +529,11 @@
 	<key>SMBIOS</key>
 	<dict>
 		<key>BiosReleaseDate</key>
-		<string>01/06/2021</string>
+		<string>07/05/2021</string>
 		<key>BiosVendor</key>
 		<string>Apple Inc.</string>
 		<key>BiosVersion</key>
-		<string>MBP154.88Z.F000.B00.2101062059</string>
+		<string>MBP154.88Z.F000.B00.2107050236</string>
 		<key>Board-ID</key>
 		<string>Mac-53FDB3D8DB8CA971</string>
 		<key>BoardManufacturer</key>
@@ -553,7 +549,7 @@
 		<key>ChassisType</key>
 		<string>0x9</string>
 		<key>EfiVersion</key>
-		<string>1554.80.3.0.0</string>
+		<string>1715.0.57.0.0</string>
 		<key>Family</key>
 		<string>MacBook Pro</string>
 		<key>FirmwareFeatures</key>
