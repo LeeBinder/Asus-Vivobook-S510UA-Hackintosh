@@ -29,8 +29,8 @@ This build enables you to run macOS on your VivoBook as long as it matches below
 # Repo Details
 
     Version:    	12.0 Beta 1
-    Repo Date:      Nov. 27, 2021
-    ReadMe Date: 	Nov. 27, 2021
+    Repo Date:      Nov. 30, 2021
+    ReadMe Date: 	Nov. 30, 2021
     Status: 	Beta
     Support:    	All BIOS (verified 301-310)
     Technology:	OpenCore and Clover with ACPI hotpatch by RehabMan  
