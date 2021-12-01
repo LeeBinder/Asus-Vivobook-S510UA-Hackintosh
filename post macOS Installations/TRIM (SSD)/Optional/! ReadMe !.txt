@@ -1,0 +1,1 @@
+System or security updates tend to disable "sudo trimforce enable". Both, Sensei and Trim Enabler, execute a Kernel Extension and a Privileged Helper Tool via a Launch Daemon so it persists better. Some therefore consider this the preferred solution.

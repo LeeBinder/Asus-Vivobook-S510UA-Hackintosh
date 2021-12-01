@@ -1,0 +1,5 @@
+The vast majority of USB enclosures do not support TRIM, but allegedly there are some that support it such as the JMS 578 USB bridge controller (source: http://bbs.pceva.com.cn/thread-125643-1-1.html). All five of the USB 3 enclosures / docks I have support it. Firewire supposedly supports TRIM, but I haven't tested it. Most Thunderbolt enclosures should support TRIM, and I currently have TRIM enabled on a SanDisk Extreme SSD in an Akitio Thunderbolt 2 enclosure. I used the trimforce command in terminal to enable it.
+
+I own a Lacie Rugged USB/Thunderbolt 128 GB drive and I enabled it with TRIM Enabler. I am using it as a boot drive.
+
+I do not know if it is smart to enable TRIM but I could not find any posts where it would stand that TRIM can harm an external SSD.

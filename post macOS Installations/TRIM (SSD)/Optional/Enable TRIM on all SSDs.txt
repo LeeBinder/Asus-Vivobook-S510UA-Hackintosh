@@ -1,0 +1,5 @@
+10.10.4 and later:
+
+sudo trimforce enable
+
+This turns on TRIM for all drives on a System. The setting is stored as part of the running macOS, and is honored in Safe Mode.

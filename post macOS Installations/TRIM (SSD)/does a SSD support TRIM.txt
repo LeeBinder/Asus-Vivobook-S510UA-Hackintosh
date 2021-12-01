@@ -1,7 +1,47 @@
-Please note that some SSD drives do not support TRIM. It is easy to find out if your SSD drive supports TRIM. Do the following:
+The advantage of the TRIM command is that it enables the SSD’s GC (garbage collection) to skip the invalid data rather than moving it, thus saving time not rewriting the invalid data. This results in a reduction of the number of erase cycles on the flash memory and enables higher performance during writes. The SSD doesn’t need to immediately delete or garbage collect these locations it just marks them as no longer valid. This helps ensure that all storage cells are aged uniformly and maximum lifetime achieved.
 
-- Launch "About This Mac" under the Apple menu
- -Click on "System Report"
-- After it loads, Click on "SATA/SATA Express"
+TRIM is complementary to garbage collection. TRIM command enables the operating system to preemptively notify the SSD which data pages in a particular block can be erased, allowing the SSD's controller to more efficiently manage the storage space available for data. TRIM eliminates any unnecessary copying of discarded or invalid data pages during the garbage collection process to save time and improve SSD performance.
+The SSD TRIM command simply marks the invalid data and tells the SSD to ignore it during the garbage collection process. The SSD then has fewer pages to move during garbage collection, which reduces the total number of program/erase cycles. In order for TRIM to function, the host's OS and the SSD must support it.
+
+Apple added native TRIM support in OS X 10.6.8 but only for Apple OEM SSDs. To get around that restriction, software such as Cindori's TRIM Enabler allowed TRIM to be used on 3rd party SSDs. Later, OS X 10.10 (Yosemite) introduced a security requirement called kext signing which prevented TRIM Enabler from working without completely turning off kext signing. Then in OS X 10.10.4, Apple introduced a “trimforce” command which enabled TRIM on 3rd party SSDs without turning off kext signing. 
+
+
+
+For recent third-party SSD/Flash memory drives, read very carefully whether the storage device vendor recommends, or discourages enabling external TRIM support on their drive. Many are now incorporating TRIM functionality into their drive controllers and enabling external TRIM may offer no advantage at all, and may actually harm the drive.
+———————
+Opinion 1: Once you make the choice stick with it; ie you do not want to be flipping back and forth as this will lead to data corruption.
+
+Opinion 2: "TRIM may cause data lost" is an old problem on Linux, not macOS. And that's many years ago. However, since that happened before, and Apple has no way to make sure all 3rd party SSD can work flawlessly with TRIM. Therefore, they have to show you that disclaimer.
+———————
+All new SSD will perform well, it is over time when allocated blocks and pages become used, you start to see a loss of performance.
+
+"TRIM doesn’t obviate the need for garbage collection—it works with garbage collection to more properly mark pages as stale. And you don’t need TRIM for garbage collection to work—but TRIM makes an SSD’s garbage collection more efficient."
+
+source: https://discussions.apple.com/thread/8580261?answerId=8580261021#8580261021
+
+Please note that some SSD drives do *not* support TRIM natively. It is easy to find out if your SSD drive is set to TRIM: 
+
+system_profiler SPSerialATADataType | grep 'TRIM'
+
+or:
+
+- In the Apple menu, launch "About This Mac"
+- Click on "System Report"
+- After it has loaded, click on "SATA/SATA Express"
 - Click on each of the drives till "Medium Type" in the list says "Solid State"
-- The line right below this will say "Yes" or "No" to "TRIM SUPPORT". If it says "NO" TRIM will NOT work on your SSD!
+- The line right below this will say "Yes" or "No" about "TRIM SUPPORT"
+
+If it says "NO" TRIM does NOT currently work on your SSD.
+
+Hackintosh:
+If your system includes a SATA SSD (NVMe SSDs do not require this), you may need to:
+	OC: enable Kernel > Quirk > ThirdPartyDrives (in OC config.plist) 
+	Clover: enable the TRIM patch (KernelandKextPatches > KextsToPatch) to enable TRIM on your 3rd-party SSD. 
+
+SSD TRIM for NVMe SSDs is still enabled *even without* this patch; you can (should?) disable this patch in CLOVER config.plist (? and OC: enable Kernel > Quirk > ThirdPartyDrives ?)
+
+If you have a SATA SSD, you still need a solution to enable TRIM on non-Apple SATA SSDs. 
+—————
+wensonL: "Another method is to add EnableTRIM Data 74727565 to NVRAM to enable SATA TRIM (this value comes from Sensei)
+jn819: "It is best to use the built-in trim force directly. ThirdPartyDrives is done using the kernel patch function, and the main purpose is NOT to turn on TRIM, but to ensure that hibernation allows files to be written to the specified SATA SSD!"
+https://bbs-pcbeta-com.translate.goog/forum.php?mod=viewthread&tid=1866922&_x_tr_sl=zh-CN&_x_tr_tl=en&_x_tr_hl=de&_x_tr_pto=sc

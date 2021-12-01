@@ -106,7 +106,7 @@ If there is more than one boot-arg, make sure you separate them from each other 
 <a name="PlistEditors"></a>
 * A good **XML property list editor**:
   - [ProperTree](https://github.com/corpnewt/ProperTree) (free) - recommended by OpenCore's Dortania Team
-  - [PlistEDPlus](https://github.com/ic005k/PlistEDPlus) (free)
+  - [PlistEDPlus](https://github.com/ic005k/PlistEDPlus) (free & cross-platform)
   - [PlistEdit Pro](https://www.fatcatsoftware.com/plisteditpro/) ($30)
   - [PrefEdit](https://www.bresink.com/osx/PrefEdit.html) $10)
   - Apple's [XCode](https://apps.apple.com/us/app/xcode/id497799835) development suite also comes with a plist editing module installed. It's free but "weighs" _many_ GB and is therefore only an alternative if you need it anyway for dev purposes
