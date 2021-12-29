@@ -29,11 +29,14 @@ This build enables you to run macOS on your VivoBook as long as it matches below
 # Repo Details
 
     Version:    	12.0 Beta 1
-    Repo Date:      Nov. 30, 2021
-    ReadMe Date: 	Nov. 30, 2021
-    Status: 	Beta
-    Support:    	All BIOS (verified 301-310)
-    Technology:	OpenCore and Clover with ACPI hotpatch by RehabMan  
+    Repo Date:      Dec. 27, 2021
+    ReadMe Date: 	Dec. 29, 2021
+    Repo-Status: 	Beta
+    Release Status: Stable
+    BIOS-Support:  	301-310
+    Technology:	OpenCore and Clover with ACPI hotpatch by RehabMan
+    OpenCore:    	v.0.7.5
+    Clover:    	r5142
    Changelog:   	see [Changelog.md](https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh/blob/master/ChangeLog.md)
 
 # System specification & Introduction
@@ -132,9 +135,7 @@ If there is more than one boot-arg, make sure you separate them from each other 
 
 2. Prepare a macOS installer on a USB flash drive or external hard disk
 
-3. **Download this repo**, preferably as **.dmg package** from the [Releases](https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh/releases) section because **a)** each release was tested thoroughly and can be considered a stable mile stone for most users, and **b)** macOS native icons and labels are maintained.<br/>  Alternatively you can download the repo at it's current "0-day" state if you see that's more recent than the latest release date and contains one or more updates you are looking for via the green "Clone or Download" button on the top right of the [repo's main page](https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh), "Download ZIP". Consider the non-release state as BETA, and be aware that GitHub does ***not*** (yet?) sustain macOS native icons and labels in its open repo!
-
-To be able to boot from your macOS install USB, it needs either one of this repo's EFI folders (recommended: OC EFI) on its FAT (16 or 32) partition.
+3. **Download this repo**, preferably as **.dmg package** from the [Releases](https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh/releases) section because **a)** each release was tested thoroughly and can be considered a stable mile stone for most users, and **b)** macOS native icons and labels are maintained.</p>  Alternatively you can download the repo at it's current "0-day" state if you see that a) it's significantly more recent than the latest release date, and b) contains one or more updates you are looking for. Download via the green "Clone or Download" button on the top right of the [repo's main page](https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh), "[Download ZIP](https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh/archive/refs/heads/main.zip)".</p>Consider the non-release state as BETA, and note that GitHub does ***not*** (yet?) sustain macOS native icons and labels in its open repo!<p>To be able to boot from your macOS install USB, it needs either one of this repo's EFI folders (recommended: OC EFI) on its FAT (16 or 32) partition.
 
 4. Recommended: connect a mouse via USB in case Trackpad does not work right away
 
@@ -287,9 +288,8 @@ If however you're using any of these, follow these steps in macOS, because this 
 - for `config.plist` changes against the previous repo release see [OC diff.plist](https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh/blob/main/OpenCore/diff.plist) and/or [Clover diff.plist](https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh/blob/main/Clover/diff.plist).
 
 # Troubleshooting
-**Many issues can be solved by performing a NVRAM Reset, then reboot**. **Recommended**: use **_Clover_** to do that because it nicely keeps your UEFI BIOS boot menu intact by _**not**_ touching your custom entries in there: boot into its Boot menu, then press **F11**.
-
-**OC**'s in contrast to Clover, OC's NVRAM reset will also wipe any custom boot entries in your UEFI BIOS boot menu! You execute it either via the last entry in the boot menu picker, or via keyboard key combo <kbd>Windows + Alt + P + R</kbd>
+**Many issues can be solved by performing a NVRAM Reset, then reboot**. If you have boot entries with custom names in your UEFI BIOS boot menu, you might want to use **_Clover's NVRAM reset_**, because it doesn't touch them but nicely keeps them intact: boot into its Boot menu, then press **F11**.
+**<ins>Disadvantage</ins>**: Clover's NVRAM reset isn't as thorough as OC's, so if you still encounter any issue which might be NVRAM related, your next bet is OC's NVRAM reset. And if you don't have custom entries in your UEFI BIOS boot picker to begin with, you should run **_OC's NVRAM reset_** right away. You execute it either via the last entry in the boot menu picker, or via keyboard key combo <kbd>Windows + Alt + P + R</kbd>
 
 **Further topics:**
 
