@@ -117,7 +117,7 @@ If there is more than one boot-arg, make sure you separate them from each other 
 
  ### OpenCore:
  * [OpenCore Configurator](https://mackie100projects.altervista.org/download-opencore-configurator/)
- * [Dortania guides](https://dortania.github.io/getting-started/) | [Online Reference Manual](https://github.com/acidanthera/OpenCorePkg/blob/master/Docs/Configuration.pdf)
+ * [Dortania guides](https://dortania.github.io/getting-started/) | [Online Reference Manual](https://raw.githubusercontent.com/acidanthera/OpenCorePkg/master/Docs/Configuration.pdf) (Pdf)
 
 
  ### Clover:
