@@ -1,6 +1,6 @@
 # Asus VivoBook S15 S510UA/ F510UA series
 
-This build enables you to run macOS on your VivoBook as long as it matches below System specifications as close as possible - verified with macOS Catalina 10.15.7 - Monterey 12.0.1
+This build enables you to run macOS on your VivoBook as long as it matches below System specifications as close as possible - verified with macOS Catalina 10.15.7 - Monterey 12.1
 
 🏳🚩**For macOS Monterey compatibility, see [macOS Monterey 12.x upgrade instructions for existing EFIs running pre-Monterey macOS](https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh/issues/11)** ✅
 
@@ -30,7 +30,7 @@ This build enables you to run macOS on your VivoBook as long as it matches below
 
     Version:    	12.0 Beta 1
     Repo Date:      Dec. 27, 2021
-    ReadMe Date: 	Dec. 29, 2021
+    ReadMe Date: 	Feb. 12, 2022
     Repo-Status: 	Beta
     Release Status: Stable
     BIOS-Support:  	301-310
@@ -117,7 +117,7 @@ If there is more than one boot-arg, make sure you separate them from each other 
 
  ### OpenCore:
  * [OpenCore Configurator](https://mackie100projects.altervista.org/download-opencore-configurator/)
- * [Online Reference Manual](https://dortania.github.io/docs/latest/Configuration.html) | [Dortania guides](https://dortania.github.io/getting-started/)
+ * [Dortania guides](https://dortania.github.io/getting-started/) | [Online Reference Manual](https://github.com/acidanthera/OpenCorePkg/blob/master/Docs/Configuration.pdf)
 
 
  ### Clover:
