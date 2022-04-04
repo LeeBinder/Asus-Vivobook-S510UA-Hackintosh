@@ -30,7 +30,7 @@ This build enables you to run macOS on your VivoBook as long as it matches below
 
     Version:    	12.0 Beta 1
     Repo Date:      Dec. 27, 2021
-    ReadMe Date: 	Feb. 12, 2022
+    ReadMe Date: 	Mar. 04, 2022
     Repo-Status: 	Beta
     Release Status: Stable
     BIOS-Support:  	301-310
@@ -109,7 +109,7 @@ If there is more than one boot-arg, make sure you separate them from each other 
 <a name="PlistEditors"></a>
 * A good **XML property list editor**:
   - [ProperTree](https://github.com/corpnewt/ProperTree) (free) - recommended by OpenCore's Dortania Team
-  - [PlistEDPlus](https://github.com/ic005k/PlistEDPlus) (free & cross-platform)
+  - [Xplist](https://github.com/ic005k/Xplist) (ex. PlistEDPlus - free & cross-platform)
   - [PlistEdit Pro](https://www.fatcatsoftware.com/plisteditpro/) ($30)
   - [PrefEdit](https://www.bresink.com/osx/PrefEdit.html) $10)
   - Apple's [XCode](https://apps.apple.com/us/app/xcode/id497799835) development suite also comes with a plist editing module installed. It's free but "weighs" _many_ GB and is therefore only an alternative if you need it anyway for dev purposes
