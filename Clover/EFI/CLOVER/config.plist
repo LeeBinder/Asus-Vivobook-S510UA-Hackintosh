@@ -424,9 +424,7 @@
 		<key>DellSMBIOSPatch</key>
 		<false/>
 		<key>ForceKextsToLoad</key>
-		<array>
-			<string>\System\Library\Extensions\IONetworkingFamily.kext</string>
-		</array>
+		<array/>
 		<key>KernelLapic</key>
 		<false/>
 		<key>KernelPm</key>

@@ -30,7 +30,7 @@ This build enables you to run macOS on your VivoBook as long as it matches below
 
     Version:    	12.0 Beta 1
     Repo Date:      Dec. 27, 2021
-    ReadMe Date: 	Mar. 04, 2022
+    ReadMe Date: 	Jun. 03, 2022
     Repo-Status: 	Beta
     Release Status: Stable
     BIOS-Support:  	301-310
@@ -100,7 +100,7 @@ If there is more than one boot-arg, make sure you separate them from each other 
 2. Apple **Safe Sleep** ("Hibernate", "Deep Sleep") has been disabled due to lack of compatibility. A similar functionality is planned to be integrated from whatnameisit's repo as soon as I find time to do so. For now, apply "*post macOS Installations/set hibernatemode to 0*" for the most reliable sleep experience.
 3. **Battery life** isn't great to begin with, not even in Windows. On some VivoBooks it seems to be even worse in macOS. A S510UQ user ([Quhuy0410](https://www.tonymacx86.com/members/quhuy0410.2255980/)) claims longer battery life with model `MacBookAir8,2` chosen in the SMBIOS section (of Clover config.plist). Feel free to experiment. Mind that `CPUFriendDataProvider.kext` ***must*** match your chosen model. For that sake, navigate to `post macOS Installations/[Optional]/change CPU Performance`
 4. **Sleep**: macOS tends to need up to 40 secs. to power down the VivoBook completely, and the fan spins up again before the system finally settles (power LED on the left blinking white, indicating sleep mode).
-5. **Swapped `<` and `^` keys**: If you have a keyboard with a `<` key next to the left ⇧ and a `^` key below the `ESC` key ([image](https://i.ebayimg.com/images/g/3WUAAOSw9ixe-fAq/s-l1600.jpg)) and these keys are reversed, and you neither want to use a tool like [Karabiner-Elements](https://karabiner-elements.pqrs.org/) nor know how to fix that via SSDT, simply stick to [VoodooPS2Controller.kext v.2.1.9](https://github.com/acidanthera/VoodooPS2/releases/tag/2.1.9) which is the only version I know to map these keys correctly for such VivoBook S15 models like mine.
+5. **Swapped `<` and `^` keys**: If you have a keyboard with a `<` key next to the left ⇧ and a `^` key below the `ESC` key ([image](https://i.ebayimg.com/images/g/3WUAAOSw9ixe-fAq/s-l1600.jpg)), these keys are reversed, and you neither want to use a tool like [Karabiner-Elements](https://karabiner-elements.pqrs.org/) nor know how to fix that via SSDT, simply stick to either [VoodooPS2Controller.kext v.2.2.7](https://github.com/acidanthera/VoodooPS2/releases/tag/2.2.7) or the older [VoodooPS2Controller.kext v.2.1.9](https://github.com/acidanthera/VoodooPS2/releases/tag/2.1.9) which are the only versions I know to map these keys correctly for such VivoBook S15 models like mine.
 
 # Tools to use
 * Your favorite macOS or hackintosh **USB installer maker**
