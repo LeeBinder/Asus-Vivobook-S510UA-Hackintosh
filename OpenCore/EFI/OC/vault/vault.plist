@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Files</key>
+	<dict>
+		<key>Drivers\AudioDxe.efi</key>
+		<data>
+		tu2c4IvOfGRhuc4q8tPlMR17+0A2+9fTCkCfJleIxzA=
+		</data>
+		<key>Drivers\OpenRuntime.efi</key>
+		<data>
+		uFmh+jnkWLaTexkoL4xI/FbaGPuGyK65olueerGd1Wc=
+		</data>
+		<key>Tools\ControlMsrE2.efi</key>
+		<data>
+		lr8mhCXBeGQpwarXju93l6ttiSxJpLVLJ1YWUjXqFNg=
+		</data>
+		<key>Tools\MmapDump.efi</key>
+		<data>
+		iEY/bQKsNaBCCTBzB3on4hcvKcTAipkC2Pexea79Atk=
+		</data>
+		<key>Tools\OpenShell.efi</key>
+		<data>
+		PbCCXi2ei9dqyv+CNqQiKwk/+0NNzBl3wH9TGfh+gl4=
+		</data>
+		<key>Tools\RtcRw.efi</key>
+		<data>
+		eb9H5MhwLWqpYv6K57dJM4zgsSFXtZzU8HW9NJpCxIE=
+		</data>
+		<key>Tools\VerifyMsrE2.efi</key>
+		<data>
+		RXKgHVLg/1g+xTE+Rv2q/LJEEv0ZGtALbmZycZUgn6Q=
+		</data>
+		<key>Tools\modGRUBShell.efi</key>
+		<data>
+		CTlGmYnZizqk14+6qrioJv8agMhRiQ5Jbw60uoAaIL8=
+		</data>
+		<key>config.plist</key>
+		<data>
+		xvmYCeORgceMaLOOBnNGJT3oOzCJM4z58Rh7631gVDc=
+		</data>
+	</dict>
+	<key>Version</key>
+	<integer>1</integer>
+</dict>
+</plist>

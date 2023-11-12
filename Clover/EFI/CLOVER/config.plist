@@ -10,6 +10,8 @@
 		<dict>
 			<key>Fixes</key>
 			<dict>
+				<key>FixIPIC</key>
+				<false/>
 				<key>FixRTC</key>
 				<true/>
 				<key>FixTMR</key>
@@ -19,187 +21,298 @@
 			<array>
 				<dict>
 					<key>Comment</key>
-					<string>AICPUPM: Rename APSS to APXX</string>
+					<string>AICPUPM: change APSS to APXX</string>
+					<key>Count</key>
+					<integer>0</integer>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
 					<data>QVBTUw==</data>
 					<key>Replace</key>
 					<data>QVBYWA==</data>
+					<key>Skip</key>
+					<integer>0</integer>
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>ATK support: Rename M(IANE) to XANE</string>
+					<string>XOSI: change OSID to XSID (to avoid match against _OSI XOSI patch)</string>
+					<key>Count</key>
+					<integer>0</integer>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>SUFORQk=</data>
+					<data>T1NJRA==</data>
 					<key>Replace</key>
-					<data>WEFORQk=</data>
+					<data>WFNJRA==</data>
+					<key>Skip</key>
+					<integer>0</integer>
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>ATK support: Rename M(_Q0A) to XQ0A F1</string>
+					<string>XOSI: change _OSI to XOSI</string>
+					<key>Count</key>
+					<integer>0</integer>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>X1EwQQ==</data>
+					<data>X09TSQ==</data>
 					<key>Replace</key>
-					<data>WFEwQQ==</data>
+					<data>WE9TSQ==</data>
+					<key>Skip</key>
+					<integer>0</integer>
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>ATK support: Rename M(_Q0B) to XQ0B F2</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>X1EwQg==</data>
-					<key>Replace</key>
-					<data>WFEwQg==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>ATK support: Rename M(_Q0E) to XQ0E F5</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>X1EwRQ==</data>
-					<key>Replace</key>
-					<data>WFEwRQ==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>ATK support: Rename M(_Q0F) to XQ0F F6</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>X1EwRg==</data>
-					<key>Replace</key>
-					<data>WFEwRg==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>ATK support: Rename M(_Q11) to XQ11 F8</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>X1ExMQ==</data>
-					<key>Replace</key>
-					<data>WFExMQ==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>Battery fix: Rename M(BIFA) to XBIF</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>QklGQQA=</data>
-					<key>Replace</key>
-					<data>WEJJRgA=</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>Battery fix: Rename M(FBST) to XBST</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>RkJTVAQ=</data>
-					<key>Replace</key>
-					<data>WEJTVAQ=</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>Battery fix: Rename M(SMBR) to XSMR</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>U01CUgs=</data>
-					<key>Replace</key>
-					<data>WE1CUgs=</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>Battery fix: Rename M(SMBW) to XSMW</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>U01CVw0=</data>
-					<key>Replace</key>
-					<data>WE1CVw0=</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>Battery fix: Rename M(_BIX) to XBIX</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>X0JJWAA=</data>
-					<key>Replace</key>
-					<data>WEJJWAA=</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>Sleep fix: Rename M(GPRW) to XPRW</string>
+					<string>Instant wake fix: Rename Method(GPRW,2,N) to XPRW</string>
+					<key>Count</key>
+					<integer>0</integer>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
 					<data>R1BSVwI=</data>
 					<key>Replace</key>
 					<data>WFBSVwI=</data>
+					<key>Skip</key>
+					<integer>0</integer>
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>ALS: change Method(RALS,0,S) XALS</string>
+					<string>Resource tables for many Macs: Rename _STA methods in MATH and LDR2 device to XSTA, pair with SSDT-MATHLDR2_STA.aml</string>
+					<key>Count</key>
+					<integer>0</integer>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>UkFMUwA=</data>
+					<data>X1NUQQCgDZNQ</data>
 					<key>Replace</key>
-					<data>WEFMUwA=</data>
+					<data>WFNUQQCgDZNQ</data>
+					<key>Skip</key>
+					<integer>0</integer>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Battery: Rename Method(_BIX,0) to Method(XBIX,0)</string>
+					<key>Count</key>
+					<integer>0</integer>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>X0JJWAA=</data>
+					<key>Replace</key>
+					<data>WEJJWAA=</data>
+					<key>Skip</key>
+					<integer>0</integer>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Battery: Rename Method(BIFA,0) to Method(XBIF,0)</string>
+					<key>Count</key>
+					<integer>0</integer>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>QklGQQA=</data>
+					<key>Replace</key>
+					<data>WEJJRgA=</data>
+					<key>Skip</key>
+					<integer>0</integer>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Battery: Rename Method(SMBR,3,Serialized) to Method(XSMR,3,Serialized)</string>
+					<key>Count</key>
+					<integer>0</integer>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>U01CUgs=</data>
+					<key>Replace</key>
+					<data>WFNNUgs=</data>
+					<key>Skip</key>
+					<integer>0</integer>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Battery: Rename Method(SMBW,5,Serialized) to Method(XSMW,5,Serialized)</string>
+					<key>Count</key>
+					<integer>0</integer>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>U01CVw0=</data>
+					<key>Replace</key>
+					<data>WFNNVw0=</data>
+					<key>Skip</key>
+					<integer>0</integer>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Battery: Rename Method(FBST,4) to Method(XBST,4)</string>
+					<key>Count</key>
+					<integer>0</integer>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>RkJTVAQ=</data>
+					<key>Replace</key>
+					<data>WEJTVAQ=</data>
+					<key>Skip</key>
+					<integer>0</integer>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>ATK: Rename Method(IANE,1,S) to XANE</string>
+					<key>Count</key>
+					<integer>0</integer>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>SUFORQk=</data>
+					<key>Replace</key>
+					<data>WEFORQk=</data>
+					<key>Skip</key>
+					<integer>0</integer>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>ATK: Rename Method(_Q0A,0,NS) to XQ0A F1</string>
+					<key>Count</key>
+					<integer>0</integer>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>X1EwQQA=</data>
+					<key>Replace</key>
+					<data>WFEwQQA=</data>
+					<key>Skip</key>
+					<integer>0</integer>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>ATK: Rename Method(_Q0B,0,NS) to XQ0B F2</string>
+					<key>Count</key>
+					<integer>0</integer>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>X1EwQgA=</data>
+					<key>Replace</key>
+					<data>WFEwQgA=</data>
+					<key>Skip</key>
+					<integer>0</integer>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>ATK: Rename Method(_Q0E,0,NS) to XQ0E F5</string>
+					<key>Count</key>
+					<integer>0</integer>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>X1EwRQA=</data>
+					<key>Replace</key>
+					<data>WFEwRQA=</data>
+					<key>Skip</key>
+					<integer>0</integer>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>ATK: Rename Method(_Q0F,0,NS) to XQ0F F6</string>
+					<key>Count</key>
+					<integer>0</integer>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>X1EwRgA=</data>
+					<key>Replace</key>
+					<data>WFEwRgA=</data>
+					<key>Skip</key>
+					<integer>0</integer>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>ATK: Rename Method(_Q11,0,NS) to XQ11 F8</string>
+					<key>Count</key>
+					<integer>0</integer>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>X1ExMQg=</data>
+					<key>Replace</key>
+					<data>WFExMQg=</data>
+					<key>Skip</key>
+					<integer>0</integer>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change _DSM to XDSM</string>
+					<key>Count</key>
+					<integer>0</integer>
+					<key>Disabled</key>
+					<true/>
+					<key>Find</key>
+					<data>X0RTTQ==</data>
+					<key>Replace</key>
+					<data>WERTTQ==</data>
+					<key>Skip</key>
+					<integer>0</integer>
 				</dict>
 				<dict>
 					<key>Comment</key>
 					<string>Sleep &amp; Shutdown: _PTS to ZPTS(1,N) (copied from Daliansky's OC-Little)</string>
+					<key>Count</key>
+					<integer>0</integer>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
 					<data>X1BUUwE=</data>
 					<key>Replace</key>
 					<data>WlBUUwE=</data>
+					<key>Skip</key>
+					<integer>0</integer>
 				</dict>
 				<dict>
 					<key>Comment</key>
 					<string>Wake from Sleep: _WAK to ZWAK(1,N) (copied from Daliansky's OC-Little)</string>
+					<key>Count</key>
+					<integer>0</integer>
 					<key>Disabled</key>
-					<false/>
+					<true/>
 					<key>Find</key>
 					<data>X1dBSwE=</data>
 					<key>Replace</key>
 					<data>WldBSwE=</data>
+					<key>Skip</key>
+					<integer>0</integer>
 				</dict>
 				<dict>
 					<key>Comment</key>
 					<string>EC firmware: _REG to XREG(2,N) in EC0 and tailing bytes (copied from hieplpvip's ASUS Zenbook repo)</string>
+					<key>Count</key>
+					<integer>0</integer>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
 					<data>X1JFRwKgCw==</data>
 					<key>Replace</key>
 					<data>WFJFRwKgCw==</data>
+					<key>Skip</key>
+					<integer>0</integer>
 				</dict>
 			</array>
+			<key>SuspendOverride</key>
+			<true/>
 		</dict>
 		<key>DisabledAML</key>
 		<array>
 			<string>SSDT-RP01_PEGP.aml</string>
+			<string>SSDT-PTSWAK-RP01_PEGP.aml</string>
+			<string>SSDT-Battery-old.aml</string>
 			<string>SSDT-Trackpad_polling-I2C1_USTP.aml</string>
-			<string>SSDT-PTS.aml</string>
 		</array>
 		<key>DropTables</key>
 		<array>
 			<dict>
-				<key>DropForAllOS</key>
-				<false/>
 				<key>Signature</key>
 				<string>DMAR</string>
 			</dict>
@@ -211,6 +324,8 @@
 			</dict>
 		</array>
 		<key>FixHeaders</key>
+		<true/>
+		<key>HaltEnabler</key>
 		<true/>
 		<key>SSDT</key>
 		<dict>
@@ -239,22 +354,30 @@
 	</dict>
 	<key>Boot</key>
 	<dict>
-		<key>#Arguments - 2</key>
-		<string></string>
-		<key>#Comment-#Arguments - 2</key>
-		<string>If you do not have DW1560</string>
-		<key>#Comment-Arguments</key>
-		<string>Only if you have DW1560</string>
+		<key>#DefaultVolume</key>
+		<string>BC58D1DD-A41F-4B3F-752C-9B493D399C95</string>
 		<key>Arguments</key>
-		<string>-v alcid=13 #brcmfx-country=US #bpr_probedelay=200 #bpr_initialdelay=400 #bpr_postresetdelay=400</string>
+		<string>#keepsyms=1 #kext-dev-mode=1 -v alcid=13 #-cputsclock revpatch=sbvmm #TSC_sync_margin=0 #-igfxdbeo #-igfxbls</string>
+		<key>Debug</key>
+		<false/>
 		<key>DefaultVolume</key>
 		<string>LastBootedVolume</string>
+		<key>HibernationFixup</key>
+		<false/>
 		<key>NeverHibernate</key>
 		<true/>
+		<key>NoEarlyProgress</key>
+		<true/>
+		<key>RtcHibernateAware</key>
+		<false/>
 		<key>Secure</key>
 		<false/>
+		<key>SignatureFixup</key>
+		<false/>
+		<key>StrictHibernate</key>
+		<false/>
 		<key>Timeout</key>
-		<integer>0</integer>
+		<integer>4</integer>
 		<key>XMPDetection</key>
 		<integer>0</integer>
 	</dict>
@@ -347,17 +470,59 @@
 	</dict>
 	<key>GUI</key>
 	<dict>
+		<key>#ScreenResolution</key>
+		<string>1920x1080</string>
 		<key>Custom</key>
 		<dict>
 			<key>Tool</key>
 			<array>
 				<dict>
+					<key>Arguments</key>
+					<string>unlock</string>
 					<key>Disabled</key>
 					<false/>
 					<key>FullTitle</key>
-					<string>ControlMsrE2</string>
+					<string>1. BIOS Boot Menau; 2. unlock cfg (ControlMsrE2 v.0.6.8)</string>
 					<key>Hidden</key>
 					<false/>
+					<key>Path</key>
+					<string>\EFI\Clover\Tools\ControlMsrE2_v.0.6.8.efi</string>
+					<key>Volume</key>
+					<string>\</string>
+				</dict>
+				<dict>
+					<key>Disabled</key>
+					<true/>
+					<key>FullTitle</key>
+					<string>VerifyMsrE2</string>
+					<key>Hidden</key>
+					<true/>
+					<key>Path</key>
+					<string>\EFI\Clover\Tools\VerifyMsrE2.efi</string>
+					<key>Volume</key>
+					<string>\</string>
+				</dict>
+				<dict>
+					<key>Disabled</key>
+					<true/>
+					<key>FullTitle</key>
+					<string>CFGLock</string>
+					<key>Hidden</key>
+					<true/>
+					<key>Path</key>
+					<string>\EFI\Clover\Tools\CFGLock.efi</string>
+					<key>Volume</key>
+					<string>\</string>
+				</dict>
+				<dict>
+					<key>Arguments</key>
+					<string>unlock</string>
+					<key>Disabled</key>
+					<true/>
+					<key>FullTitle</key>
+					<string>1. BIOS Boot Menau; 2. unlock  cfg (Clover ControlMsrE2)</string>
+					<key>Hidden</key>
+					<true/>
 					<key>Path</key>
 					<string>\EFI\Clover\Tools\ControlMsrE2.efi</string>
 					<key>Volume</key>
@@ -367,24 +532,32 @@
 					<key>Disabled</key>
 					<false/>
 					<key>FullTitle</key>
-					<string>CleanNvram</string>
+					<string>CleanNvram (thorough)</string>
 					<key>Hidden</key>
 					<false/>
 					<key>Path</key>
-					<string>\EFI\Clover\Tools\CleanNvram.efi</string>
+					<string>\EFI\CLOVER\tools\CleanNvram.efi</string>
 					<key>Volume</key>
-					<string>\</string>
+					<string>EFI</string>
 				</dict>
 			</array>
 		</dict>
+		<key>CustomIcons</key>
+		<true/>
 		<key>Hide</key>
 		<array>
 			<string>Recovery</string>
+			<string>Big Sur</string>
+			<string>Monterey</string>
+			<string>Ventura</string>
+			<string>Ventura (virgin)</string>
 		</array>
 		<key>Mouse</key>
 		<dict>
 			<key>Enabled</key>
-			<false/>
+			<true/>
+			<key>Speed</key>
+			<integer>8</integer>
 		</dict>
 		<key>Scan</key>
 		<dict>
@@ -393,12 +566,14 @@
 			<key>Legacy</key>
 			<false/>
 			<key>Linux</key>
-			<true/>
+			<false/>
 			<key>Tool</key>
 			<true/>
 		</dict>
-		<key>ScreenResolution</key>
-		<string>1920x1080</string>
+		<key>ShowOptimus</key>
+		<false/>
+		<key>Theme</key>
+		<string>Universe</string>
 	</dict>
 	<key>Graphics</key>
 	<dict>
@@ -423,27 +598,29 @@
 		<false/>
 		<key>DellSMBIOSPatch</key>
 		<false/>
-		<key>ForceKextsToLoad</key>
-		<array/>
 		<key>KernelLapic</key>
-		<false/>
-		<key>KernelPm</key>
 		<false/>
 		<key>KernelToPatch</key>
 		<array>
 			<dict>
 				<key>Comment</key>
 				<string>MSR 0xE2 _xcpm_idle instant reboot(c) Pike R. Alpha (Delete this patch after unlocking MSR 0xE2)</string>
+				<key>Count</key>
+				<integer>0</integer>
 				<key>Disabled</key>
 				<true/>
 				<key>Find</key>
 				<data>ILniAAAADzA=</data>
 				<key>Replace</key>
 				<data>ILniAAAAkJA=</data>
+				<key>Skip</key>
+				<integer>0</integer>
 			</dict>
 			<dict>
 				<key>Comment</key>
 				<string>Disable panic kext logging on 10.14 release kernel (credit vit9696)</string>
+				<key>Count</key>
+				<integer>0</integer>
 				<key>Disabled</key>
 				<true/>
 				<key>Find</key>
@@ -452,6 +629,8 @@
 				<string>10.14.x</string>
 				<key>Replace</key>
 				<data>igKEwOtC</data>
+				<key>Skip</key>
+				<integer>0</integer>
 			</dict>
 		</array>
 		<key>KextsToPatch</key>
@@ -464,7 +643,7 @@
 				<key>Find</key>
 				<data>SU9LaXQ=</data>
 				<key>InfoPlistPatch</key>
-				<true/>
+				<false/>
 				<key>Name</key>
 				<string>AppleIntelLpssI2CController</string>
 				<key>Replace</key>
@@ -512,9 +691,15 @@
 		<true/>
 		<key>EnableWriteUnprotector</key>
 		<true/>
+		<key>ProvideCurrentCpuInfo</key>
+		<false/>
 		<key>ProvideMaxSlide</key>
 		<integer>0</integer>
+		<key>ResizeAppleGpuBars</key>
+		<integer>-1</integer>
 		<key>SetupVirtualMap</key>
+		<true/>
+		<key>ThirdPartyDrives</key>
 		<true/>
 	</dict>
 	<key>RtVariables</key>
@@ -522,18 +707,18 @@
 		<key>BooterConfig</key>
 		<string>0x28</string>
 		<key>CsrActiveConfig</key>
-		<string>0x67</string>
-		<key>HWTarget</key>
-		<string>J213AP</string>
+		<string>0x0A0F</string>
+		<key>ROM</key>
+		<data>W/CkfrgO</data>
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
 		<key>BiosReleaseDate</key>
-		<string>07/05/2021</string>
+		<string>03/04/2023</string>
 		<key>BiosVendor</key>
 		<string>Apple Inc.</string>
 		<key>BiosVersion</key>
-		<string>MBP154.88Z.F000.B00.2107050236</string>
+		<string>MBP154.88Z.F000.B00.2303040348</string>
 		<key>Board-ID</key>
 		<string>Mac-53FDB3D8DB8CA971</string>
 		<key>BoardManufacturer</key>
@@ -549,7 +734,11 @@
 		<key>ChassisType</key>
 		<string>0x9</string>
 		<key>EfiVersion</key>
-		<string>1715.0.57.0.0</string>
+		<string>2020.41.1.0.0</string>
+		<key>ExtendedFirmwareFeatures</key>
+		<string>0x00000008FD8FF426</string>
+		<key>ExtendedFirmwareFeaturesMask</key>
+		<string>0x00000008FF9FFF3F</string>
 		<key>Family</key>
 		<string>MacBook Pro</string>
 		<key>FirmwareFeatures</key>
@@ -566,11 +755,17 @@
 		<string>0x32</string>
 		<key>ProductName</key>
 		<string>MacBookPro15,4</string>
+		<key>SerialNumber</key>
+		<string>update this field</string>
+		<key>SmUUID</key>
+		<string>update this field</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
+		<key>InjectKexts</key>
+		<true/>
 		<key>InjectSystemID</key>
 		<true/>
 	</dict>

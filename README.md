@@ -1,6 +1,6 @@
 # Asus VivoBook S15 S510UA/ F510UA series
 
-This build enables you to run macOS on your VivoBook as long as it matches below System specifications as close as possible - verified with macOS Catalina 10.15.7 - Monterey 12.1
+This build enables you to run macOS on your VivoBook as long as it matches below System specifications as close as possible - verified with macOS Monterey 12.6.6 - Sonoma 14.1.1
 
 🏳🚩**For macOS Monterey compatibility, see [macOS Monterey 12.x upgrade instructions for existing EFIs running pre-Monterey macOS](https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh/issues/11)** ✅
 
@@ -28,16 +28,16 @@ This build enables you to run macOS on your VivoBook as long as it matches below
 
 # Repo Details
 
-    Version:    	12.0 Beta 1
-    Repo Date:      Dec. 27, 2021
-    ReadMe Date: 	Jun. 03, 2022
+    Version:    	14.1.1 Beta 1
+    Repo Date:      Nov. 12, 2023
+    ReadMe Date: 	Nov. 12, 2023
     Repo-Status: 	Beta
     Release Status: Stable
     BIOS-Support:  	301-310
     Technology:	OpenCore and Clover with ACPI hotpatch by RehabMan
-    OpenCore:    	v.0.7.5
-    Clover:    	r5142
-   Changelog:   	see [Changelog.md](https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh/blob/master/ChangeLog.md)
+    OpenCore:    	v.0.9.6
+    Clover:    	r5166
+   (Changelog:   	outdated - see [Changelog.md](https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh/blob/master/ChangeLog.md)
 
 # System specification & Introduction
 
@@ -74,7 +74,7 @@ Of the two bootloaders offered in this repo, [OpenCore](https://github.com/acida
     • Fingerprint reader
     • FN + media controller key combo
     • Apple Safe Sleep ("Hibernate") - see additional note below
-    • Partially supported: Intel Wi-Fi - replacement options see below
+    • By now well supported: Intel Wi-Fi - full Mac-alike replacement options see below
 The support for DRM contents is limited due to incompatible firmware. Please see the [DRM Compatibility Chart](https://github.com/acidanthera/WhateverGreen/blob/master/Manual/FAQ.Chart.md)
 
 # VivoBooks with an additional dGPU (NVIDIA GeForce 940MX, MX150 etc.)
