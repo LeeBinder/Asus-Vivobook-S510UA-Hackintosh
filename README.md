@@ -1,6 +1,6 @@
 # Asus VivoBook S15 S510UA/ F510UA series
 
-This build enables you to run macOS on your VivoBook as long as it matches below System specifications as close as possible - verified with macOS Monterey 12.6.6 - Sonoma 14.1.
+This build enables you to run macOS on your VivoBook as long as it matches below System specifications as close as possible - verified with macOS Monterey 12.6.6 - Sonoma 14.1.1
 
 🏳🚩**For macOS Monterey compatibility, see [macOS Monterey 12.x upgrade instructions for existing EFIs running pre-Monterey macOS](https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh/issues/11)** ✅
 
