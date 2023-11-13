@@ -13,7 +13,7 @@ This build enables you to run macOS on your VivoBook as long as it matches below
 - [Unsupported Hardware & Features](#unsupported-hardware--features)
 - [VivoBooks with an additional NVIDIA GeForce dGPU](#vivobooks-with-an-additional-dgpu-nvidia-geforce-940mx-mx150-etc)
 - [Known Issues, weaknesses and oddities](#known-issues-weaknesses-and-oddities)
-- [Tools & Guides to use](#tools-&-guides-to-use)
+- [Tools & Guides to use](#tools--guides-to-use)
 - [Steps to install macOS](#steps-to-install-macos)
 - [Steps after installing macOS](#steps-after-installing-macos)
 - [Unlock the MSR E2 register](#unlock-the-msr-e2-register)
