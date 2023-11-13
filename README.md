@@ -104,7 +104,7 @@ If there is more than one boot-arg, make sure you separate them from each other 
 
 # Tools & Guides to use
 * Your favorite macOS or hackintosh **USB installer maker**
-* **Hackintool**: [Forum thread](https://www.insanelymac.com/forum/topic/335018-hackintool-v286/) | [GitHub](https://github.com/headkaze/Hackintool) incl. [Downloads](https://github.com/headkaze/Hackintool/releases)
+* **Hackintool**: [Forum thread](https://www.insanelymac.com/forum/topic/335018-hackintool-v286/) | [GitHub](https://github.com/headkaze/Hackintool)
 * **Kext Updater**: [Homepage](https://www.sl-soft.de/en/kext-updater/) | [GitHub](https://github.com/MacThings/kextupdater/) | [Main forum thread](https://www.hackintosh-forum.de/forum/thread/32621-kext-updater-neue-version-3-x/) {German}
 <a name="PlistEditors"></a>
 * A good **XML property list editor**:
