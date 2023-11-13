@@ -13,7 +13,7 @@ This build enables you to run macOS on your VivoBook as long as it matches below
 - [Unsupported Hardware & Features](#unsupported-hardware--features)
 - [VivoBooks with an additional NVIDIA GeForce dGPU](#vivobooks-with-an-additional-dgpu-nvidia-geforce-940mx-mx150-etc)
 - [Known Issues, weaknesses and oddities](#known-issues-weaknesses-and-oddities)
-- [Tools to use](#tools-to-use)
+- [Tools & Guides to use](#tools-&-guides-to-use)
 - [Steps to install macOS](#steps-to-install-macos)
 - [Steps after installing macOS](#steps-after-installing-macos)
 - [Unlock the MSR E2 register](#unlock-the-msr-e2-register)
@@ -102,7 +102,7 @@ If there is more than one boot-arg, make sure you separate them from each other 
 4. **Sleep**: macOS tends to need up to 40 secs. to power down the VivoBook completely, and the fan spins up again before the system finally settles (power LED on the left blinking white, indicating sleep mode).
 5. **Swapped `<` and `^` keys**: If you have a keyboard with a `<` key next to the left ⇧ and a `^` key below the `ESC` key ([image](https://i.ebayimg.com/images/g/3WUAAOSw9ixe-fAq/s-l1600.jpg)), these keys are reversed, and you neither want to use a tool like [Karabiner-Elements](https://karabiner-elements.pqrs.org/) nor know how to fix that via SSDT, simply stick to either [VoodooPS2Controller.kext v.2.2.7](https://github.com/acidanthera/VoodooPS2/releases/tag/2.2.7) or the older [VoodooPS2Controller.kext v.2.1.9](https://github.com/acidanthera/VoodooPS2/releases/tag/2.1.9) which are the only versions I know to map these keys correctly for such VivoBook S15 models like mine.
 
-# Tools to use
+# Tools & Guides to use
 * Your favorite macOS or hackintosh **USB installer maker**
 * **Hackintool**: [Forum thread](https://www.insanelymac.com/forum/topic/335018-hackintool-v286/) | [GitHub](https://github.com/headkaze/Hackintool) incl. [Downloads](https://github.com/headkaze/Hackintool/releases)
 * **Kext Updater**: [Homepage](https://www.sl-soft.de/en/kext-updater/) incl. Download | Download current and archive @ [bitbucket](https://bitbucket.org/profdrluigi/kextupdater/downloads/) | [Main forum thread](https://www.hackintosh-forum.de/forum/thread/32621-kext-updater-neue-version-3-x/) {German}
@@ -117,6 +117,8 @@ If there is more than one boot-arg, make sure you separate them from each other 
 
  ### OpenCore:
  * [OpenCore Configurator](https://mackie100projects.altervista.org/download-opencore-configurator/)
+ * OpenCore Auxiliary Tools (OCAT): [GitHub](https://github.com/ic005k/OCAuxiliaryTools) | [Guide by 5T33Z0](https://github.com/5T33Z0/OC-Little-Translated/blob/main/D_Updating_OpenCore/README.md) | [User's Guide by chriswayg](https://chriswayg.gitbook.io/opencore-visual-beginners-guide/step-by-step/oc-auxiliary-tools) | [Topic @InsanelyMac](https://www.insanelymac.com/forum/topic/344752-open-source-cross-platform-opencore-auxiliary-tools（ocat/) | [YT 2:18 Video by Olarila](https://www.youtube.com/watch?v=y8oeq7kMI7o) | [YT 9:43 Video by PandorasBox](https://www.youtube.com/watch?v=AGq5kbZ5IfM)
+ * HackinDROM: [Homepage](https://hackindrom.zapto.org/) | [Topic @tonymacx86](https://www.tonymacx86.com/threads/hackindrom-app-for-opencore-efi-creation-and-update.312176/)
  * [Dortania guides](https://dortania.github.io/getting-started/) | [Online Reference Manual](https://raw.githubusercontent.com/acidanthera/OpenCorePkg/master/Docs/Configuration.pdf) (Pdf)
 
 
