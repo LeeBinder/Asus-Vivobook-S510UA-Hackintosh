@@ -116,8 +116,8 @@ If there is more than one boot-arg, make sure you separate them from each other 
 * A professional **cloning/ backup utility** like [Carbon Copy Cloner](https://bombich.com/download) or [SuperDuper!](https://www.shirt-pocket.com/SuperDuper/SuperDuperDescription.html)
 
  ### OpenCore:
- * [OpenCore Configurator](https://mackie100projects.altervista.org/download-opencore-configurator/)
  * OpenCore Auxiliary Tools (OCAT): [GitHub](https://github.com/ic005k/OCAuxiliaryTools) | [Guide by 5T33Z0](https://github.com/5T33Z0/OC-Little-Translated/blob/main/D_Updating_OpenCore/README.md) | [User's Guide by chriswayg](https://chriswayg.gitbook.io/opencore-visual-beginners-guide/step-by-step/oc-auxiliary-tools) | [Topic @InsanelyMac](https://www.insanelymac.com/forum/topic/344752-open-source-cross-platform-opencore-auxiliary-tools（ocat/) | [YT 2:18 Video by Olarila](https://www.youtube.com/watch?v=y8oeq7kMI7o) | [YT 9:43 Video by PandorasBox](https://www.youtube.com/watch?v=AGq5kbZ5IfM)
+ * [OpenCore Configurator](https://mackie100projects.altervista.org/download-opencore-configurator/)
  * HackinDROM: [Homepage](https://hackindrom.zapto.org/) | [Topic @tonymacx86](https://www.tonymacx86.com/threads/hackindrom-app-for-opencore-efi-creation-and-update.312176/)
  * [Dortania guides](https://dortania.github.io/getting-started/) | [Online Reference Manual](https://raw.githubusercontent.com/acidanthera/OpenCorePkg/master/Docs/Configuration.pdf) (Pdf)
 
